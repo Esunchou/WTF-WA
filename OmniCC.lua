@@ -1,12 +1,12 @@
 
 OmniCCDB = {
+	["profileKeys"] = {
+		["老弓 - 阿尔萨斯"] = "默认",
+		["你见过我吗 - 阿尔萨斯"] = "默认",
+	},
 	["global"] = {
 		["addonVersion"] = "9.0.2",
 		["dbVersion"] = 5,
-	},
-	["profileKeys"] = {
-		["你见过我吗 - 阿尔萨斯"] = "默认",
-		["老弓 - 阿尔萨斯"] = "默认",
 	},
 	["profiles"] = {
 		["默认"] = {
@@ -41,9 +41,9 @@ OmniCCDB = {
 			["themes"] = {
 				["默认"] = {
 					["textStyles"] = {
-						["seconds"] = {
-						},
 						["soon"] = {
+						},
+						["seconds"] = {
 						},
 						["minutes"] = {
 						},
@@ -55,6 +55,8 @@ OmniCCDB = {
 	},
 }
 OmniCC4Config = {
+	["groups"] = {
+	},
 	["version"] = "7.0.1",
 	["groupSettings"] = {
 		["base"] = {
@@ -79,7 +81,5 @@ OmniCC4Config = {
 			["mmSSDuration"] = 0,
 			["spiralOpacity"] = 1.00999997742474,
 		},
-	},
-	["groups"] = {
 	},
 }
