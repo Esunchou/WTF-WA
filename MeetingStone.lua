@@ -2,13 +2,13 @@
 MEETINGSTONE_UI_DB = {
 	["profileKeys"] = {
 		["猫乄 - 阿尔萨斯"] = "Default",
-		["霜天晓角 - 阿尔萨斯"] = "Default",
+		["秋心 - 阿尔萨斯"] = "Default",
 		["丨术丨 - 阿尔萨斯"] = "Default",
 		["你见过我吗 - 阿尔萨斯"] = "Default",
 		["阿服第一武僧 - 阿尔萨斯"] = "Default",
-		["老弓 - 阿尔萨斯"] = "Default",
+		["霜天晓角 - 阿尔萨斯"] = "Default",
 		["木叶之说 - 阿尔萨斯"] = "Default",
-		["秋心 - 阿尔萨斯"] = "Default",
+		["老弓 - 阿尔萨斯"] = "Default",
 		["悦战 - 阿尔萨斯"] = "Default",
 		["冰火兮 - 阿尔萨斯"] = "Default",
 		["古剑 - 阿尔萨斯"] = "Default",
@@ -100,16 +100,16 @@ MEETINGSTONE_UI_DB = {
 				["ItemLevel"] = 370,
 				["HonorLevel"] = 0,
 			},
-			["评级战场"] = {
-				["ItemLevel"] = 416,
+			["风暴神殿（史诗）"] = {
+				["ItemLevel"] = 325,
 				["HonorLevel"] = 0,
 			},
 			["托尔达戈（史诗钥石）"] = {
 				["ItemLevel"] = 336,
 				["HonorLevel"] = 0,
 			},
-			["风暴神殿（史诗）"] = {
-				["ItemLevel"] = 325,
+			["托尔达戈（史诗）"] = {
+				["ItemLevel"] = 360,
 				["HonorLevel"] = 0,
 			},
 			["围攻伯拉勒斯（史诗钥石）"] = {
@@ -128,8 +128,8 @@ MEETINGSTONE_UI_DB = {
 				["ItemLevel"] = 460,
 				["HonorLevel"] = 0,
 			},
-			["托尔达戈（史诗）"] = {
-				["ItemLevel"] = 360,
+			["评级战场"] = {
+				["ItemLevel"] = 416,
 				["HonorLevel"] = 0,
 			},
 			["竞技场（3v3）"] = {
@@ -152,17 +152,17 @@ MEETINGSTONE_UI_DB = {
 					["max"] = 0,
 					["enable"] = false,
 				},
-				["Members"] = {
-					["min"] = 0,
-					["max"] = 0,
-					["enable"] = false,
-				},
 				["ItemLevel"] = {
 					["min"] = 0,
 					["max"] = 0,
 					["enable"] = false,
 				},
 				["Age"] = {
+					["min"] = 0,
+					["max"] = 0,
+					["enable"] = false,
+				},
+				["Members"] = {
 					["min"] = 0,
 					["max"] = 0,
 					["enable"] = false,
@@ -174,46 +174,34 @@ MEETINGSTONE_UI_DB = {
 					["max"] = 0,
 					["enable"] = false,
 				},
+				["Members"] = {
+					["min"] = 0,
+					["max"] = 0,
+					["enable"] = false,
+				},
+				["ItemLevel"] = {
+					["min"] = 0,
+					["max"] = 0,
+					["enable"] = false,
+				},
 				["Age"] = {
 					["min"] = 0,
 					["max"] = 40,
 					["enable"] = true,
 				},
-				["Members"] = {
-					["min"] = 0,
-					["max"] = 0,
-					["enable"] = false,
-				},
-				["ItemLevel"] = {
-					["min"] = 0,
-					["max"] = 0,
-					["enable"] = false,
-				},
-			},
-			[4] = {
-				["BossKilled"] = {
-					["min"] = 0,
-					["enable"] = false,
-					["max"] = 0,
-				},
-				["ItemLevel"] = {
-					["min"] = 0,
-					["enable"] = false,
-					["max"] = 0,
-				},
-				["Age"] = {
-					["min"] = 0,
-					["enable"] = false,
-					["max"] = 0,
-				},
-				["Members"] = {
-					["min"] = 0,
-					["enable"] = false,
-					["max"] = 0,
-				},
 			},
 			[9] = {
 				["BossKilled"] = {
+					["min"] = 0,
+					["enable"] = false,
+					["max"] = 0,
+				},
+				["Members"] = {
+					["min"] = 0,
+					["enable"] = false,
+					["max"] = 0,
+				},
+				["ItemLevel"] = {
 					["min"] = 0,
 					["enable"] = false,
 					["max"] = 0,
@@ -223,6 +211,18 @@ MEETINGSTONE_UI_DB = {
 					["enable"] = true,
 					["max"] = 50,
 				},
+			},
+			[111] = {
+				["BossKilled"] = {
+					["min"] = 0,
+					["enable"] = false,
+					["max"] = 0,
+				},
+				["Age"] = {
+					["min"] = 0,
+					["enable"] = false,
+					["max"] = 0,
+				},
 				["Members"] = {
 					["min"] = 0,
 					["enable"] = false,
@@ -234,13 +234,8 @@ MEETINGSTONE_UI_DB = {
 					["max"] = 0,
 				},
 			},
-			[111] = {
+			[4] = {
 				["BossKilled"] = {
-					["min"] = 0,
-					["enable"] = false,
-					["max"] = 0,
-				},
-				["ItemLevel"] = {
 					["min"] = 0,
 					["enable"] = false,
 					["max"] = 0,
@@ -251,6 +246,11 @@ MEETINGSTONE_UI_DB = {
 					["max"] = 0,
 				},
 				["Members"] = {
+					["min"] = 0,
+					["enable"] = false,
+					["max"] = 0,
+				},
+				["ItemLevel"] = {
 					["min"] = 0,
 					["enable"] = false,
 					["max"] = 0,

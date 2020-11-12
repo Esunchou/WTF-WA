@@ -1,6 +1,6 @@
 
 BugGrabberDB = {
-	["session"] = 966,
+	["session"] = 968,
 	["lastSanitation"] = 3,
 	["errors"] = {
 		{
@@ -2257,53 +2257,13 @@ BugGrabberDB = {
 			["counter"] = 86,
 		}, -- [299]
 		{
-			["message"] = "Interface\\AddOns\\Simulationcraft\\core.lua:5: Cannot find a library instance of \"LibRealmInfo\".",
-			["time"] = "2020/11/07 23:36:14",
-			["locals"] = "(*temporary) = \"Cannot find a library instance of \"LibRealmInfo\".\"\n",
-			["stack"] = "[string \"=[C]\"]: in function `error'\n[string \"@Interface\\AddOns\\libs\\LibStub\\LibStub.lua\"]:23: in function `LibStub'\n[string \"@Interface\\AddOns\\Simulationcraft\\core.lua\"]:5: in main chunk",
-			["session"] = 966,
-			["counter"] = 18,
-		}, -- [300]
-		{
-			["message"] = "Interface\\AddOns\\vexpower\\core\\cps.lua:563: attempt to call method 'SetBackdrop' (a nil value)",
-			["time"] = "2020/10/15 22:58:16",
-			["locals"] = "(*temporary) = nil\n(*temporary) = vexpower.CPBar.mainframe {\n 0 = <userdata>\n}\n(*temporary) = <table> {\n bgFile = \"Interface\\Buttons\\WHITE8X8\"\n edgeSize = 2\n tile = false\n}\n(*temporary) = \"attempt to call method 'SetBackdrop' (a nil value)\"\n",
-			["stack"] = "[string \"@Interface\\AddOns\\vexpower\\core\\cps.lua\"]:563: in function `setMainframe'\n[string \"@Interface\\AddOns\\vexpower\\core\\initialize.lua\"]:18: in function `core'\n[string \"@Interface\\AddOns\\vexpower\\vexpower-2.8.24.lua\"]:94: in function <Interface\\AddOns\\vexpower\\vexpower.lua:92>",
-			["session"] = 966,
-			["counter"] = 86,
-		}, -- [301]
-		{
-			["message"] = "(null)",
-			["session"] = 966,
-			["time"] = "2018/08/14 07:27:37",
-			["counter"] = 285,
-		}, -- [302]
-		{
-			["message"] = "Couldn't open Interface\\AddOns\\vexpower\\libs\\AceBucket-3.0-4\\AceBucket-3.0.xml",
-			["time"] = "2018/09/29 23:02:18",
-			["session"] = 966,
-			["counter"] = 770,
-		}, -- [303]
-		{
-			["message"] = "Couldn't open Interface\\AddOns\\vexpower\\libs\\AceHook-3.0-8\\AceHook-3.0.xml",
-			["time"] = "2018/09/29 23:02:18",
-			["session"] = 966,
-			["counter"] = 608,
-		}, -- [304]
-		{
-			["message"] = "Couldn't open Interface\\AddOns\\vexpower\\libs\\AceComm-3.0-12\\AceComm-3.0.xml",
-			["time"] = "2018/09/29 23:02:18",
-			["session"] = 966,
-			["counter"] = 607,
-		}, -- [305]
-		{
 			["message"] = "Interface\\AddOns\\EuiScript\\module\\PMFilter.lua:151: attempt to call upvalue 'BNGetNumFriendGameAccounts' (a nil value)",
 			["time"] = "2020/11/06 22:25:48",
 			["locals"] = "f = ChatFrame1 {\n SetJustifyV = <function> defined =[C]:-1\n RefreshIfNecessary = <function> defined =[C]:-1\n OnPostShow = <function> defined =[C]:-1\n SetScript = <function> defined =[C]:-1\n CalculateLineAlphaValueFromTimestamp = <function> defined =[C]:-1\n isLayoutDirty = false\n isDisplayDirty = true\n GetFading = <function> defined =[C]:-1\n IsTextCopyable = <function> defined =[C]:-1\n shouldFadeAfterInactivity = true\n SetIndentedWordWrap = <function> defined =[C]:-1\n GetJustifyV = <function> defined =[C]:-1\n SetFont = <function> defined =[C]:-1\n GetMaxLines = <function> defined =[C]:-1\n font = \"Fonts\\ARKai_T.ttf\"\n GetIndentedWordWrap = <function> defined =[C]:-1\n buttonSide = \"left\"\n GetFont = <function> defined =[C]:-1\n onScrollChangedCallback = <function> defined =[C]:-1\n CalculateSelectingCharacterIndicesForVisibleLine = <function> defined =[C]:-1\n PageUp = <function> defined =[C]:-1\n RefreshDisplay = <function> defined =[C]:-1\n SetFontObject = <function> defined =[C]:-1\n textIsCopyable = false\n SetOnScrollChangedCallback = <function> defined =[C]:-1\n CalculateNumVisibleLines = <function> defined =[C]:-1\n overrideFadeTimestamp = 729056.623000\n MarkDisplayDirty = <function> defined =[C]:-1\n GetMessageInfo = <function> defined =[C]:-1\n GetOnScrollChangedCallback = <function> defined =[C]:-1\n AtTop = <function> defined =[C]:-1\n GetFontObject = <function> defined =[C]:-1\n fontStringPool = <table> {\n }\n CanEffectivelyFade = <function> defined =[C]:-1\n OnPreSizeChanged = <function> defined =[C]:-1\n OnPostMouseUp = <function> defined =[C]:-1\n GetSpacing = <function> defined =[C]:-1\n OnPreLoad = <function> defined =[C]:-1\n SetSpacing = <function> defined =[C]:-1\n name = \"综合\"\n CalculateLineSpacing = <function> defined =[C]:-1\n AddMessage = <function> defined @Interface\\AddOns\\ElvUI\\Modules\\chat\\chat.lua:710\n InitializeFontableFrame = <function> defined =[C]:-1\n GetShadowColor = <function> defined =[C]:-1\n isUninteractable = false\n SetOnTextCopiedCallback = <function> defined =[C]:-1\n fontStyle = \"NONE\"\n copyButton = ElvUI_CopyChatButton1 {\n }\n AcquireFontString = <function> defined =[C]:-1\n TransformMessages = <function> defined =[C]:-1\n SetShadowColor = <function> defined =[C]:-1\n buttonFrame = ChatFrame1ButtonFrame {\n }\n HasFontObject = <function> defined =[C]:-1\n isDocked = 1\n GetOnTextCopiedCallback = <function> defined =[C]:-1\n SetFading = <function> defined =[C]:-1\n OnPostHide = <function> defined =[C]:-1\n alternativeDefaultLanguage = \"兽人语\"\n OldAddMessage = <function> defined =[C]:-1\n isInitialized = 1\n ScrollByAmount = <function> defined =[C]:-1\n GetInsertMode = <function> defined =[C]:-1\n SetTimeVisible = <function> defined =[C]:-1\n hasOwnFontObject = true\n scriptsSet = true\n Clear = <function> defined =[C]:-1\n oldAlpha = 0.156863\n channelList = <table> {\n }\n GetTimeVisible = <function> defined =[C]:-1\n MarkLayoutDirty = <function> defined =[C]:-1\n SetTextCopyable = <function> defined =[C]:-1\n BackFillMessage = <function> defined =[C]:-1\n UnpackageEntry = <function> defined =[C]:-1\n ScrollBar = <unnamed> {\n }\n SetShadowOffset = <function> defined =[C]:-1\n messageTypeList = <table> {\n }\n timeVisibleSecs = 100\n PackageEntry = <function> defined =[C]:-1\n MakeFontObjectCustom = <function> defined =[C]:-1\n fontObject = table: 0000026822425A20 {\n }\n SetInsertMode = <function> defined =[C]:-1\n mouseInTime = 0\n ScrollDown = <function> defined =[C]:-1\n zoneChannelList = <table> {\n }\n SetScrollOffset = <function> defined =[C]:-1\n onDisplayRefreshedCallback = <function> defined =[C]:-1\n insertMode = 2\n mouseOutTime = 0\n chatLevelUP = <table> {\n }\n ResetSelectingText = <function> defined =[C]:-1\n defaultLanguage = \"兽人语\"\n fontSize = 12\n styled = true\n tab = ChatFrame1Tab {\n }\n GetTextColor = <function> defined =[C]:-1\n GatherSelectedText = <function> defined =[C]:-1\n ResetAllFadeTimes = <function> defined =[C]:-1\n GetNumVisibleLines = <function> defined =[C]:-1\n ScrollUp = <function> defined =[C]:-1\n 0 = <userdata>\n IsSelectingText = <function> defined =[C]:-1\n fadeDurationSecs = 3\n ScrollToBottom = <function> defi",
 			["stack"] = "[string \"@Interface\\AddOns\\EuiScript\\module\\PMFilter.lua\"]:151: in function `filterFunc'\n[string \"@Interface\\AddOns\\ElvUI\\Modules\\chat\\chat-聊天.lua\"]:1533: in function `ChatFrame_MessageEventHandler'\n[string \"@Interface\\AddOns\\ElvUI\\Modules\\chat\\chat-聊天.lua\"]:1961: in function `ChatFrame_OnEvent'\n[string \"@Interface\\AddOns\\ElvUI\\Modules\\chat\\chat-聊天.lua\"]:1965: in function `FloatingChatFrame_OnEvent'\n[string \"@Interface\\AddOns\\ElvUI\\Modules\\chat\\chat-聊天.lua\"]:1970: in function <Interface\\AddOns\\ElvUI\\Modules\\chat\\chat.lua:1969>",
 			["session"] = 966,
 			["counter"] = 6,
-		}, -- [306]
+		}, -- [300]
 		{
 			["message"] = "Interface\\AddOns\\EuiScript\\module\\tradetabs.lua:235: attempt to call method 'SkinButton' (a nil value)",
 			["time"] = "2020/11/01 22:59:41",
@@ -2311,6 +2271,46 @@ BugGrabberDB = {
 			["stack"] = "[string \"@Interface\\AddOns\\EuiScript\\module\\tradetabs.lua\"]:235: in function <Interface\\AddOns\\EuiScript\\module\\tradetabs.lua:229>\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: in function `LoadAddOn'\n[string \"@Interface\\FrameXML\\UIParent.lua\"]:495: in function `UIParentLoadAddOn'\n[string \"@Interface\\FrameXML\\UIParent.lua\"]:538: in function `ClassTrainerFrame_LoadUI'\n[string \"@Interface\\FrameXML\\UIParent.lua\"]:1886: in function <Interface\\FrameXML\\UIParent.lua:1258>",
 			["session"] = 966,
 			["counter"] = 2,
+		}, -- [301]
+		{
+			["message"] = "Interface\\AddOns\\Simulationcraft\\core.lua:5: Cannot find a library instance of \"LibRealmInfo\".",
+			["time"] = "2020/11/07 23:36:14",
+			["locals"] = "(*temporary) = \"Cannot find a library instance of \"LibRealmInfo\".\"\n",
+			["stack"] = "[string \"=[C]\"]: in function `error'\n[string \"@Interface\\AddOns\\libs\\LibStub\\LibStub.lua\"]:23: in function `LibStub'\n[string \"@Interface\\AddOns\\Simulationcraft\\core.lua\"]:5: in main chunk",
+			["session"] = 968,
+			["counter"] = 20,
+		}, -- [302]
+		{
+			["message"] = "Interface\\AddOns\\vexpower\\core\\cps.lua:563: attempt to call method 'SetBackdrop' (a nil value)",
+			["time"] = "2020/10/15 22:58:16",
+			["locals"] = "(*temporary) = nil\n(*temporary) = vexpower.CPBar.mainframe {\n 0 = <userdata>\n}\n(*temporary) = <table> {\n bgFile = \"Interface\\Buttons\\WHITE8X8\"\n edgeSize = 2\n tile = false\n}\n(*temporary) = \"attempt to call method 'SetBackdrop' (a nil value)\"\n",
+			["stack"] = "[string \"@Interface\\AddOns\\vexpower\\core\\cps.lua\"]:563: in function `setMainframe'\n[string \"@Interface\\AddOns\\vexpower\\core\\initialize.lua\"]:18: in function `core'\n[string \"@Interface\\AddOns\\vexpower\\vexpower-2.8.24.lua\"]:94: in function <Interface\\AddOns\\vexpower\\vexpower.lua:92>",
+			["session"] = 968,
+			["counter"] = 88,
+		}, -- [303]
+		{
+			["message"] = "(null)",
+			["session"] = 968,
+			["time"] = "2018/08/14 07:27:37",
+			["counter"] = 289,
+		}, -- [304]
+		{
+			["message"] = "Couldn't open Interface\\AddOns\\vexpower\\libs\\AceBucket-3.0-4\\AceBucket-3.0.xml",
+			["time"] = "2018/09/29 23:02:18",
+			["session"] = 968,
+			["counter"] = 772,
+		}, -- [305]
+		{
+			["message"] = "Couldn't open Interface\\AddOns\\vexpower\\libs\\AceHook-3.0-8\\AceHook-3.0.xml",
+			["time"] = "2018/09/29 23:02:18",
+			["session"] = 968,
+			["counter"] = 610,
+		}, -- [306]
+		{
+			["message"] = "Couldn't open Interface\\AddOns\\vexpower\\libs\\AceComm-3.0-12\\AceComm-3.0.xml",
+			["time"] = "2018/09/29 23:02:18",
+			["session"] = 968,
+			["counter"] = 609,
 		}, -- [307]
 	},
 }
