@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
-	["session"] = 968,
 	["lastSanitation"] = 3,
+	["session"] = 969,
 	["errors"] = {
 		{
 			["message"] = "...ace\\AddOns\\epgp\\libs\\LibDialog-1.0\\LibDialog-1.0-1.lua:223: Usage: PlaySound(soundKitID, optional[\"SFX\",\"Music\",\"Ambience\", \"Dialog\" or \"Master\"], [forceNoDuplicates, runFinishCallback])",
@@ -194,14 +194,14 @@ BugGrabberDB = {
 		}, -- [25]
 		{
 			["message"] = "Error loading Interface\\AddOns\\DBM-BlackrockFoundry\\localization.kr.lua",
-			["time"] = "2018/08/10 19:41:09",
 			["session"] = 50,
+			["time"] = "2018/08/10 19:41:09",
 			["counter"] = 1,
 		}, -- [26]
 		{
 			["message"] = "Error loading Interface\\AddOns\\DBM-BlackrockFoundry\\localization.ru.lua",
-			["time"] = "2018/08/10 19:41:09",
 			["session"] = 50,
+			["time"] = "2018/08/10 19:41:09",
 			["counter"] = 1,
 		}, -- [27]
 		{
@@ -403,20 +403,20 @@ BugGrabberDB = {
 		}, -- [52]
 		{
 			["message"] = "Error loading Interface\\AddOns\\EuiGarrison\\InProgressMissions.lua",
-			["time"] = "2018/09/08 14:03:34",
 			["session"] = 104,
+			["time"] = "2018/09/08 14:03:34",
 			["counter"] = 1,
 		}, -- [53]
 		{
 			["message"] = "Error loading Interface\\AddOns\\EuiGarrison\\MissionUI_BFA.lua",
-			["time"] = "2018/09/08 14:03:34",
 			["session"] = 104,
+			["time"] = "2018/09/08 14:03:34",
 			["counter"] = 2,
 		}, -- [54]
 		{
 			["message"] = "Error loading Interface\\AddOns\\EuiGarrison\\MoreRewardsFormOrderHall.lua",
-			["time"] = "2018/09/08 14:03:34",
 			["session"] = 104,
+			["time"] = "2018/09/08 14:03:34",
 			["counter"] = 2,
 		}, -- [55]
 		{
@@ -629,8 +629,8 @@ BugGrabberDB = {
 		}, -- [82]
 		{
 			["message"] = "Couldn't open Interface\\AddOns\\TellMeWhen_Options\\TellMeWhen_Options.toc",
-			["time"] = "2018/09/29 22:39:38",
 			["session"] = 174,
+			["time"] = "2018/09/29 22:39:38",
 			["counter"] = 2,
 		}, -- [83]
 		{
@@ -642,32 +642,32 @@ BugGrabberDB = {
 		}, -- [84]
 		{
 			["message"] = "Couldn't open Interface\\AddOns\\AuctionLite\\AuctionLite.toc",
-			["session"] = 175,
 			["time"] = "2018/09/29 22:40:43",
+			["session"] = 175,
 			["counter"] = 1,
 		}, -- [85]
 		{
 			["message"] = "Couldn't open Interface\\AddOns\\epgp\\epgp.toc",
-			["session"] = 175,
 			["time"] = "2018/09/29 22:40:43",
+			["session"] = 175,
 			["counter"] = 1,
 		}, -- [86]
 		{
 			["message"] = "Couldn't open Interface\\AddOns\\ExtraCD\\ExtraCD.toc",
-			["session"] = 175,
 			["time"] = "2018/09/29 22:40:43",
+			["session"] = 175,
 			["counter"] = 1,
 		}, -- [87]
 		{
 			["message"] = "Couldn't open Interface\\AddOns\\HandyNotes_Achievements\\HandyNotes_Achievements.toc",
-			["session"] = 175,
 			["time"] = "2018/09/29 22:40:43",
+			["session"] = 175,
 			["counter"] = 1,
 		}, -- [88]
 		{
 			["message"] = "Couldn't open Interface\\AddOns\\HandyNotes_DraenorTreasures\\HandyNotes_DraenorTreasures.toc",
-			["session"] = 175,
 			["time"] = "2018/09/29 22:40:43",
+			["session"] = 175,
 			["counter"] = 1,
 		}, -- [89]
 		{
@@ -818,20 +818,20 @@ BugGrabberDB = {
 		}, -- [108]
 		{
 			["message"] = "Error loading Interface\\AddOns\\DBM-Uldir\\localization.es.lua",
-			["session"] = 285,
 			["time"] = "2018/09/07 20:13:39",
+			["session"] = 285,
 			["counter"] = 27,
 		}, -- [109]
 		{
 			["message"] = "Error loading Interface\\AddOns\\DBM-Uldir\\localization.de.lua",
-			["time"] = "2018/09/08 19:43:19",
 			["session"] = 285,
+			["time"] = "2018/09/08 19:43:19",
 			["counter"] = 50,
 		}, -- [110]
 		{
 			["message"] = "Error loading Interface\\AddOns\\DBM-Uldir\\localization.ru.lua",
-			["session"] = 285,
 			["time"] = "2018/09/07 20:13:39",
+			["session"] = 285,
 			["counter"] = 50,
 		}, -- [111]
 		{
@@ -858,20 +858,20 @@ BugGrabberDB = {
 		}, -- [114]
 		{
 			["message"] = "Error loading Interface\\AddOns\\DBM-Party-BfA\\localization.es.lua",
-			["session"] = 289,
 			["time"] = "2018/08/31 23:55:58",
+			["session"] = 289,
 			["counter"] = 54,
 		}, -- [115]
 		{
 			["message"] = "Error loading Interface\\AddOns\\DBM-Party-BfA\\localization.de.lua",
-			["time"] = "2018/09/08 14:22:37",
 			["session"] = 289,
+			["time"] = "2018/09/08 14:22:37",
 			["counter"] = 66,
 		}, -- [116]
 		{
 			["message"] = "Error loading Interface\\AddOns\\DBM-Party-BfA\\localization.kr.lua",
-			["session"] = 289,
 			["time"] = "2018/10/03 21:44:15",
+			["session"] = 289,
 			["counter"] = 36,
 		}, -- [117]
 		{
@@ -966,14 +966,14 @@ BugGrabberDB = {
 		}, -- [129]
 		{
 			["message"] = "Error loading Interface\\AddOns\\DBM-Azeroth-BfA\\localization.kr.lua",
-			["time"] = "2018/09/08 13:47:39",
 			["session"] = 297,
+			["time"] = "2018/09/08 13:47:39",
 			["counter"] = 29,
 		}, -- [130]
 		{
 			["message"] = "Error loading Interface\\AddOns\\DBM-Azeroth-BfA\\localization.de.lua",
-			["session"] = 297,
 			["time"] = "2018/09/13 20:23:26",
+			["session"] = 297,
 			["counter"] = 39,
 		}, -- [131]
 		{
@@ -1160,8 +1160,8 @@ BugGrabberDB = {
 		}, -- [154]
 		{
 			["message"] = "Error loading Interface\\AddOns\\libs\\oUF\\elements\\pvpclassificationindicator.lua",
-			["time"] = "2019/03/14 20:01:51",
 			["session"] = 456,
+			["time"] = "2019/03/14 20:01:51",
 			["counter"] = 636,
 		}, -- [155]
 		{
@@ -1375,26 +1375,26 @@ BugGrabberDB = {
 		}, -- [182]
 		{
 			["message"] = "Error loading Interface\\AddOns\\DBM-Challenges\\localization.es.lua",
-			["session"] = 532,
 			["time"] = "2020/04/06 22:47:58",
+			["session"] = 532,
 			["counter"] = 10,
 		}, -- [183]
 		{
 			["message"] = "Error loading Interface\\AddOns\\DBM-Challenges\\localization.kr.lua",
-			["session"] = 532,
 			["time"] = "2020/04/06 22:47:58",
+			["session"] = 532,
 			["counter"] = 10,
 		}, -- [184]
 		{
 			["message"] = "Error loading Interface\\AddOns\\DBM-Challenges\\localization.ru.lua",
-			["session"] = 532,
 			["time"] = "2020/04/06 22:47:58",
+			["session"] = 532,
 			["counter"] = 10,
 		}, -- [185]
 		{
 			["message"] = "Error loading Interface\\AddOns\\DBM-Challenges\\localization.de.lua",
-			["session"] = 532,
 			["time"] = "2020/04/06 22:47:58",
+			["session"] = 532,
 			["counter"] = 20,
 		}, -- [186]
 		{
@@ -1540,8 +1540,8 @@ BugGrabberDB = {
 		}, -- [204]
 		{
 			["message"] = "Error loading Interface\\AddOns\\ElvUI\\Modules\\skins\\Blizzard\\CombatLog.lua",
-			["session"] = 615,
 			["time"] = "2020/05/24 11:05:18",
+			["session"] = 615,
 			["counter"] = 5,
 		}, -- [205]
 		{
@@ -2147,14 +2147,14 @@ BugGrabberDB = {
 		}, -- [283]
 		{
 			["message"] = "Couldn't open Interface\\AddOns\\vexpower\\libs\\AceTab-3.0\\AceTab-3.0.xml",
-			["time"] = "2018/09/29 23:02:18",
 			["session"] = 945,
+			["time"] = "2018/09/29 23:02:18",
 			["counter"] = 589,
 		}, -- [284]
 		{
 			["message"] = "Couldn't open Interface\\AddOns\\vexpower\\libs\\AceSerializer-3.0-5\\AceSerializer-3.0.xml",
-			["time"] = "2018/09/29 23:02:18",
 			["session"] = 945,
+			["time"] = "2018/09/29 23:02:18",
 			["counter"] = 588,
 		}, -- [285]
 		{
@@ -2230,8 +2230,8 @@ BugGrabberDB = {
 		}, -- [295]
 		{
 			["message"] = "Error loading Interface\\AddOns\\Masque\\SkinsModule\\PixelPerfect.lua",
-			["time"] = "2020/11/07 23:24:13",
 			["session"] = 959,
+			["time"] = "2020/11/07 23:24:13",
 			["counter"] = 28,
 		}, -- [296]
 		{
@@ -2277,40 +2277,70 @@ BugGrabberDB = {
 			["time"] = "2020/11/07 23:36:14",
 			["locals"] = "(*temporary) = \"Cannot find a library instance of \"LibRealmInfo\".\"\n",
 			["stack"] = "[string \"=[C]\"]: in function `error'\n[string \"@Interface\\AddOns\\libs\\LibStub\\LibStub.lua\"]:23: in function `LibStub'\n[string \"@Interface\\AddOns\\Simulationcraft\\core.lua\"]:5: in main chunk",
-			["session"] = 968,
-			["counter"] = 20,
+			["session"] = 969,
+			["counter"] = 21,
 		}, -- [302]
 		{
 			["message"] = "Interface\\AddOns\\vexpower\\core\\cps.lua:563: attempt to call method 'SetBackdrop' (a nil value)",
 			["time"] = "2020/10/15 22:58:16",
 			["locals"] = "(*temporary) = nil\n(*temporary) = vexpower.CPBar.mainframe {\n 0 = <userdata>\n}\n(*temporary) = <table> {\n bgFile = \"Interface\\Buttons\\WHITE8X8\"\n edgeSize = 2\n tile = false\n}\n(*temporary) = \"attempt to call method 'SetBackdrop' (a nil value)\"\n",
 			["stack"] = "[string \"@Interface\\AddOns\\vexpower\\core\\cps.lua\"]:563: in function `setMainframe'\n[string \"@Interface\\AddOns\\vexpower\\core\\initialize.lua\"]:18: in function `core'\n[string \"@Interface\\AddOns\\vexpower\\vexpower-2.8.24.lua\"]:94: in function <Interface\\AddOns\\vexpower\\vexpower.lua:92>",
-			["session"] = 968,
-			["counter"] = 88,
+			["session"] = 969,
+			["counter"] = 89,
 		}, -- [303]
 		{
 			["message"] = "(null)",
-			["session"] = 968,
 			["time"] = "2018/08/14 07:27:37",
-			["counter"] = 289,
+			["session"] = 969,
+			["counter"] = 291,
 		}, -- [304]
 		{
 			["message"] = "Couldn't open Interface\\AddOns\\vexpower\\libs\\AceBucket-3.0-4\\AceBucket-3.0.xml",
+			["session"] = 969,
 			["time"] = "2018/09/29 23:02:18",
-			["session"] = 968,
-			["counter"] = 772,
+			["counter"] = 773,
 		}, -- [305]
 		{
 			["message"] = "Couldn't open Interface\\AddOns\\vexpower\\libs\\AceHook-3.0-8\\AceHook-3.0.xml",
+			["session"] = 969,
 			["time"] = "2018/09/29 23:02:18",
-			["session"] = 968,
-			["counter"] = 610,
+			["counter"] = 611,
 		}, -- [306]
 		{
 			["message"] = "Couldn't open Interface\\AddOns\\vexpower\\libs\\AceComm-3.0-12\\AceComm-3.0.xml",
+			["session"] = 969,
 			["time"] = "2018/09/29 23:02:18",
-			["session"] = 968,
-			["counter"] = 609,
+			["counter"] = 610,
 		}, -- [307]
+		{
+			["message"] = "Error loading Interface\\AddOns\\DBM-GUI\\localization.de.lua",
+			["time"] = "2020/11/12 23:51:17",
+			["session"] = 969,
+			["counter"] = 1,
+		}, -- [308]
+		{
+			["message"] = "Error loading Interface\\AddOns\\DBM-GUI\\localization.ru.lua",
+			["time"] = "2020/11/12 23:51:17",
+			["session"] = 969,
+			["counter"] = 1,
+		}, -- [309]
+		{
+			["message"] = "Error loading Interface\\AddOns\\DBM-GUI\\localization.fr.lua",
+			["time"] = "2020/11/12 23:51:17",
+			["session"] = 969,
+			["counter"] = 1,
+		}, -- [310]
+		{
+			["message"] = "Error loading Interface\\AddOns\\DBM-GUI\\localization.it.lua",
+			["time"] = "2020/11/12 23:51:17",
+			["session"] = 969,
+			["counter"] = 1,
+		}, -- [311]
+		{
+			["message"] = "Error loading Interface\\AddOns\\DBM-GUI\\localization.kr.lua",
+			["time"] = "2020/11/12 23:51:17",
+			["session"] = 969,
+			["counter"] = 1,
+		}, -- [312]
 	},
 }
