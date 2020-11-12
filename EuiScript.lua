@@ -5,10 +5,6 @@ TalentProfilesGlobalDB = {
 		["specs"] = {
 		},
 	},
-	["DEMONHUNTER"] = {
-		["specs"] = {
-		},
-	},
 	["ROGUE"] = {
 		["specs"] = {
 			{
@@ -23,6 +19,10 @@ TalentProfilesGlobalDB = {
 				["profiles"] = {
 				},
 			}, -- [3]
+		},
+	},
+	["DEMONHUNTER"] = {
+		["specs"] = {
 		},
 	},
 	["MAGE"] = {
@@ -99,13 +99,6 @@ MTGDB = {
 	["talkedNPC"] = {
 	},
 	["buyList"] = {
-	},
-	["NPCNameList"] = {
-		[152084] = "|TInterface\\TARGETINGFRAME\\UI-RaidTargetingIcon_2:26|t 穆勒尔",
-		[151952] = "|TInterface\\TARGETINGFRAME\\UI-RaidTargetingIcon_1:26|t 弗勒格勒",
-		[151953] = "|TInterface\\TARGETINGFRAME\\UI-RaidTargetingIcon_3:26|t 胡勒格勒",
-		[151950] = "|TInterface\\TARGETINGFRAME\\UI-RaidTargetingIcon_6:26|t 穆勒格勒勒",
-		[151951] = "|TInterface\\TARGETINGFRAME\\UI-RaidTargetingIcon_5:26|t 格姆勒格",
 	},
 	["buyLists"] = {
 	},
@@ -330,6 +323,13 @@ MTGDB = {
 				}, -- [2]
 			},
 		},
+	},
+	["NPCNameList"] = {
+		[152084] = "|TInterface\\TARGETINGFRAME\\UI-RaidTargetingIcon_2:26|t 穆勒尔",
+		[151952] = "|TInterface\\TARGETINGFRAME\\UI-RaidTargetingIcon_1:26|t 弗勒格勒",
+		[151953] = "|TInterface\\TARGETINGFRAME\\UI-RaidTargetingIcon_3:26|t 胡勒格勒",
+		[151950] = "|TInterface\\TARGETINGFRAME\\UI-RaidTargetingIcon_6:26|t 穆勒格勒勒",
+		[151951] = "|TInterface\\TARGETINGFRAME\\UI-RaidTargetingIcon_5:26|t 格姆勒格",
 	},
 }
 j_toggle = true

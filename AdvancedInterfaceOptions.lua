@@ -10,6 +10,7 @@ AdvancedInterfaceOptionsSaved = {
 	["AccountVars"] = {
 		["ActionButtonUseKeyDown"] = "0",
 		["cameraDistanceMaxZoomFactor"] = "2.5999999046326",
+		["enableWoWMouse"] = "0",
 	},
 	["EnforceSettings"] = false,
 }
