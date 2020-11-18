@@ -47,7 +47,7 @@ ElvDB = {
 			"Interface\\AddOns\\_Cursor\\_Cursor-7.0.3.1.lua:382: attempt to call method 'GetModel' (a nil value)Interface\\AddOns\\_Cursor\\_Cursor-7.0.3.1.lua:382: in function <Interface\\AddOns\\_Cursor\\_Cursor.lua:380>\n[C]: in function `Show'\nInterface\\AddOns\\_Cursor\\_Cursor-7.0.3.1.lua:179: in function <Interface\\AddOns\\_Cursor\\_Cursor.lua:174>\nInterface\\AddOns\\_Cursor\\_Cursor-7.0.3.1.lua:248: in function <Interface\\AddOns\\_Cursor\\_Cursor.lua:247>\n(tail call): ?(for generator) = <function> defined =[C]:-1\n(for state) = <table> {\n (null) = <table> {\n }\n (null) = <table> {\n }\n}\n(for control) = CursorModel1 {\n 0 = <userdata>\n X = 4\n Y = -6\n}\nmodel = CursorModel1 {\n 0 = <userdata>\n X = 4\n Y = -6\n}\n(*temporary) = nil\n(*temporary) = CursorModel1 {\n 0 = <userdata>\n X = 4\n Y = -6\n}\n(*temporary) = \"attempt to call method 'GetModel' (a nil value)\"\npairs = <function> defined =[C]:-1\nActiveModels = <table> {\n (null) = <table> {\n }\n (null) = <table> {\n }\n}\ntype = <function> defined =[C]:-1\n162018/05/04 20:42:14", -- [19]
 			"Interface\\AddOns\\RareScanner\\MapTracker.lua:188: attempt to perform arithmetic on field 'coordX' (a string value)Interface\\AddOns\\RareScanner\\MapTracker.lua:188: in function `RS_SetupMapIcon'\nInterface\\AddOns\\RareScanner\\MapTracker.lua:179: in function `RS_AddMapIcon'\nInterface\\AddOns\\RareScanner\\MapTracker.lua:127: in function `RS_UpdateMapIcon'\nInterface\\AddOns\\RareScanner\\Core.lua:1109: in function `?'\n...Ons\\Libs\\CallbackHandler-1.0\\CallbackHandler-1.0-6.lua:145: in function <...Ons\\Libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:145>\n[string \"safecall Dispatcher[4]\"]:4: in function <[string \"safecall Dispatcher[4]\"]:4>\n[C]: ?\n[string \"safecall Dispatcher[4]\"]:13: in function `?'\n...Ons\\Libs\\CallbackHandler-1.0\\CallbackHandler-1.0-6.lua:90: in function `Fire'\nInterface\\AddOns\\libs\\AceComm-3.0\\AceComm-3.0-10.lua:214: in function `OnReceiveMultipartLast'\nInterface\\AddOns\\libs\\AceComm-3.0\\AceComm-3.0-10.lua:252: in function <Interface\\AddOns\\libs\\AceComm-3.0\\AceComm-3.0.lua:242>162018/05/04 20:50:02", -- [20]
 		},
-		["Ver"] = "20201105A",
+		["Ver"] = "20201117A",
 		["unitframe"] = {
 			["ChannelTicks"] = {
 				["苦修"] = 3,
@@ -617,9 +617,9 @@ ElvDB = {
 				["ElvAB_6"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-488,330",
 				["TooltipMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-50,50",
 				["ElvUF_TankMover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,50,995",
-				["TotemBarMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,463,50",
 				["ElvUF_PetMover"] = "BOTTOM,ElvUIParent,BOTTOM,0,200",
 				["ElvUF_PlayerMover"] = "BOTTOM,ElvUIParent,BOTTOM,-230,140",
+				["TotemBarMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,463,50",
 				["ElvUF_PartyMover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,184,773",
 				["AlertFrameMover"] = "TOP,ElvUIParent,TOP,0,-50",
 				["ElvUF_TargetMover"] = "BOTTOM,ElvUIParent,BOTTOM,230,140",
@@ -986,13 +986,13 @@ ElvDB = {
 				["LossControlMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-554,385",
 				["LevelUpBossBannerMover"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,-520,-281",
 				["MirrorTimer1Mover"] = "TOP,ElvUIParent,TOP,198,-105",
-				["ElvUIBagMover"] = "BOTTOM,ElvUIParent,BOTTOM,-177,309",
+				["TotemBarMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,413,2",
 				["ElvAB_1"] = "BOTTOM,ElvUIParent,BOTTOM,-4,0",
 				["ElvAB_2"] = "BOTTOM,ElvUIParent,BOTTOM,-3,35",
 				["RightChatMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,8,2",
-				["TotemBarMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,413,2",
-				["TalkingHeadFrameMover"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,-258,-303",
 				["ElvUF_PetMover"] = "BOTTOM,ElvUIParent,BOTTOM,-300,284",
+				["TalkingHeadFrameMover"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,-258,-303",
+				["ElvUIBagMover"] = "BOTTOM,ElvUIParent,BOTTOM,-177,309",
 				["AltPowerBarMover"] = "TOPLEFT,ElvUIParent,TOPLEFT,346,-404",
 				["ElvAB_3"] = "BOTTOM,ElvUIParent,BOTTOM,-2,70",
 				["ElvAB_5"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,-39,-334",
@@ -1017,7 +1017,7 @@ ElvDB = {
 			},
 			["AuraWatch"] = {
 				["loadDefault"] = true,
-				["myclass"] = "DEATHKNIGHT",
+				["myclass"] = "ROGUE",
 				["DB"] = {
 					{
 						["Direction"] = "RIGHT",
@@ -1558,12 +1558,8 @@ ElvDB = {
 				["panelColorConverted"] = true,
 				["fadeTabsNoBackdrop"] = false,
 			},
-			["dbConverted"] = 12.08,
+			["dbConverted"] = 12.12,
 			["actionbar"] = {
-				["bar3"] = {
-					["buttons"] = 12,
-					["buttonsPerRow"] = 12,
-				},
 				["barPet"] = {
 					["buttonsPerRow"] = 10,
 				},
@@ -1577,8 +1573,12 @@ ElvDB = {
 					["backdrop"] = true,
 				},
 				["bar5"] = {
-					["buttons"] = 12,
 					["buttonsPerRow"] = 1,
+					["buttons"] = 12,
+				},
+				["bar3"] = {
+					["buttonsPerRow"] = 12,
+					["buttons"] = 12,
 				},
 			},
 		},
@@ -3309,11 +3309,11 @@ ElvDB = {
 				["ElvUF_TargetCastbarMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-328,300",
 				["TooltipMover"] = "TOP,ElvUIParent,TOP,-148,-198",
 				["ElvUF_TankMover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,33,796",
-				["ElvUF_PetMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,530,29",
-				["TotemBarMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,413,2",
-				["ElvUIBagMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,394,192",
-				["RightChatMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,0,2",
 				["ElvUF_PlayerMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,473,81",
+				["ElvUIBagMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,394,192",
+				["TotemBarMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,413,2",
+				["RightChatMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,0,2",
+				["ElvUF_PetMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,530,29",
 				["DebuffsMover"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,-198,-157",
 				["ElvUF_AssistMover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,28,740",
 			},
@@ -3387,9 +3387,6 @@ ElvDB = {
 					["enabled"] = true,
 					["backdrop"] = true,
 				},
-				["barPet"] = {
-					["buttonsPerRow"] = 10,
-				},
 				["microbar"] = {
 					["enabled"] = true,
 					["mouseover"] = true,
@@ -3397,6 +3394,9 @@ ElvDB = {
 				["bar5"] = {
 					["buttonsPerRow"] = 1,
 					["buttons"] = 12,
+				},
+				["barPet"] = {
+					["buttonsPerRow"] = 10,
 				},
 			},
 			["chat"] = {
@@ -3698,11 +3698,11 @@ ElvDB = {
 				["ElvUF_TargetCastbarMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-328,300",
 				["TooltipMover"] = "TOP,ElvUIParent,TOP,-148,-198",
 				["ElvUF_TankMover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,33,796",
-				["ElvUF_PetMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,530,29",
-				["TotemBarMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,413,2",
-				["ElvUIBagMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,394,192",
-				["RightChatMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,0,2",
 				["ElvUF_PlayerMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,473,81",
+				["ElvUIBagMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,394,192",
+				["TotemBarMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,413,2",
+				["RightChatMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,0,2",
+				["ElvUF_PetMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,530,29",
 				["DebuffsMover"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,-198,-157",
 				["ElvUF_AssistMover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,28,740",
 			},
@@ -3794,9 +3794,6 @@ ElvDB = {
 					["enabled"] = true,
 					["backdrop"] = true,
 				},
-				["barPet"] = {
-					["buttonsPerRow"] = 10,
-				},
 				["microbar"] = {
 					["enabled"] = true,
 					["mouseover"] = true,
@@ -3804,6 +3801,9 @@ ElvDB = {
 				["bar5"] = {
 					["buttons"] = 12,
 					["buttonsPerRow"] = 1,
+				},
+				["barPet"] = {
+					["buttonsPerRow"] = 10,
 				},
 			},
 			["AuraWatch"] = {
@@ -4084,13 +4084,13 @@ ElvDB = {
 	},
 	["profileKeys"] = {
 		["猫乄 - 阿尔萨斯"] = "你见过我吗 - 阿尔萨斯",
-		["霜天晓角 - 阿尔萨斯"] = "你见过我吗 - 阿尔萨斯",
+		["秋心 - 阿尔萨斯"] = "你见过我吗 - 阿尔萨斯",
 		["木叶之说 - 阿尔萨斯"] = "你见过我吗 - 阿尔萨斯",
 		["你见过我吗 - 阿尔萨斯"] = "你见过我吗 - 阿尔萨斯",
 		["阿服第一武僧 - 阿尔萨斯"] = "你见过我吗 - 阿尔萨斯",
-		["老弓 - 阿尔萨斯"] = "你见过我吗 - 阿尔萨斯",
+		["霜天晓角 - 阿尔萨斯"] = "你见过我吗 - 阿尔萨斯",
 		["丨术丨 - 阿尔萨斯"] = "你见过我吗 - 阿尔萨斯",
-		["秋心 - 阿尔萨斯"] = "你见过我吗 - 阿尔萨斯",
+		["老弓 - 阿尔萨斯"] = "你见过我吗 - 阿尔萨斯",
 		["悦战 - 阿尔萨斯"] = "你见过我吗 - 阿尔萨斯",
 		["冰火兮 - 阿尔萨斯"] = "你见过我吗 - 阿尔萨斯",
 		["古剑 - 阿尔萨斯"] = "你见过我吗 - 阿尔萨斯",
@@ -4098,17 +4098,17 @@ ElvDB = {
 	},
 	["gold"] = {
 		["阿尔萨斯"] = {
-			["古剑"] = 1104785405,
+			["古剑"] = 1110767683,
 			["秋心"] = 257374478,
-			["你见过我吗"] = 26722931,
+			["你见过我吗"] = 31568043,
 			["冰火兮"] = 23230758,
 			["猫乄"] = 296888147,
 			["霜天晓角"] = 29335365,
 			["作业还没写"] = 1613099,
-			["老弓"] = 76191054,
+			["老弓"] = 77422673,
 			["木叶之说"] = 319963646,
 			["丨术丨"] = 102033465,
-			["阿服第一武僧"] = 129879089,
+			["阿服第一武僧"] = 132227144,
 			["悦战"] = 12956864,
 		},
 	},
@@ -4118,13 +4118,13 @@ ElvDB = {
 ElvPrivateDB = {
 	["profileKeys"] = {
 		["猫乄 - 阿尔萨斯"] = "猫乄 - 阿尔萨斯",
-		["霜天晓角 - 阿尔萨斯"] = "霜天晓角 - 阿尔萨斯",
+		["秋心 - 阿尔萨斯"] = "秋心 - 阿尔萨斯",
 		["木叶之说 - 阿尔萨斯"] = "木叶之说 - 阿尔萨斯",
 		["你见过我吗 - 阿尔萨斯"] = "你见过我吗 - 阿尔萨斯",
 		["阿服第一武僧 - 阿尔萨斯"] = "阿服第一武僧 - 阿尔萨斯",
-		["老弓 - 阿尔萨斯"] = "老弓 - 阿尔萨斯",
+		["霜天晓角 - 阿尔萨斯"] = "霜天晓角 - 阿尔萨斯",
 		["丨术丨 - 阿尔萨斯"] = "丨术丨 - 阿尔萨斯",
-		["秋心 - 阿尔萨斯"] = "秋心 - 阿尔萨斯",
+		["老弓 - 阿尔萨斯"] = "老弓 - 阿尔萨斯",
 		["悦战 - 阿尔萨斯"] = "悦战 - 阿尔萨斯",
 		["冰火兮 - 阿尔萨斯"] = "冰火兮 - 阿尔萨斯",
 		["古剑 - 阿尔萨斯"] = "古剑 - 阿尔萨斯",
@@ -4134,13 +4134,8 @@ ElvPrivateDB = {
 		["猫乄 - 阿尔萨斯"] = {
 			["install_complete"] = "11.02",
 		},
-		["霜天晓角 - 阿尔萨斯"] = {
-			["skins"] = {
-				["blizzard"] = {
-					["spellbook"] = false,
-				},
-			},
-			["install_complete"] = "10.76",
+		["秋心 - 阿尔萨斯"] = {
+			["install_complete"] = 11.41,
 		},
 		["木叶之说 - 阿尔萨斯"] = {
 			["install_complete"] = "10.70",
@@ -4151,14 +4146,19 @@ ElvPrivateDB = {
 		["阿服第一武僧 - 阿尔萨斯"] = {
 			["install_complete"] = 12.04,
 		},
-		["老弓 - 阿尔萨斯"] = {
+		["霜天晓角 - 阿尔萨斯"] = {
+			["skins"] = {
+				["blizzard"] = {
+					["spellbook"] = false,
+				},
+			},
 			["install_complete"] = "10.76",
 		},
 		["丨术丨 - 阿尔萨斯"] = {
 			["install_complete"] = 12.04,
 		},
-		["秋心 - 阿尔萨斯"] = {
-			["install_complete"] = 11.41,
+		["老弓 - 阿尔萨斯"] = {
+			["install_complete"] = "10.76",
 		},
 		["悦战 - 阿尔萨斯"] = {
 		},
@@ -4179,13 +4179,13 @@ ElvPrivateDB = {
 AzeriteTooltipDB = {
 	["profileKeys"] = {
 		["猫乄 - 阿尔萨斯"] = "Default",
-		["秋心 - 阿尔萨斯"] = "Default",
+		["霜天晓角 - 阿尔萨斯"] = "Default",
 		["木叶之说 - 阿尔萨斯"] = "Default",
 		["你见过我吗 - 阿尔萨斯"] = "Default",
 		["阿服第一武僧 - 阿尔萨斯"] = "Default",
-		["老弓 - 阿尔萨斯"] = "Default",
+		["秋心 - 阿尔萨斯"] = "Default",
 		["丨术丨 - 阿尔萨斯"] = "Default",
-		["霜天晓角 - 阿尔萨斯"] = "Default",
+		["老弓 - 阿尔萨斯"] = "Default",
 		["悦战 - 阿尔萨斯"] = "Default",
 		["冰火兮 - 阿尔萨斯"] = "Default",
 		["古剑 - 阿尔萨斯"] = "Default",

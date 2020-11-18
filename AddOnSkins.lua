@@ -2,13 +2,13 @@
 AddOnSkinsDB = {
 	["profileKeys"] = {
 		["猫乄 - 阿尔萨斯"] = "Default",
-		["霜天晓角 - 阿尔萨斯"] = "霜天晓角 - 阿尔萨斯",
+		["秋心 - 阿尔萨斯"] = "Default",
 		["木叶之说 - 阿尔萨斯"] = "木叶之说 - 阿尔萨斯",
 		["你见过我吗 - 阿尔萨斯"] = "你见过我吗 - 阿尔萨斯",
 		["阿服第一武僧 - 阿尔萨斯"] = "Default",
-		["老弓 - 阿尔萨斯"] = "老弓 - 阿尔萨斯",
+		["霜天晓角 - 阿尔萨斯"] = "霜天晓角 - 阿尔萨斯",
 		["丨术丨 - 阿尔萨斯"] = "Default",
-		["秋心 - 阿尔萨斯"] = "Default",
+		["老弓 - 阿尔萨斯"] = "老弓 - 阿尔萨斯",
 		["悦战 - 阿尔萨斯"] = "Default",
 		["冰火兮 - 阿尔萨斯"] = "冰火兮 - 阿尔萨斯",
 		["古剑 - 阿尔萨斯"] = "古剑 - 阿尔萨斯",
@@ -16,11 +16,13 @@ AddOnSkinsDB = {
 	},
 	["profiles"] = {
 		["Default"] = {
+			["Simulationcraft"] = false,
 			["ChangeLogVersion"] = 4.15,
 		},
 		["木叶之说 - 阿尔萨斯"] = {
 		},
 		["老弓 - 阿尔萨斯"] = {
+			["Simulationcraft"] = false,
 		},
 		["霜天晓角 - 阿尔萨斯"] = {
 		},
@@ -30,12 +32,12 @@ AddOnSkinsDB = {
 			["Simulationcraft"] = false,
 		},
 		["你见过我吗 - 阿尔萨斯"] = {
-			["Simulationcraft"] = false,
 			["ParchmentRemover"] = false,
-			["MeetingStone"] = false,
-			["ChangeLogVersion"] = 4.21,
+			["Simulationcraft"] = false,
 			["Skada"] = false,
 			["TinyInspect"] = false,
+			["ChangeLogVersion"] = 4.21,
+			["MeetingStone"] = false,
 		},
 	},
 }
