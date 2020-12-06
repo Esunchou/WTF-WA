@@ -3,9 +3,9 @@ MSBTProfiles_SavedVars = {
 	["profiles"] = {
 		["Default"] = {
 			["enableBlizzardHealing"] = false,
-			["creationVersion"] = "5.7.147",
-			["groupNumbers"] = false,
 			["enableBlizzardDamage"] = false,
+			["groupNumbers"] = false,
+			["creationVersion"] = "5.7.147",
 		},
 	},
 }

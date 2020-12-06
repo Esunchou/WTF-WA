@@ -22,6 +22,10 @@ ElvDB = {
 			},
 		},
 		["general"] = {
+			["AceGUI"] = {
+				["height"] = 600,
+				["width"] = 800,
+			},
 			["UIScale"] = 0.71111,
 		},
 		["uiScale"] = "0.7111",
@@ -47,10 +51,96 @@ ElvDB = {
 			"Interface\\AddOns\\_Cursor\\_Cursor-7.0.3.1.lua:382: attempt to call method 'GetModel' (a nil value)Interface\\AddOns\\_Cursor\\_Cursor-7.0.3.1.lua:382: in function <Interface\\AddOns\\_Cursor\\_Cursor.lua:380>\n[C]: in function `Show'\nInterface\\AddOns\\_Cursor\\_Cursor-7.0.3.1.lua:179: in function <Interface\\AddOns\\_Cursor\\_Cursor.lua:174>\nInterface\\AddOns\\_Cursor\\_Cursor-7.0.3.1.lua:248: in function <Interface\\AddOns\\_Cursor\\_Cursor.lua:247>\n(tail call): ?(for generator) = <function> defined =[C]:-1\n(for state) = <table> {\n (null) = <table> {\n }\n (null) = <table> {\n }\n}\n(for control) = CursorModel1 {\n 0 = <userdata>\n X = 4\n Y = -6\n}\nmodel = CursorModel1 {\n 0 = <userdata>\n X = 4\n Y = -6\n}\n(*temporary) = nil\n(*temporary) = CursorModel1 {\n 0 = <userdata>\n X = 4\n Y = -6\n}\n(*temporary) = \"attempt to call method 'GetModel' (a nil value)\"\npairs = <function> defined =[C]:-1\nActiveModels = <table> {\n (null) = <table> {\n }\n (null) = <table> {\n }\n}\ntype = <function> defined =[C]:-1\n162018/05/04 20:42:14", -- [19]
 			"Interface\\AddOns\\RareScanner\\MapTracker.lua:188: attempt to perform arithmetic on field 'coordX' (a string value)Interface\\AddOns\\RareScanner\\MapTracker.lua:188: in function `RS_SetupMapIcon'\nInterface\\AddOns\\RareScanner\\MapTracker.lua:179: in function `RS_AddMapIcon'\nInterface\\AddOns\\RareScanner\\MapTracker.lua:127: in function `RS_UpdateMapIcon'\nInterface\\AddOns\\RareScanner\\Core.lua:1109: in function `?'\n...Ons\\Libs\\CallbackHandler-1.0\\CallbackHandler-1.0-6.lua:145: in function <...Ons\\Libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:145>\n[string \"safecall Dispatcher[4]\"]:4: in function <[string \"safecall Dispatcher[4]\"]:4>\n[C]: ?\n[string \"safecall Dispatcher[4]\"]:13: in function `?'\n...Ons\\Libs\\CallbackHandler-1.0\\CallbackHandler-1.0-6.lua:90: in function `Fire'\nInterface\\AddOns\\libs\\AceComm-3.0\\AceComm-3.0-10.lua:214: in function `OnReceiveMultipartLast'\nInterface\\AddOns\\libs\\AceComm-3.0\\AceComm-3.0-10.lua:252: in function <Interface\\AddOns\\libs\\AceComm-3.0\\AceComm-3.0.lua:242>162018/05/04 20:50:02", -- [20]
 		},
-		["Ver"] = "20201117A",
+		["Ver"] = "20201202A",
 		["unitframe"] = {
 			["ChannelTicks"] = {
 				["苦修"] = 3,
+			},
+		},
+		["datatexts"] = {
+			["settings"] = {
+				["Currencies"] = {
+					["tooltipData"] = {
+						nil, -- [1]
+						nil, -- [2]
+						nil, -- [3]
+						nil, -- [4]
+						nil, -- [5]
+						nil, -- [6]
+						{
+							nil, -- [1]
+							nil, -- [2]
+							nil, -- [3]
+							true, -- [4]
+						}, -- [7]
+						nil, -- [8]
+						nil, -- [9]
+						{
+							nil, -- [1]
+							nil, -- [2]
+							nil, -- [3]
+							true, -- [4]
+						}, -- [10]
+						nil, -- [11]
+						nil, -- [12]
+						nil, -- [13]
+						{
+							nil, -- [1]
+							nil, -- [2]
+							nil, -- [3]
+							true, -- [4]
+						}, -- [14]
+						nil, -- [15]
+						{
+							nil, -- [1]
+							nil, -- [2]
+							nil, -- [3]
+							true, -- [4]
+						}, -- [16]
+						[26] = {
+							nil, -- [1]
+							nil, -- [2]
+							nil, -- [3]
+							true, -- [4]
+						},
+						[39] = {
+							nil, -- [1]
+							nil, -- [2]
+							nil, -- [3]
+							true, -- [4]
+						},
+						[47] = {
+							nil, -- [1]
+							nil, -- [2]
+							nil, -- [3]
+							true, -- [4]
+						},
+						[52] = {
+							nil, -- [1]
+							nil, -- [2]
+							nil, -- [3]
+							true, -- [4]
+						},
+						[55] = {
+							nil, -- [1]
+							nil, -- [2]
+							nil, -- [3]
+							true, -- [4]
+						},
+						[57] = {
+							nil, -- [1]
+							nil, -- [2]
+							nil, -- [3]
+							true, -- [4]
+						},
+						[59] = {
+							nil, -- [1]
+							nil, -- [2]
+							nil, -- [3]
+							true, -- [4]
+						},
+					},
+				},
 			},
 		},
 	},
@@ -76,202 +166,323 @@ ElvDB = {
 	},
 	["profiles"] = {
 		["猫乄 - 阿尔萨斯"] = {
-			["currentTutorial"] = 1,
+			["currentTutorial"] = 2,
 			["movers"] = {
-				["ElvUF_PartyMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,4,195",
-				["ElvUF_RaidMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,4,195",
+				["EuiWorldStateMover"] = "TOP,ElvUIParent,TOP,-215,-60",
+				["ElvUF_PlayerCastbarMover"] = "BOTTOM,ElvUIParent,BOTTOM,13,221",
+				["ElvUF_RaidMover"] = "TOPLEFT,ElvUIParent,TOPLEFT,214,-207",
+				["LeftChatMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,0,0",
+				["GMMover"] = "TOPLEFT,ElvUIParent,TOPLEFT,374,-22",
+				["BuffsMover"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,-244,0",
+				["BossButton"] = "BOTTOM,ElvUIParent,BOTTOM,2,174",
+				["LootFrameMover"] = "TOPLEFT,ElvUIParent,TOPLEFT,476,-225",
+				["ZoneAbility"] = "BOTTOM,ElvUIParent,BOTTOM,118,283",
 				["ElvUF_RaidpetMover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,4,736",
-				["ShiftAB"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,4,1076",
+				["AutoButtonAnchor2Mover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-484,116",
+				["ElvUF_FocusMover"] = "TOPLEFT,ElvUIParent,TOPLEFT,478,-116",
+				["AutoButtonAnchorMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-461,72",
+				["ClassBarMover"] = "BOTTOM,ElvUIParent,BOTTOM,4,149",
+				["MicrobarMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,8,229",
+				["ElvUF_PetCastbarMover"] = "BOTTOM,ElvUIParent,BOTTOM,-130,358",
+				["VehicleSeatMover"] = "TOPLEFT,ElvUIParent,TOPLEFT,292,-236",
+				["MinimapMover"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,-1,0",
+				["AutoButtonAnchor3Mover"] = "BOTTOM,ElvUIParent,BOTTOM,312,157",
+				["ElvUF_TargetMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-438,223",
+				["EuiExecuteMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,1125,280",
+				["LossControlMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-554,385",
+				["LevelUpBossBannerMover"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,-520,-281",
+				["MirrorTimer1Mover"] = "TOP,ElvUIParent,TOP,198,-105",
+				["ElvUF_TargetTargetMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-273,235",
+				["ElvAB_1"] = "BOTTOM,ElvUIParent,BOTTOM,-4,0",
+				["ElvAB_2"] = "BOTTOM,ElvUIParent,BOTTOM,-3,35",
+				["ElvUF_PartyMover"] = "TOPLEFT,ElvUIParent,TOPLEFT,453,-337",
+				["PetAB"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,0,237",
+				["TalkingHeadFrameMover"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,-258,-303",
+				["PlayerPowerBarMover"] = "BOTTOM,ElvUIParent,BOTTOM,1,119",
+				["AltPowerBarMover"] = "TOPLEFT,ElvUIParent,TOPLEFT,346,-404",
+				["ElvAB_3"] = "BOTTOM,ElvUIParent,BOTTOM,-2,70",
+				["ElvAB_5"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,-39,-334",
+				["VehicleLeaveButton"] = "BOTTOM,ElvUIParent,BOTTOM,-258,398",
+				["ArtifactBarMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,368,6",
+				["ElvUF_PlayerMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,468,222",
+				["ElvNP_PlayerMover"] = "BOTTOM,ElvUIParent,BOTTOM,163,440",
+				["ArenaHeaderMover"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,-437,-351",
+				["ShiftAB"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,684,209",
+				["VOICECHAT"] = "TOPLEFT,ElvUIParent,TOPLEFT,370,-147",
+				["HonorBarMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,396,0",
+				["ElvUF_TargetCastbarMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-305,343",
+				["TooltipMover"] = "TOP,ElvUIParent,TOP,-148,-198",
+				["ElvUF_TankMover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,11,651",
+				["BossHeaderMover"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,-332,-356",
+				["ElvUIBagMover"] = "BOTTOM,ElvUIParent,BOTTOM,-177,309",
+				["ElvUF_PetMover"] = "BOTTOM,ElvUIParent,BOTTOM,-300,284",
+				["RightChatMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,8,2",
+				["TotemBarMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,413,2",
+				["DebuffsMover"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,-198,-157",
+				["ElvUF_AssistMover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,127,650",
 			},
 			["v11NamePlateReset"] = true,
+			["auras"] = {
+				["buffs"] = {
+					["countFontSize"] = 12,
+					["durationFontSize"] = 12,
+				},
+				["debuffs"] = {
+					["countFontSize"] = 12,
+					["durationFontSize"] = 12,
+				},
+			},
+			["unitframe"] = {
+				["colors"] = {
+					["power_backdrop"] = {
+						["r"] = 0.5019607843137255,
+						["g"] = 0.05882352941176471,
+						["b"] = 0.03529411764705882,
+					},
+					["power"] = {
+						["RAGE"] = {
+							["r"] = 0.9294117647058824,
+							["g"] = 0.04705882352941176,
+							["b"] = 0.1294117647058823,
+						},
+						["ENERGY"] = {
+							["r"] = 0.6509803921568628,
+							["g"] = 0.07058823529411765,
+							["b"] = 0.6039215686274509,
+						},
+					},
+					["colorhealthbyvalue"] = false,
+					["healthclass"] = true,
+				},
+				["units"] = {
+					["targettargettarget"] = {
+						["health"] = {
+							["frequentUpdates"] = true,
+						},
+					},
+					["focustarget"] = {
+						["health"] = {
+							["frequentUpdates"] = true,
+						},
+					},
+					["pet"] = {
+						["health"] = {
+							["frequentUpdates"] = true,
+						},
+					},
+					["targettarget"] = {
+						["health"] = {
+							["frequentUpdates"] = true,
+						},
+					},
+					["boss"] = {
+						["health"] = {
+							["frequentUpdates"] = true,
+						},
+					},
+					["player"] = {
+						["portrait"] = {
+							["enable"] = false,
+						},
+						["castbar"] = {
+							["tickWidth"] = 4,
+							["height"] = 57,
+							["width"] = 439,
+						},
+						["width"] = 259,
+						["health"] = {
+							["frequentUpdates"] = true,
+						},
+						["threatStyle"] = "GLOW",
+						["height"] = 56,
+						["power"] = {
+							["attachTextTo"] = "Power",
+							["detachedWidth"] = 430,
+							["height"] = 28,
+							["xOffset"] = -8,
+							["detachFromFrame"] = true,
+							["width"] = "spaced",
+						},
+						["classbar"] = {
+							["detachFromFrame"] = true,
+							["verticalOrientation"] = true,
+							["strataAndLevel"] = {
+								["useCustomLevel"] = true,
+								["useCustomStrata"] = true,
+								["frameLevel"] = 128,
+								["frameStrata"] = "HIGH",
+							},
+							["spacing"] = 4,
+							["height"] = 25,
+							["detachedWidth"] = 386,
+							["fill"] = "fill",
+						},
+						["aurabar"] = {
+							["enable"] = false,
+						},
+					},
+					["focus"] = {
+						["health"] = {
+							["frequentUpdates"] = true,
+						},
+					},
+					["target"] = {
+						["width"] = 259,
+						["health"] = {
+							["frequentUpdates"] = true,
+						},
+						["castbar"] = {
+							["height"] = 37,
+							["width"] = 461,
+						},
+						["height"] = 52,
+						["portrait"] = {
+							["enable"] = false,
+						},
+						["fader"] = {
+							["enable"] = false,
+							["range"] = false,
+						},
+						["aurabar"] = {
+							["enable"] = false,
+						},
+					},
+					["raid"] = {
+						["height"] = 56,
+						["width"] = 85,
+					},
+					["arena"] = {
+						["health"] = {
+							["frequentUpdates"] = true,
+						},
+					},
+					["pettarget"] = {
+						["health"] = {
+							["frequentUpdates"] = true,
+						},
+					},
+				},
+			},
+			["actionbar"] = {
+				["bar3"] = {
+					["buttons"] = 12,
+					["buttonsPerRow"] = 12,
+				},
+				["bar2"] = {
+					["enabled"] = true,
+					["backdrop"] = true,
+				},
+				["barPet"] = {
+					["buttonsPerRow"] = 10,
+				},
+				["microbar"] = {
+					["enabled"] = true,
+					["mouseover"] = true,
+					["buttons"] = 11,
+				},
+				["bar5"] = {
+					["buttons"] = 12,
+					["buttonsPerRow"] = 1,
+				},
+			},
+			["euiscript"] = {
+				["disableBLZCombatText"] = false,
+				["threat"] = {
+					["enable"] = true,
+				},
+				["executebutton"] = {
+					["spellList"] = {
+						["ROGUE"] = {
+							{
+								["enabled"] = true,
+								["perc"] = 30,
+							}, -- [1]
+						},
+					},
+				},
+			},
+			["dbConverted"] = 12.13,
+			["chat"] = {
+				["fadeTabsNoBackdrop"] = false,
+				["panelColor"] = {
+					["a"] = 0.9,
+				},
+				["panelColorConverted"] = true,
+				["panelWidth"] = 386,
+			},
 			["AuraWatch"] = {
 				["loadDefault"] = true,
 				["myclass"] = "DRUID",
 				["ver"] = 2,
 				["DB"] = {
 					{
-						["IconSize"] = 42,
 						["Direction"] = "RIGHT",
-						["Name"] = "玩家增益",
+						["Name"] = "玩家减益",
 						["List"] = {
 							{
-								["AuraID"] = 102560,
-								["filter"] = "BUFF",
+								["AuraID"] = 118,
 								["UnitID"] = "player",
-								["Caster"] = "player",
 							}, -- [1]
-							{
-								["AuraID"] = 102543,
-								["filter"] = "BUFF",
-								["UnitID"] = "player",
-								["Caster"] = "player",
-							}, -- [2]
-							{
-								["AuraID"] = 102558,
-								["filter"] = "BUFF",
-								["UnitID"] = "player",
-								["Caster"] = "player",
-							}, -- [3]
-							{
-								["AuraID"] = 117679,
-								["filter"] = "BUFF",
-								["UnitID"] = "player",
-								["Caster"] = "player",
-							}, -- [4]
-							{
-								["AuraID"] = 61336,
-								["filter"] = "BUFF",
-								["UnitID"] = "player",
-								["Caster"] = "player",
-							}, -- [5]
-							{
-								["AuraID"] = 22812,
-								["filter"] = "BUFF",
-								["UnitID"] = "player",
-								["Caster"] = "player",
-							}, -- [6]
-							{
-								["AuraID"] = 52610,
-								["filter"] = "BUFF",
-								["UnitID"] = "player",
-								["Caster"] = "player",
-							}, -- [7]
-							{
-								["AuraID"] = 106951,
-								["Caster"] = "player",
-								["UnitID"] = "player",
-								["absID"] = true,
-								["filter"] = "BUFF",
-							}, -- [8]
-							{
-								["AuraID"] = 5217,
-								["filter"] = "BUFF",
-								["UnitID"] = "player",
-								["Caster"] = "player",
-							}, -- [9]
-							{
-								["AuraID"] = 194223,
-								["filter"] = "BUFF",
-								["UnitID"] = "player",
-								["Caster"] = "player",
-							}, -- [10]
-							{
-								["AuraID"] = 124974,
-								["filter"] = "BUFF",
-								["UnitID"] = "player",
-								["Caster"] = "player",
-							}, -- [11]
-							{
-								["AuraID"] = 200851,
-								["filter"] = "BUFF",
-								["UnitID"] = "player",
-								["Caster"] = "player",
-							}, -- [12]
-							{
-								["AuraID"] = 192081,
-								["filter"] = "BUFF",
-								["UnitID"] = "player",
-								["Caster"] = "player",
-							}, -- [13]
-							{
-								["AuraID"] = 158792,
-								["filter"] = "BUFF",
-								["UnitID"] = "player",
-								["Caster"] = "player",
-							}, -- [14]
-							{
-								["AuraID"] = 164547,
-								["filter"] = "BUFF",
-								["UnitID"] = "player",
-								["Caster"] = "player",
-							}, -- [15]
-							{
-								["AuraID"] = 164545,
-								["filter"] = "BUFF",
-								["UnitID"] = "player",
-								["Caster"] = "player",
-							}, -- [16]
-							{
-								["AuraID"] = 170856,
-								["filter"] = "BUFF",
-								["UnitID"] = "player",
-								["Caster"] = "player",
-							}, -- [17]
-							{
-								["AuraID"] = 1850,
-								["filter"] = "BUFF",
-								["UnitID"] = "player",
-								["Caster"] = "player",
-							}, -- [18]
-							{
-								["AuraID"] = 102351,
-								["filter"] = "BUFF",
-								["UnitID"] = "player",
-								["Caster"] = "player",
-							}, -- [19]
 						},
-						["Interval"] = 6,
+						["Interval"] = 10,
 						["Mode"] = "ICON",
-						["Alpha"] = 1,
+						["IconSize"] = 48,
 						["Pos"] = {
-							"BOTTOMLEFT", -- [1]
-							"ElvUF_Player", -- [2]
-							"TOPLEFT", -- [3]
-							0, -- [4]
-							12, -- [5]
+							"CENTER", -- [1]
+							"UIParent", -- [2]
+							"CENTER", -- [3]
+							-200, -- [4]
+							200, -- [5]
 						},
 					}, -- [1]
 					{
-						["IconSize"] = 42,
 						["Direction"] = "RIGHT",
 						["Name"] = "玩家重要增益",
 						["List"] = {
 							{
-								["AuraID"] = 202425,
-								["filter"] = "BUFF",
+								["AuraID"] = 74001,
 								["UnitID"] = "player",
-								["Caster"] = "player",
 							}, -- [1]
 							{
-								["AuraID"] = 279709,
-								["filter"] = "BUFF",
+								["AuraID"] = 74002,
 								["UnitID"] = "player",
-								["Caster"] = "player",
 							}, -- [2]
 							{
-								["AuraID"] = 145152,
-								["filter"] = "BUFF",
+								["AuraID"] = 126697,
 								["UnitID"] = "player",
-								["Caster"] = "player",
 							}, -- [3]
 							{
-								["AuraID"] = 16870,
-								["filter"] = "BUFF",
+								["AuraID"] = 126649,
 								["UnitID"] = "player",
-								["Caster"] = "player",
 							}, -- [4]
 							{
-								["AuraID"] = 114108,
-								["filter"] = "BUFF",
+								["AuraID"] = 126599,
 								["UnitID"] = "player",
-								["Caster"] = "player",
 							}, -- [5]
 							{
-								["AuraID"] = 69369,
-								["filter"] = "BUFF",
+								["AuraID"] = 126554,
 								["UnitID"] = "player",
-								["Caster"] = "player",
 							}, -- [6]
 							{
-								["AuraID"] = 213680,
-								["filter"] = "BUFF",
+								["AuraID"] = 126690,
 								["UnitID"] = "player",
-								["Caster"] = "player",
 							}, -- [7]
+							{
+								["AuraID"] = 126707,
+								["UnitID"] = "player",
+							}, -- [8]
+							{
+								["AuraID"] = 125489,
+								["UnitID"] = "player",
+							}, -- [9]
+							{
+								["AuraID"] = 118334,
+								["UnitID"] = "player",
+							}, -- [10]
 						},
 						["Interval"] = 6,
 						["Mode"] = "ICON",
-						["Alpha"] = 1,
+						["IconSize"] = 42,
 						["Pos"] = {
 							"BOTTOMLEFT", -- [1]
 							"ElvUF_Player", -- [2]
@@ -281,116 +492,167 @@ ElvDB = {
 						},
 					}, -- [2]
 					{
-						["IconSize"] = 42,
 						["Direction"] = "RIGHT",
-						["Name"] = "目标减益",
+						["Name"] = "玩家增益",
 						["List"] = {
 							{
-								["AuraID"] = 164812,
-								["filter"] = "DEBUFF",
-								["UnitID"] = "target",
-								["Caster"] = "player",
+								["AuraID"] = 2983,
+								["UnitID"] = "player",
 							}, -- [1]
 							{
-								["AuraID"] = 164815,
-								["filter"] = "DEBUFF",
-								["UnitID"] = "target",
-								["Caster"] = "player",
+								["AuraID"] = 13750,
+								["UnitID"] = "player",
 							}, -- [2]
 							{
-								["AuraID"] = 202347,
-								["filter"] = "DEBUFF",
-								["UnitID"] = "target",
-								["Caster"] = "player",
+								["AuraID"] = 5277,
+								["UnitID"] = "player",
 							}, -- [3]
 							{
-								["AuraID"] = 210722,
-								["filter"] = "DEBUFF",
-								["UnitID"] = "target",
-								["Caster"] = "player",
+								["AuraID"] = 32645,
+								["UnitID"] = "player",
 							}, -- [4]
 							{
-								["AuraID"] = 155722,
-								["Caster"] = "player",
-								["UnitID"] = "target",
-								["absID"] = true,
-								["filter"] = "DEBUFF",
+								["AuraID"] = 58426,
+								["UnitID"] = "player",
 							}, -- [5]
 							{
-								["AuraID"] = 1079,
-								["filter"] = "DEBUFF",
-								["UnitID"] = "target",
-								["Caster"] = "player",
+								["AuraID"] = 5171,
+								["UnitID"] = "player",
 							}, -- [6]
 							{
-								["AuraID"] = 77758,
-								["filter"] = "DEBUFF",
-								["UnitID"] = "target",
-								["Caster"] = "player",
+								["AuraID"] = 51713,
+								["UnitID"] = "player",
 							}, -- [7]
 							{
-								["AuraID"] = 45334,
-								["filter"] = "DEBUFF",
-								["UnitID"] = "target",
-								["Caster"] = "player",
+								["AuraID"] = 73651,
+								["UnitID"] = "player",
 							}, -- [8]
+							{
+								["AuraID"] = 36563,
+								["UnitID"] = "player",
+							}, -- [9]
+							{
+								["AuraID"] = 31665,
+								["UnitID"] = "player",
+							}, -- [10]
+							{
+								["AuraID"] = 31224,
+								["UnitID"] = "player",
+							}, -- [11]
+							{
+								["AuraID"] = 1856,
+								["UnitID"] = "player",
+							}, -- [12]
+							{
+								["AuraID"] = 45182,
+								["UnitID"] = "player",
+							}, -- [13]
+							{
+								["AuraID"] = 13877,
+								["UnitID"] = "player",
+							}, -- [14]
+							{
+								["AuraID"] = 84745,
+								["UnitID"] = "player",
+							}, -- [15]
+							{
+								["AuraID"] = 84746,
+								["UnitID"] = "player",
+							}, -- [16]
+							{
+								["AuraID"] = 84747,
+								["UnitID"] = "player",
+							}, -- [17]
 						},
 						["Interval"] = 6,
 						["Mode"] = "ICON",
-						["Alpha"] = 1,
+						["IconSize"] = 42,
 						["Pos"] = {
 							"BOTTOMLEFT", -- [1]
-							"ElvUF_Target", -- [2]
+							"ElvUF_Player", -- [2]
 							"TOPLEFT", -- [3]
 							0, -- [4]
 							12, -- [5]
 						},
 					}, -- [3]
 					{
-						["IconSize"] = 48,
 						["Direction"] = "RIGHT",
-						["Name"] = "目标增益",
+						["Name"] = "目标减益",
 						["List"] = {
 							{
-								["AuraID"] = 33763,
-								["filter"] = "BUFF",
 								["UnitID"] = "target",
+								["AuraID"] = 1943,
 								["Caster"] = "player",
 							}, -- [1]
 							{
-								["AuraID"] = 774,
-								["filter"] = "BUFF",
 								["UnitID"] = "target",
+								["AuraID"] = 703,
 								["Caster"] = "player",
 							}, -- [2]
 							{
-								["AuraID"] = 155777,
-								["filter"] = "BUFF",
 								["UnitID"] = "target",
+								["AuraID"] = 1776,
 								["Caster"] = "player",
 							}, -- [3]
 							{
-								["AuraID"] = 8936,
-								["filter"] = "BUFF",
 								["UnitID"] = "target",
+								["AuraID"] = 8647,
 								["Caster"] = "player",
 							}, -- [4]
 							{
-								["AuraID"] = 48438,
-								["filter"] = "BUFF",
 								["UnitID"] = "target",
+								["AuraID"] = 51722,
 								["Caster"] = "player",
 							}, -- [5]
 							{
-								["AuraID"] = 102351,
-								["filter"] = "BUFF",
 								["UnitID"] = "target",
+								["AuraID"] = 84617,
 								["Caster"] = "player",
 							}, -- [6]
+							{
+								["UnitID"] = "target",
+								["AuraID"] = 79140,
+								["Caster"] = "player",
+							}, -- [7]
+							{
+								["UnitID"] = "target",
+								["AuraID"] = 16511,
+								["Caster"] = "player",
+							}, -- [8]
+							{
+								["UnitID"] = "target",
+								["AuraID"] = 89775,
+								["Caster"] = "player",
+							}, -- [9]
+							{
+								["UnitID"] = "target",
+								["AuraID"] = 91021,
+								["Caster"] = "player",
+							}, -- [10]
+							{
+								["UnitID"] = "target",
+								["AuraID"] = 2818,
+								["Caster"] = "player",
+							}, -- [11]
+							{
+								["UnitID"] = "target",
+								["AuraID"] = 5760,
+								["Caster"] = "player",
+							}, -- [12]
+							{
+								["UnitID"] = "target",
+								["AuraID"] = 3409,
+								["Caster"] = "player",
+							}, -- [13]
+							{
+								["UnitID"] = "target",
+								["AuraID"] = 8680,
+								["Caster"] = "player",
+							}, -- [14]
 						},
-						["Interval"] = 6,
+						["Interval"] = 4,
 						["Mode"] = "ICON",
-						["Alpha"] = 1,
+						["IconSize"] = 48,
 						["Pos"] = {
 							"BOTTOMLEFT", -- [1]
 							"ElvUF_Target", -- [2]
@@ -400,7 +662,7 @@ ElvDB = {
 						},
 					}, -- [4]
 					{
-						["IconSize"] = 48,
+						["Interval"] = 6,
 						["Direction"] = "RIGHT",
 						["Name"] = "冷却监视",
 						["List"] = {
@@ -539,7 +801,7 @@ ElvDB = {
 								["filter"] = "CD",
 							}, -- [33]
 						},
-						["Interval"] = 6,
+						["IconSize"] = 48,
 						["Mode"] = "ICON",
 						["Alpha"] = 1,
 						["Pos"] = {
@@ -552,12 +814,7 @@ ElvDB = {
 					}, -- [5]
 				},
 			},
-			["chat"] = {
-				["panelColor"] = {
-					["a"] = 0.9,
-				},
-				["panelColorConverted"] = true,
-			},
+			["RightChatPanelFaded"] = true,
 		},
 		["Minimalistic"] = {
 			["currentTutorial"] = 2,
@@ -617,9 +874,9 @@ ElvDB = {
 				["ElvAB_6"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-488,330",
 				["TooltipMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-50,50",
 				["ElvUF_TankMover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,50,995",
+				["TotemBarMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,463,50",
 				["ElvUF_PetMover"] = "BOTTOM,ElvUIParent,BOTTOM,0,200",
 				["ElvUF_PlayerMover"] = "BOTTOM,ElvUIParent,BOTTOM,-230,140",
-				["TotemBarMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,463,50",
 				["ElvUF_PartyMover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,184,773",
 				["AlertFrameMover"] = "TOP,ElvUIParent,TOP,0,-50",
 				["ElvUF_TargetMover"] = "BOTTOM,ElvUIParent,BOTTOM,230,140",
@@ -963,57 +1220,62 @@ ElvDB = {
 			["RightChatPanelFaded"] = true,
 			["movers"] = {
 				["EuiWorldStateMover"] = "TOP,ElvUIParent,TOP,-215,-60",
-				["ElvUF_PlayerCastbarMover"] = "BOTTOM,ElvUIParent,BOTTOM,13,221",
+				["ElvUF_PlayerCastbarMover"] = "BOTTOM,ElvUIParent,BOTTOM,4,103",
 				["ElvUF_RaidMover"] = "TOPLEFT,ElvUIParent,TOPLEFT,214,-207",
 				["LeftChatMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,0,0",
 				["GMMover"] = "TOPLEFT,ElvUIParent,TOPLEFT,374,-22",
 				["BuffsMover"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,-244,0",
-				["BossButton"] = "BOTTOM,ElvUIParent,BOTTOM,2,174",
+				["BossButton"] = "BOTTOM,ElvUIParent,BOTTOM,-6,164",
 				["LootFrameMover"] = "TOPLEFT,ElvUIParent,TOPLEFT,476,-225",
 				["ZoneAbility"] = "BOTTOM,ElvUIParent,BOTTOM,118,283",
+				["ElvUF_AssistMover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,127,650",
+				["DebuffsMover"] = "BOTTOM,ElvUIParent,BOTTOM,-262,280",
 				["ElvUF_RaidpetMover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,4,736",
+				["EUIMinimapButtonMover"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,-17,-8",
 				["AutoButtonAnchor2Mover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-484,116",
 				["ElvUF_FocusMover"] = "TOPLEFT,ElvUIParent,TOPLEFT,478,-116",
+				["RightChatMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,8,2",
 				["AutoButtonAnchorMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-461,72",
-				["ClassBarMover"] = "BOTTOM,ElvUIParent,BOTTOM,4,149",
+				["ClassBarMover"] = "BOTTOM,ElvUIParent,BOTTOM,3,254",
 				["MicrobarMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,8,229",
 				["ElvUF_PetCastbarMover"] = "BOTTOM,ElvUIParent,BOTTOM,-130,358",
 				["VehicleSeatMover"] = "TOPLEFT,ElvUIParent,TOPLEFT,292,-236",
-				["ElvUF_AssistMover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,127,650",
-				["DebuffsMover"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,-198,-157",
+				["TotemBarMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,413,2",
+				["ElvUIBagMover"] = "BOTTOM,ElvUIParent,BOTTOM,-177,309",
+				["ElvUF_TargetTargetMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-273,235",
 				["ElvUF_TargetMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-438,223",
 				["EuiExecuteMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,1125,280",
 				["LossControlMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-554,385",
-				["LevelUpBossBannerMover"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,-520,-281",
+				["LevelUpBossBannerMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-7,239",
 				["MirrorTimer1Mover"] = "TOP,ElvUIParent,TOP,198,-105",
-				["TotemBarMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,413,2",
+				["ElvUF_PetMover"] = "BOTTOM,ElvUIParent,BOTTOM,-300,284",
 				["ElvAB_1"] = "BOTTOM,ElvUIParent,BOTTOM,-4,0",
 				["ElvAB_2"] = "BOTTOM,ElvUIParent,BOTTOM,-3,35",
-				["RightChatMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,8,2",
-				["ElvUF_PetMover"] = "BOTTOM,ElvUIParent,BOTTOM,-300,284",
+				["BelowMinimapContainerMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-13,202",
+				["VehicleLeaveButton"] = "BOTTOM,ElvUIParent,BOTTOM,-258,398",
 				["TalkingHeadFrameMover"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,-258,-303",
-				["ElvUIBagMover"] = "BOTTOM,ElvUIParent,BOTTOM,-177,309",
+				["ElvAB_6"] = "BOTTOM,ElvUIParent,BOTTOM,313,0",
 				["AltPowerBarMover"] = "TOPLEFT,ElvUIParent,TOPLEFT,346,-404",
 				["ElvAB_3"] = "BOTTOM,ElvUIParent,BOTTOM,-2,70",
 				["ElvAB_5"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,-39,-334",
-				["VehicleLeaveButton"] = "BOTTOM,ElvUIParent,BOTTOM,-258,398",
 				["ArtifactBarMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,368,6",
-				["ElvUF_PlayerMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,468,222",
-				["ShiftAB"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,684,209",
 				["ElvUF_TargetCastbarMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-305,343",
-				["ElvNP_PlayerMover"] = "BOTTOM,ElvUIParent,BOTTOM,163,440",
+				["ElvUF_PlayerMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,468,222",
 				["VOICECHAT"] = "TOPLEFT,ElvUIParent,TOPLEFT,370,-147",
+				["BNETMover"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,-214,-226",
+				["ShiftAB"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,684,209",
+				["ElvNP_PlayerMover"] = "BOTTOM,ElvUIParent,BOTTOM,163,440",
 				["HonorBarMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,396,0",
 				["ArenaHeaderMover"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,-437,-351",
-				["TooltipMover"] = "TOP,ElvUIParent,TOP,-148,-198",
+				["TooltipMover"] = "TOP,ElvUIParent,TOP,-268,-223",
 				["ElvUF_TankMover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,11,651",
 				["BossHeaderMover"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,-332,-356",
-				["PlayerPowerBarMover"] = "BOTTOM,ElvUIParent,BOTTOM,1,119",
-				["PetAB"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,0,237",
+				["PlayerPowerBarMover"] = "BOTTOM,ElvUIParent,BOTTOM,3,240",
+				["PetAB"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,0,268",
 				["ElvUF_PartyMover"] = "TOPLEFT,ElvUIParent,TOPLEFT,453,-337",
-				["ElvUF_TargetTargetMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-273,235",
+				["RaidCDAnchorMover"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,-208,-276",
 				["AutoButtonAnchor3Mover"] = "BOTTOM,ElvUIParent,BOTTOM,312,157",
-				["MinimapMover"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,-1,0",
+				["MinimapMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-321,0",
 			},
 			["AuraWatch"] = {
 				["loadDefault"] = true,
@@ -1431,12 +1693,12 @@ ElvDB = {
 							["frequentUpdates"] = true,
 						},
 					},
-					["targettarget"] = {
+					["pettarget"] = {
 						["health"] = {
 							["frequentUpdates"] = true,
 						},
 					},
-					["pet"] = {
+					["targettarget"] = {
 						["health"] = {
 							["frequentUpdates"] = true,
 						},
@@ -1456,12 +1718,12 @@ ElvDB = {
 							["enable"] = false,
 						},
 						["power"] = {
-							["height"] = 28,
+							["height"] = 15,
 							["attachTextTo"] = "Power",
 							["detachFromFrame"] = true,
 							["width"] = "spaced",
 							["xOffset"] = -8,
-							["detachedWidth"] = 430,
+							["detachedWidth"] = 350,
 						},
 						["width"] = 259,
 						["health"] = {
@@ -1473,16 +1735,15 @@ ElvDB = {
 							["fill"] = "fill",
 							["verticalOrientation"] = true,
 							["strataAndLevel"] = {
-								["useCustomStrata"] = true,
 								["useCustomLevel"] = true,
-								["frameStrata"] = "HIGH",
 								["frameLevel"] = 128,
+								["useCustomStrata"] = true,
 							},
-							["height"] = 25,
-							["detachedWidth"] = 386,
+							["height"] = 16,
+							["detachedWidth"] = 350,
 						},
 					},
-					["pettarget"] = {
+					["pet"] = {
 						["health"] = {
 							["frequentUpdates"] = true,
 						},
@@ -1513,14 +1774,14 @@ ElvDB = {
 							["frequentUpdates"] = true,
 						},
 					},
-					["raid"] = {
-						["height"] = 56,
-						["width"] = 85,
-					},
 					["arena"] = {
 						["health"] = {
 							["frequentUpdates"] = true,
 						},
+					},
+					["raid"] = {
+						["height"] = 56,
+						["width"] = 85,
 					},
 					["boss"] = {
 						["health"] = {
@@ -1538,9 +1799,9 @@ ElvDB = {
 					["colorhealthbyvalue"] = false,
 					["power"] = {
 						["ENERGY"] = {
-							["b"] = 0.6039215686274509,
-							["g"] = 0.07058823529411765,
-							["r"] = 0.6509803921568628,
+							["b"] = 0.07058823529411765,
+							["g"] = 0.4196078431372549,
+							["r"] = 0.9058823529411765,
 						},
 						["RAGE"] = {
 							["b"] = 0.1294117647058823,
@@ -1558,7 +1819,7 @@ ElvDB = {
 				["panelColorConverted"] = true,
 				["fadeTabsNoBackdrop"] = false,
 			},
-			["dbConverted"] = 12.12,
+			["dbConverted"] = 12.16,
 			["actionbar"] = {
 				["barPet"] = {
 					["buttonsPerRow"] = 10,
@@ -1571,6 +1832,10 @@ ElvDB = {
 				["bar2"] = {
 					["enabled"] = true,
 					["backdrop"] = true,
+				},
+				["bar6"] = {
+					["enabled"] = true,
+					["buttonsPerRow"] = 6,
 				},
 				["bar5"] = {
 					["buttonsPerRow"] = 1,
@@ -2657,713 +2922,212 @@ ElvDB = {
 			},
 		},
 		["秋心 - 阿尔萨斯"] = {
-			["v11NamePlateReset"] = true,
-			["AuraWatch"] = {
-				["loadDefault"] = true,
-				["myclass"] = "PALADIN",
-				["DB"] = {
-					{
-						["IconSize"] = 42,
-						["Direction"] = "RIGHT",
-						["Name"] = "玩家增益",
-						["List"] = {
-							{
-								["AuraID"] = 84963,
-								["filter"] = "BUFF",
-								["UnitID"] = "player",
-								["Caster"] = "player",
-							}, -- [1]
-							{
-								["AuraID"] = 184662,
-								["filter"] = "BUFF",
-								["UnitID"] = "player",
-								["Caster"] = "player",
-							}, -- [2]
-							{
-								["AuraID"] = 205191,
-								["filter"] = "BUFF",
-								["UnitID"] = "player",
-								["Caster"] = "player",
-							}, -- [3]
-							{
-								["AuraID"] = 231895,
-								["filter"] = "BUFF",
-								["UnitID"] = "player",
-								["Caster"] = "player",
-							}, -- [4]
-							{
-								["AuraID"] = 642,
-								["filter"] = "BUFF",
-								["UnitID"] = "player",
-								["Caster"] = "player",
-							}, -- [5]
-							{
-								["AuraID"] = 86659,
-								["filter"] = "BUFF",
-								["UnitID"] = "player",
-								["Caster"] = "player",
-							}, -- [6]
-							{
-								["AuraID"] = 105809,
-								["filter"] = "BUFF",
-								["UnitID"] = "player",
-								["Caster"] = "player",
-							}, -- [7]
-							{
-								["AuraID"] = 31884,
-								["filter"] = "BUFF",
-								["UnitID"] = "player",
-								["Caster"] = "player",
-							}, -- [8]
-							{
-								["AuraID"] = 152262,
-								["filter"] = "BUFF",
-								["UnitID"] = "player",
-								["Caster"] = "player",
-							}, -- [9]
-							{
-								["AuraID"] = 31850,
-								["filter"] = "BUFF",
-								["UnitID"] = "player",
-								["Caster"] = "player",
-							}, -- [10]
-							{
-								["AuraID"] = 498,
-								["filter"] = "BUFF",
-								["UnitID"] = "player",
-								["Caster"] = "player",
-							}, -- [11]
-							{
-								["AuraID"] = 214202,
-								["filter"] = "BUFF",
-								["UnitID"] = "player",
-								["Caster"] = "player",
-							}, -- [12]
-							{
-								["AuraID"] = 132403,
-								["filter"] = "BUFF",
-								["UnitID"] = "player",
-								["Caster"] = "player",
-							}, -- [13]
-							{
-								["AuraID"] = 85499,
-								["filter"] = "BUFF",
-								["UnitID"] = "player",
-								["Caster"] = "player",
-							}, -- [14]
-						},
-						["Interval"] = 6,
-						["Mode"] = "ICON",
-						["Alpha"] = 1,
-						["Pos"] = {
-							"BOTTOMLEFT", -- [1]
-							"ElvUF_Player", -- [2]
-							"TOPLEFT", -- [3]
-							0, -- [4]
-							12, -- [5]
-						},
-					}, -- [1]
-					{
-						["IconSize"] = 42,
-						["Direction"] = "RIGHT",
-						["Name"] = "玩家重要增益",
-						["List"] = {
-							{
-								["AuraID"] = 267611,
-								["filter"] = "BUFF",
-								["UnitID"] = "player",
-								["Caster"] = "player",
-							}, -- [1]
-							{
-								["AuraID"] = 54149,
-								["filter"] = "BUFF",
-								["UnitID"] = "player",
-								["Caster"] = "player",
-							}, -- [2]
-							{
-								["AuraID"] = 114250,
-								["filter"] = "BUFF",
-								["UnitID"] = "player",
-								["Caster"] = "player",
-							}, -- [3]
-							{
-								["AuraID"] = 223819,
-								["filter"] = "BUFF",
-								["UnitID"] = "player",
-								["Caster"] = "player",
-							}, -- [4]
-							{
-								["AuraID"] = 85416,
-								["filter"] = "BUFF",
-								["UnitID"] = "player",
-								["Caster"] = "player",
-							}, -- [5]
-							{
-								["AuraID"] = 157048,
-								["filter"] = "BUFF",
-								["UnitID"] = "player",
-								["Caster"] = "player",
-							}, -- [6]
-							{
-								["AuraID"] = 209785,
-								["filter"] = "BUFF",
-								["UnitID"] = "player",
-								["Caster"] = "player",
-							}, -- [7]
-						},
-						["Interval"] = 6,
-						["Mode"] = "ICON",
-						["Alpha"] = 1,
-						["Pos"] = {
-							"BOTTOMLEFT", -- [1]
-							"ElvUF_Player", -- [2]
-							"TOPLEFT", -- [3]
-							0, -- [4]
-							55, -- [5]
-						},
-					}, -- [2]
-					{
-						["IconSize"] = 42,
-						["Direction"] = "RIGHT",
-						["Name"] = "目标减益",
-						["List"] = {
-							{
-								["AuraID"] = 267799,
-								["filter"] = "DEBUFF",
-								["UnitID"] = "target",
-								["Caster"] = "player",
-							}, -- [1]
-							{
-								["AuraID"] = 209202,
-								["filter"] = "DEBUFF",
-								["UnitID"] = "target",
-								["Caster"] = "player",
-							}, -- [2]
-							{
-								["AuraID"] = 25771,
-								["filter"] = "DEBUFF",
-								["UnitID"] = "player",
-								["Caster"] = "all",
-							}, -- [3]
-							{
-								["AuraID"] = 197277,
-								["filter"] = "DEBUFF",
-								["UnitID"] = "target",
-								["Caster"] = "player",
-							}, -- [4]
-							{
-								["AuraID"] = 183218,
-								["filter"] = "DEBUFF",
-								["UnitID"] = "target",
-								["Caster"] = "player",
-							}, -- [5]
-						},
-						["Interval"] = 6,
-						["Mode"] = "ICON",
-						["Alpha"] = 1,
-						["Pos"] = {
-							"BOTTOMLEFT", -- [1]
-							"ElvUF_Target", -- [2]
-							"TOPLEFT", -- [3]
-							0, -- [4]
-							68, -- [5]
-						},
-					}, -- [3]
-					{
-						["IconSize"] = 48,
-						["Direction"] = "RIGHT",
-						["Name"] = "冷却监视",
-						["List"] = {
-							{
-								["AuraID"] = 209202,
-								["filter"] = "CD",
-							}, -- [1]
-							{
-								["AuraID"] = 4987,
-								["filter"] = "CD",
-							}, -- [2]
-							{
-								["AuraID"] = 96231,
-								["filter"] = "CD",
-							}, -- [3]
-							{
-								["AuraID"] = 20066,
-								["filter"] = "CD",
-							}, -- [4]
-							{
-								["AuraID"] = 853,
-								["filter"] = "CD",
-							}, -- [5]
-							{
-								["AuraID"] = 20271,
-								["filter"] = "CD",
-							}, -- [6]
-							{
-								["AuraID"] = 26573,
-								["filter"] = "CD",
-							}, -- [7]
-							{
-								["AuraID"] = 31935,
-								["filter"] = "CD",
-							}, -- [8]
-							{
-								["AuraID"] = 223306,
-								["filter"] = "CD",
-							}, -- [9]
-							{
-								["AuraID"] = 85222,
-								["filter"] = "CD",
-							}, -- [10]
-							{
-								["AuraID"] = 114165,
-								["filter"] = "CD",
-							}, -- [11]
-							{
-								["AuraID"] = 1044,
-								["filter"] = "CD",
-							}, -- [12]
-							{
-								["AuraID"] = 152262,
-								["filter"] = "CD",
-							}, -- [13]
-							{
-								["AuraID"] = 214202,
-								["filter"] = "CD",
-							}, -- [14]
-							{
-								["AuraID"] = 85499,
-								["filter"] = "CD",
-							}, -- [15]
-							{
-								["AuraID"] = 498,
-								["absID"] = true,
-								["filter"] = "CD",
-							}, -- [16]
-							{
-								["AuraID"] = 114158,
-								["filter"] = "CD",
-							}, -- [17]
-							{
-								["AuraID"] = 115750,
-								["filter"] = "CD",
-							}, -- [18]
-							{
-								["AuraID"] = 105809,
-								["filter"] = "CD",
-							}, -- [19]
-							{
-								["AuraID"] = 210220,
-								["filter"] = "CD",
-							}, -- [20]
-							{
-								["AuraID"] = 31821,
-								["filter"] = "CD",
-							}, -- [21]
-							{
-								["AuraID"] = 6940,
-								["filter"] = "CD",
-							}, -- [22]
-							{
-								["AuraID"] = 31884,
-								["filter"] = "CD",
-							}, -- [23]
-							{
-								["AuraID"] = 31850,
-								["absID"] = true,
-								["filter"] = "CD",
-							}, -- [24]
-							{
-								["AuraID"] = 86659,
-								["filter"] = "CD",
-							}, -- [25]
-							{
-								["AuraID"] = 1022,
-								["filter"] = "CD",
-							}, -- [26]
-							{
-								["AuraID"] = 195710,
-								["filter"] = "CD",
-							}, -- [27]
-							{
-								["AuraID"] = 69179,
-								["filter"] = "CD",
-							}, -- [28]
-							{
-								["AuraID"] = 59752,
-								["filter"] = "CD",
-							}, -- [29]
-							{
-								["AuraID"] = 28880,
-								["filter"] = "CD",
-							}, -- [30]
-							{
-								["AuraID"] = 20594,
-								["filter"] = "CD",
-							}, -- [31]
-							{
-								["AuraID"] = 20549,
-								["filter"] = "CD",
-							}, -- [32]
-						},
-						["Interval"] = 6,
-						["Mode"] = "ICON",
-						["Alpha"] = 1,
-						["Pos"] = {
-							"BOTTOMLEFT", -- [1]
-							"ElvUF_Player", -- [2]
-							"TOPLEFT", -- [3]
-							0, -- [4]
-							99, -- [5]
-						},
-					}, -- [4]
-				},
-				["ver"] = 2,
-			},
-			["unitframe"] = {
-				["units"] = {
-					["target"] = {
-						["fader"] = {
-							["enable"] = false,
-							["range"] = false,
-						},
-					},
-				},
-			},
-			["movers"] = {
-				["EuiInfoBar1Mover"] = "TOP,ElvUIParent,TOP,222,-53",
-			},
-		},
-		["冰火兮 - 阿尔萨斯"] = {
-			["movers"] = {
-				["ElvUF_PartyMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,4,195",
-				["ElvUF_RaidMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,4,195",
-				["ElvUF_RaidpetMover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,4,736",
-				["ShiftAB"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,4,1052",
-			},
-			["AuraWatch"] = {
-				["loadDefault"] = true,
-				["myclass"] = "MAGE",
-				["DB"] = {
-					{
-						["Direction"] = "RIGHT",
-						["Name"] = "玩家减益",
-						["List"] = {
-							{
-								["AuraID"] = 118,
-								["UnitID"] = "player",
-							}, -- [1]
-						},
-						["Interval"] = 10,
-						["Mode"] = "ICON",
-						["IconSize"] = 48,
-						["Pos"] = {
-							"CENTER", -- [1]
-							"UIParent", -- [2]
-							"CENTER", -- [3]
-							-200, -- [4]
-							200, -- [5]
-						},
-					}, -- [1]
-					{
-						["Direction"] = "RIGHT",
-						["Name"] = "玩家重要增益",
-						["List"] = {
-							{
-								["AuraID"] = 44544,
-								["UnitID"] = "player",
-							}, -- [1]
-							{
-								["AuraID"] = 57761,
-								["UnitID"] = "player",
-							}, -- [2]
-							{
-								["AuraID"] = 79683,
-								["UnitID"] = "player",
-							}, -- [3]
-							{
-								["AuraID"] = 48107,
-								["UnitID"] = "player",
-							}, -- [4]
-							{
-								["AuraID"] = 48108,
-								["UnitID"] = "player",
-							}, -- [5]
-							{
-								["AuraID"] = 126697,
-								["UnitID"] = "player",
-							}, -- [6]
-							{
-								["AuraID"] = 126605,
-								["UnitID"] = "player",
-							}, -- [7]
-							{
-								["AuraID"] = 126683,
-								["UnitID"] = "player",
-							}, -- [8]
-							{
-								["AuraID"] = 126705,
-								["UnitID"] = "player",
-							}, -- [9]
-							{
-								["AuraID"] = 126659,
-								["UnitID"] = "player",
-							}, -- [10]
-							{
-								["AuraID"] = 126577,
-								["UnitID"] = "player",
-							}, -- [11]
-							{
-								["AuraID"] = 104993,
-								["UnitID"] = "player",
-							}, -- [12]
-							{
-								["AuraID"] = 125487,
-								["UnitID"] = "player",
-							}, -- [13]
-						},
-						["Interval"] = 6,
-						["Mode"] = "ICON",
-						["IconSize"] = 42,
-						["Pos"] = {
-							"BOTTOMLEFT", -- [1]
-							"ElvUF_Player", -- [2]
-							"TOPLEFT", -- [3]
-							0, -- [4]
-							55, -- [5]
-						},
-					}, -- [2]
-					{
-						["Direction"] = "RIGHT",
-						["Name"] = "玩家增益",
-						["List"] = {
-							{
-								["AuraID"] = 157913,
-								["UnitID"] = "target",
-							}, -- [1]
-							{
-								["AuraID"] = 45438,
-								["UnitID"] = "target",
-							}, -- [2]
-							{
-								["AuraID"] = 111264,
-								["UnitID"] = "target",
-							}, -- [3]
-							{
-								["AuraID"] = 32612,
-								["UnitID"] = "player",
-							}, -- [4]
-							{
-								["AuraID"] = 110960,
-								["UnitID"] = "player",
-							}, -- [5]
-							{
-								["AuraID"] = 12472,
-								["UnitID"] = "player",
-							}, -- [6]
-							{
-								["AuraID"] = 1463,
-								["UnitID"] = "player",
-							}, -- [7]
-							{
-								["AuraID"] = 115610,
-								["UnitID"] = "player",
-							}, -- [8]
-							{
-								["AuraID"] = 11426,
-								["UnitID"] = "player",
-							}, -- [9]
-							{
-								["AuraID"] = 108839,
-								["UnitID"] = "player",
-							}, -- [10]
-							{
-								["AuraID"] = 12042,
-								["UnitID"] = "player",
-							}, -- [11]
-						},
-						["Interval"] = 6,
-						["Mode"] = "ICON",
-						["IconSize"] = 42,
-						["Pos"] = {
-							"BOTTOMLEFT", -- [1]
-							"ElvUF_Player", -- [2]
-							"TOPLEFT", -- [3]
-							0, -- [4]
-							12, -- [5]
-						},
-					}, -- [3]
-					{
-						["Direction"] = "RIGHT",
-						["Name"] = "目标减益",
-						["List"] = {
-							{
-								["AuraID"] = 36032,
-								["UnitID"] = "player",
-								["Caster"] = "player",
-							}, -- [1]
-							{
-								["AuraID"] = 31589,
-								["UnitID"] = "target",
-								["Caster"] = "player",
-							}, -- [2]
-							{
-								["AuraID"] = 12654,
-								["UnitID"] = "target",
-								["Caster"] = "player",
-							}, -- [3]
-							{
-								["AuraID"] = 44457,
-								["UnitID"] = "target",
-								["Caster"] = "player",
-							}, -- [4]
-							{
-								["AuraID"] = 114923,
-								["UnitID"] = "target",
-								["Caster"] = "player",
-							}, -- [5]
-							{
-								["AuraID"] = 11366,
-								["UnitID"] = "target",
-								["Caster"] = "player",
-							}, -- [6]
-							{
-								["AuraID"] = 83853,
-								["UnitID"] = "target",
-								["Caster"] = "player",
-							}, -- [7]
-							{
-								["AuraID"] = 33395,
-								["UnitID"] = "target",
-								["Caster"] = "player",
-							}, -- [8]
-							{
-								["AuraID"] = 122,
-								["UnitID"] = "target",
-								["Caster"] = "player",
-							}, -- [9]
-							{
-								["AuraID"] = 111340,
-								["UnitID"] = "target",
-								["Caster"] = "player",
-							}, -- [10]
-							{
-								["AuraID"] = 120,
-								["UnitID"] = "target",
-								["Caster"] = "player",
-							}, -- [11]
-							{
-								["AuraID"] = 44614,
-								["UnitID"] = "target",
-								["Caster"] = "player",
-							}, -- [12]
-						},
-						["Interval"] = 4,
-						["Mode"] = "ICON",
-						["IconSize"] = 48,
-						["Pos"] = {
-							"BOTTOMLEFT", -- [1]
-							"ElvUF_Target", -- [2]
-							"TOPLEFT", -- [3]
-							0, -- [4]
-							68, -- [5]
-						},
-					}, -- [4]
-				},
-			},
-		},
-		["古剑 - 阿尔萨斯"] = {
-			["currentTutorial"] = 11,
+			["currentTutorial"] = 2,
 			["movers"] = {
 				["EuiWorldStateMover"] = "TOP,ElvUIParent,TOP,-215,-60",
-				["ElvUF_PlayerCastbarMover"] = "BOTTOM,ElvUIParent,BOTTOM,12,207",
-				["ElvUF_RaidMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,280,240",
+				["PetAB"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,0,268",
+				["ElvUF_RaidMover"] = "TOPLEFT,ElvUIParent,TOPLEFT,214,-207",
+				["LeftChatMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,0,0",
 				["GMMover"] = "TOPLEFT,ElvUIParent,TOPLEFT,374,-22",
 				["BuffsMover"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,-244,0",
-				["BossButton"] = "BOTTOM,ElvUIParent,BOTTOM,20,186",
+				["BossButton"] = "BOTTOM,ElvUIParent,BOTTOM,-6,164",
 				["LootFrameMover"] = "TOPLEFT,ElvUIParent,TOPLEFT,476,-225",
-				["ZoneAbility"] = "BOTTOM,ElvUIParent,BOTTOM,91,264",
+				["ZoneAbility"] = "BOTTOM,ElvUIParent,BOTTOM,118,283",
+				["MinimapMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-263,0",
+				["AutoButtonAnchor3Mover"] = "BOTTOM,ElvUIParent,BOTTOM,312,157",
 				["ElvUF_RaidpetMover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,4,736",
-				["AutoButtonAnchor2Mover"] = "BOTTOM,ElvUIParent,BOTTOM,309,0",
+				["EUIMinimapButtonMover"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,-17,-8",
+				["AutoButtonAnchor2Mover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-484,116",
 				["ElvUF_FocusMover"] = "TOPLEFT,ElvUIParent,TOPLEFT,478,-116",
-				["AutoButtonAnchorMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-372,2",
-				["MicrobarMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,3,187",
+				["ElvUF_PartyMover"] = "TOPLEFT,ElvUIParent,TOPLEFT,453,-337",
+				["AutoButtonAnchorMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-461,72",
+				["ClassBarMover"] = "BOTTOM,ElvUIParent,BOTTOM,3,254",
+				["MicrobarMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,8,229",
+				["ElvUF_PetCastbarMover"] = "BOTTOM,ElvUIParent,BOTTOM,-130,358",
 				["VehicleSeatMover"] = "TOPLEFT,ElvUIParent,TOPLEFT,292,-236",
-				["ElvUF_TargetMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-472,79",
-				["EuiExecuteMover"] = "BOTTOM,ElvUIParent,BOTTOM,-176,155",
+				["PlayerPowerBarMover"] = "BOTTOM,ElvUIParent,BOTTOM,3,240",
+				["ElvUF_PetMover"] = "BOTTOM,ElvUIParent,BOTTOM,-300,284",
+				["ElvUF_TargetTargetMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-273,235",
+				["ElvUF_TargetMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-438,223",
+				["EuiExecuteMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,1125,280",
 				["LossControlMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-554,385",
-				["LevelUpBossBannerMover"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,-520,-281",
+				["LevelUpBossBannerMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-7,239",
 				["MirrorTimer1Mover"] = "TOP,ElvUIParent,TOP,198,-105",
-				["ElvAB_1"] = "BOTTOM,ElvUIParent,BOTTOM,-3,4",
-				["ElvAB_2"] = "BOTTOM,ElvUIParent,BOTTOM,-3,41",
-				["TalkingHeadFrameMover"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,-377,-333",
-				["AltPowerBarMover"] = "TOPLEFT,ElvUIParent,TOPLEFT,346,-404",
-				["ElvAB_3"] = "BOTTOM,ElvUIParent,BOTTOM,-3,77",
-				["ElvAB_5"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,-42,-333",
+				["ElvUF_PlayerCastbarMover"] = "BOTTOM,ElvUIParent,BOTTOM,4,103",
+				["ElvAB_1"] = "BOTTOM,ElvUIParent,BOTTOM,-4,0",
+				["ElvAB_2"] = "BOTTOM,ElvUIParent,BOTTOM,-3,35",
+				["BelowMinimapContainerMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-13,202",
 				["ArtifactBarMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,368,6",
-				["MinimapMover"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,0,-42",
-				["ElvUF_TargetTargetMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-346,102",
-				["PetAB"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-375,2",
+				["TalkingHeadFrameMover"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,-258,-303",
+				["ArenaHeaderMover"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,-437,-351",
+				["AltPowerBarMover"] = "TOPLEFT,ElvUIParent,TOPLEFT,346,-404",
+				["ElvAB_3"] = "BOTTOM,ElvUIParent,BOTTOM,-2,70",
+				["ElvAB_5"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,-39,-334",
+				["VehicleLeaveButton"] = "BOTTOM,ElvUIParent,BOTTOM,-258,398",
+				["ElvUF_TargetCastbarMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-305,343",
+				["ElvNP_PlayerMover"] = "BOTTOM,ElvUIParent,BOTTOM,163,440",
 				["ShiftAB"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,684,209",
-				["ElvUF_PartyMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,281,253",
-				["HonorBarMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,380,4",
-				["ElvUF_TargetCastbarMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-328,300",
-				["TooltipMover"] = "TOP,ElvUIParent,TOP,-148,-198",
-				["ElvUF_TankMover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,33,796",
-				["ElvUF_PlayerMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,473,81",
-				["ElvUIBagMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,394,192",
+				["BNETMover"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,-214,-226",
+				["VOICECHAT"] = "TOPLEFT,ElvUIParent,TOPLEFT,370,-147",
+				["ElvUF_PlayerMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,468,222",
+				["HonorBarMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,396,0",
+				["ElvAB_6"] = "BOTTOM,ElvUIParent,BOTTOM,313,0",
+				["TooltipMover"] = "TOP,ElvUIParent,TOP,-268,-223",
+				["ElvUF_TankMover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,11,651",
+				["BossHeaderMover"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,-332,-356",
 				["TotemBarMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,413,2",
-				["RightChatMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,0,2",
-				["ElvUF_PetMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,530,29",
-				["DebuffsMover"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,-198,-157",
-				["ElvUF_AssistMover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,28,740",
+				["ElvUIBagMover"] = "BOTTOM,ElvUIParent,BOTTOM,-177,309",
+				["RightChatMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,8,2",
+				["RaidCDAnchorMover"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,-6,-78",
+				["DebuffsMover"] = "TOP,ElvUIParent,TOP,28,-211",
+				["ElvUF_AssistMover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,127,650",
 			},
 			["v11NamePlateReset"] = true,
 			["auras"] = {
-				["buffs"] = {
+				["debuffs"] = {
 					["countFontSize"] = 12,
 					["durationFontSize"] = 12,
 				},
-				["debuffs"] = {
+				["buffs"] = {
 					["countFontSize"] = 12,
 					["durationFontSize"] = 12,
 				},
 			},
 			["unitframe"] = {
 				["colors"] = {
-					["colorhealthbyvalue"] = false,
+					["power_backdrop"] = {
+						["b"] = 0.03529411764705882,
+						["g"] = 0.05882352941176471,
+						["r"] = 0.5019607843137255,
+					},
 					["healthclass"] = true,
+					["colorhealthbyvalue"] = false,
+					["power"] = {
+						["ENERGY"] = {
+							["b"] = 0.07058823529411765,
+							["g"] = 0.4196078431372549,
+							["r"] = 0.9058823529411765,
+						},
+						["RAGE"] = {
+							["b"] = 0.1294117647058823,
+							["g"] = 0.04705882352941176,
+							["r"] = 0.9294117647058824,
+						},
+					},
 				},
 				["units"] = {
+					["targettargettarget"] = {
+						["health"] = {
+							["frequentUpdates"] = true,
+						},
+					},
+					["focustarget"] = {
+						["health"] = {
+							["frequentUpdates"] = true,
+						},
+					},
+					["targettarget"] = {
+						["health"] = {
+							["frequentUpdates"] = true,
+						},
+					},
+					["pet"] = {
+						["health"] = {
+							["frequentUpdates"] = true,
+						},
+					},
+					["boss"] = {
+						["health"] = {
+							["frequentUpdates"] = true,
+						},
+					},
+					["pettarget"] = {
+						["health"] = {
+							["frequentUpdates"] = true,
+						},
+					},
+					["focus"] = {
+						["health"] = {
+							["frequentUpdates"] = true,
+						},
+					},
 					["target"] = {
-						["height"] = 80,
+						["aurabar"] = {
+							["enable"] = false,
+						},
+						["fader"] = {
+							["enable"] = false,
+							["range"] = false,
+						},
 						["castbar"] = {
 							["height"] = 37,
 							["width"] = 461,
 						},
-						["aurabar"] = {
+						["height"] = 52,
+						["health"] = {
+							["frequentUpdates"] = true,
+						},
+						["portrait"] = {
 							["enable"] = false,
 						},
+						["width"] = 259,
+					},
+					["arena"] = {
+						["health"] = {
+							["frequentUpdates"] = true,
+						},
+					},
+					["raid"] = {
+						["height"] = 56,
+						["width"] = 85,
 					},
 					["player"] = {
+						["portrait"] = {
+							["enable"] = false,
+						},
+						["power"] = {
+							["detachFromFrame"] = true,
+							["detachedWidth"] = 350,
+							["height"] = 15,
+							["attachTextTo"] = "Power",
+							["xOffset"] = -8,
+							["width"] = "spaced",
+						},
+						["width"] = 259,
+						["health"] = {
+							["frequentUpdates"] = true,
+						},
 						["threatStyle"] = "GLOW",
+						["height"] = 56,
 						["castbar"] = {
 							["tickWidth"] = 4,
 							["height"] = 57,
 							["width"] = 439,
 						},
-						["height"] = 80,
-						["width"] = 272,
+						["classbar"] = {
+							["detachFromFrame"] = true,
+							["verticalOrientation"] = true,
+							["strataAndLevel"] = {
+								["useCustomStrata"] = true,
+								["frameLevel"] = 128,
+								["useCustomLevel"] = true,
+							},
+							["spacing"] = 4,
+							["height"] = 16,
+							["detachedWidth"] = 350,
+							["fill"] = "fill",
+						},
 						["aurabar"] = {
 							["enable"] = false,
 						},
 					},
-					["raid"] = {
-						["height"] = 69,
-						["width"] = 85,
-					},
 				},
 			},
 			["euiscript"] = {
+				["disableBLZCombatText"] = false,
+				["threat"] = {
+					["enable"] = true,
+				},
 				["executebutton"] = {
 					["spellList"] = {
 						["ROGUE"] = {
@@ -3374,14 +3138,15 @@ ElvDB = {
 						},
 					},
 				},
-				["threat"] = {
-					["enable"] = true,
-				},
 			},
 			["actionbar"] = {
 				["bar3"] = {
 					["buttonsPerRow"] = 12,
 					["buttons"] = 12,
+				},
+				["bar6"] = {
+					["enabled"] = true,
+					["buttonsPerRow"] = 6,
 				},
 				["bar2"] = {
 					["enabled"] = true,
@@ -3390,6 +3155,7 @@ ElvDB = {
 				["microbar"] = {
 					["enabled"] = true,
 					["mouseover"] = true,
+					["buttons"] = 11,
 				},
 				["bar5"] = {
 					["buttonsPerRow"] = 1,
@@ -3399,15 +3165,9 @@ ElvDB = {
 					["buttonsPerRow"] = 10,
 				},
 			},
-			["chat"] = {
-				["panelColorConverted"] = true,
-				["panelColor"] = {
-					["a"] = 0.9,
-				},
-			},
 			["AuraWatch"] = {
 				["loadDefault"] = true,
-				["myclass"] = "DEATHKNIGHT",
+				["myclass"] = "PALADIN",
 				["DB"] = {
 					{
 						["Direction"] = "RIGHT",
@@ -3655,6 +3415,1059 @@ ElvDB = {
 							68, -- [5]
 						},
 					}, -- [4]
+					{
+						["Interval"] = 6,
+						["Direction"] = "RIGHT",
+						["Name"] = "冷却监视",
+						["List"] = {
+							{
+								["AuraID"] = 88423,
+								["filter"] = "CD",
+							}, -- [1]
+							{
+								["AuraID"] = 2782,
+								["filter"] = "CD",
+							}, -- [2]
+							{
+								["AuraID"] = 106839,
+								["filter"] = "CD",
+							}, -- [3]
+							{
+								["AuraID"] = 33917,
+								["filter"] = "CD",
+							}, -- [4]
+							{
+								["AuraID"] = 48438,
+								["filter"] = "CD",
+							}, -- [5]
+							{
+								["AuraID"] = 18562,
+								["filter"] = "CD",
+							}, -- [6]
+							{
+								["AuraID"] = 6795,
+								["filter"] = "CD",
+							}, -- [7]
+							{
+								["AuraID"] = 22570,
+								["filter"] = "CD",
+							}, -- [8]
+							{
+								["AuraID"] = 78674,
+								["filter"] = "CD",
+							}, -- [9]
+							{
+								["AuraID"] = 102401,
+								["filter"] = "CD",
+							}, -- [10]
+							{
+								["AuraID"] = 205636,
+								["filter"] = "CD",
+							}, -- [11]
+							{
+								["AuraID"] = 5217,
+								["filter"] = "CD",
+							}, -- [12]
+							{
+								["AuraID"] = 99,
+								["filter"] = "CD",
+							}, -- [13]
+							{
+								["AuraID"] = 155835,
+								["filter"] = "CD",
+							}, -- [14]
+							{
+								["AuraID"] = 102359,
+								["filter"] = "CD",
+							}, -- [15]
+							{
+								["AuraID"] = 132469,
+								["filter"] = "CD",
+							}, -- [16]
+							{
+								["AuraID"] = 5211,
+								["filter"] = "CD",
+							}, -- [17]
+							{
+								["AuraID"] = 78675,
+								["filter"] = "CD",
+							}, -- [18]
+							{
+								["AuraID"] = 22812,
+								["filter"] = "CD",
+							}, -- [19]
+							{
+								["AuraID"] = 102342,
+								["filter"] = "CD",
+							}, -- [20]
+							{
+								["AuraID"] = 102793,
+								["filter"] = "CD",
+							}, -- [21]
+							{
+								["AuraID"] = 124974,
+								["filter"] = "CD",
+							}, -- [22]
+							{
+								["AuraID"] = 106951,
+								["absID"] = true,
+								["filter"] = "CD",
+							}, -- [23]
+							{
+								["AuraID"] = 210722,
+								["filter"] = "CD",
+							}, -- [24]
+							{
+								["AuraID"] = 102560,
+								["filter"] = "CD",
+							}, -- [25]
+							{
+								["AuraID"] = 102543,
+								["filter"] = "CD",
+							}, -- [26]
+							{
+								["AuraID"] = 102558,
+								["filter"] = "CD",
+							}, -- [27]
+							{
+								["AuraID"] = 33891,
+								["filter"] = "CD",
+							}, -- [28]
+							{
+								["AuraID"] = 195710,
+								["filter"] = "CD",
+							}, -- [29]
+							{
+								["AuraID"] = 26297,
+								["absID"] = true,
+								["filter"] = "CD",
+							}, -- [30]
+							{
+								["AuraID"] = 68992,
+								["filter"] = "CD",
+							}, -- [31]
+							{
+								["AuraID"] = 58984,
+								["filter"] = "CD",
+							}, -- [32]
+							{
+								["AuraID"] = 20549,
+								["filter"] = "CD",
+							}, -- [33]
+						},
+						["IconSize"] = 48,
+						["Mode"] = "ICON",
+						["Alpha"] = 1,
+						["Pos"] = {
+							"BOTTOMLEFT", -- [1]
+							"ElvUF_Player", -- [2]
+							"TOPLEFT", -- [3]
+							0, -- [4]
+							99, -- [5]
+						},
+					}, -- [5]
+				},
+				["ver"] = 2,
+			},
+			["chat"] = {
+				["fadeTabsNoBackdrop"] = false,
+				["panelColor"] = {
+					["a"] = 0.9,
+				},
+				["panelColorConverted"] = true,
+				["panelWidth"] = 386,
+			},
+			["dbConverted"] = 12.16,
+			["RightChatPanelFaded"] = true,
+		},
+		["冰火兮 - 阿尔萨斯"] = {
+			["movers"] = {
+				["ElvUF_PartyMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,4,195",
+				["ElvUF_RaidMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,4,195",
+				["ElvUF_RaidpetMover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,4,736",
+				["ShiftAB"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,4,1052",
+			},
+			["AuraWatch"] = {
+				["loadDefault"] = true,
+				["myclass"] = "MAGE",
+				["DB"] = {
+					{
+						["Direction"] = "RIGHT",
+						["Name"] = "玩家减益",
+						["List"] = {
+							{
+								["AuraID"] = 118,
+								["UnitID"] = "player",
+							}, -- [1]
+						},
+						["Interval"] = 10,
+						["Mode"] = "ICON",
+						["IconSize"] = 48,
+						["Pos"] = {
+							"CENTER", -- [1]
+							"UIParent", -- [2]
+							"CENTER", -- [3]
+							-200, -- [4]
+							200, -- [5]
+						},
+					}, -- [1]
+					{
+						["Direction"] = "RIGHT",
+						["Name"] = "玩家重要增益",
+						["List"] = {
+							{
+								["AuraID"] = 44544,
+								["UnitID"] = "player",
+							}, -- [1]
+							{
+								["AuraID"] = 57761,
+								["UnitID"] = "player",
+							}, -- [2]
+							{
+								["AuraID"] = 79683,
+								["UnitID"] = "player",
+							}, -- [3]
+							{
+								["AuraID"] = 48107,
+								["UnitID"] = "player",
+							}, -- [4]
+							{
+								["AuraID"] = 48108,
+								["UnitID"] = "player",
+							}, -- [5]
+							{
+								["AuraID"] = 126697,
+								["UnitID"] = "player",
+							}, -- [6]
+							{
+								["AuraID"] = 126605,
+								["UnitID"] = "player",
+							}, -- [7]
+							{
+								["AuraID"] = 126683,
+								["UnitID"] = "player",
+							}, -- [8]
+							{
+								["AuraID"] = 126705,
+								["UnitID"] = "player",
+							}, -- [9]
+							{
+								["AuraID"] = 126659,
+								["UnitID"] = "player",
+							}, -- [10]
+							{
+								["AuraID"] = 126577,
+								["UnitID"] = "player",
+							}, -- [11]
+							{
+								["AuraID"] = 104993,
+								["UnitID"] = "player",
+							}, -- [12]
+							{
+								["AuraID"] = 125487,
+								["UnitID"] = "player",
+							}, -- [13]
+						},
+						["Interval"] = 6,
+						["Mode"] = "ICON",
+						["IconSize"] = 42,
+						["Pos"] = {
+							"BOTTOMLEFT", -- [1]
+							"ElvUF_Player", -- [2]
+							"TOPLEFT", -- [3]
+							0, -- [4]
+							55, -- [5]
+						},
+					}, -- [2]
+					{
+						["Direction"] = "RIGHT",
+						["Name"] = "玩家增益",
+						["List"] = {
+							{
+								["AuraID"] = 157913,
+								["UnitID"] = "target",
+							}, -- [1]
+							{
+								["AuraID"] = 45438,
+								["UnitID"] = "target",
+							}, -- [2]
+							{
+								["AuraID"] = 111264,
+								["UnitID"] = "target",
+							}, -- [3]
+							{
+								["AuraID"] = 32612,
+								["UnitID"] = "player",
+							}, -- [4]
+							{
+								["AuraID"] = 110960,
+								["UnitID"] = "player",
+							}, -- [5]
+							{
+								["AuraID"] = 12472,
+								["UnitID"] = "player",
+							}, -- [6]
+							{
+								["AuraID"] = 1463,
+								["UnitID"] = "player",
+							}, -- [7]
+							{
+								["AuraID"] = 115610,
+								["UnitID"] = "player",
+							}, -- [8]
+							{
+								["AuraID"] = 11426,
+								["UnitID"] = "player",
+							}, -- [9]
+							{
+								["AuraID"] = 108839,
+								["UnitID"] = "player",
+							}, -- [10]
+							{
+								["AuraID"] = 12042,
+								["UnitID"] = "player",
+							}, -- [11]
+						},
+						["Interval"] = 6,
+						["Mode"] = "ICON",
+						["IconSize"] = 42,
+						["Pos"] = {
+							"BOTTOMLEFT", -- [1]
+							"ElvUF_Player", -- [2]
+							"TOPLEFT", -- [3]
+							0, -- [4]
+							12, -- [5]
+						},
+					}, -- [3]
+					{
+						["Direction"] = "RIGHT",
+						["Name"] = "目标减益",
+						["List"] = {
+							{
+								["AuraID"] = 36032,
+								["UnitID"] = "player",
+								["Caster"] = "player",
+							}, -- [1]
+							{
+								["AuraID"] = 31589,
+								["UnitID"] = "target",
+								["Caster"] = "player",
+							}, -- [2]
+							{
+								["AuraID"] = 12654,
+								["UnitID"] = "target",
+								["Caster"] = "player",
+							}, -- [3]
+							{
+								["AuraID"] = 44457,
+								["UnitID"] = "target",
+								["Caster"] = "player",
+							}, -- [4]
+							{
+								["AuraID"] = 114923,
+								["UnitID"] = "target",
+								["Caster"] = "player",
+							}, -- [5]
+							{
+								["AuraID"] = 11366,
+								["UnitID"] = "target",
+								["Caster"] = "player",
+							}, -- [6]
+							{
+								["AuraID"] = 83853,
+								["UnitID"] = "target",
+								["Caster"] = "player",
+							}, -- [7]
+							{
+								["AuraID"] = 33395,
+								["UnitID"] = "target",
+								["Caster"] = "player",
+							}, -- [8]
+							{
+								["AuraID"] = 122,
+								["UnitID"] = "target",
+								["Caster"] = "player",
+							}, -- [9]
+							{
+								["AuraID"] = 111340,
+								["UnitID"] = "target",
+								["Caster"] = "player",
+							}, -- [10]
+							{
+								["AuraID"] = 120,
+								["UnitID"] = "target",
+								["Caster"] = "player",
+							}, -- [11]
+							{
+								["AuraID"] = 44614,
+								["UnitID"] = "target",
+								["Caster"] = "player",
+							}, -- [12]
+						},
+						["Interval"] = 4,
+						["Mode"] = "ICON",
+						["IconSize"] = 48,
+						["Pos"] = {
+							"BOTTOMLEFT", -- [1]
+							"ElvUF_Target", -- [2]
+							"TOPLEFT", -- [3]
+							0, -- [4]
+							68, -- [5]
+						},
+					}, -- [4]
+				},
+			},
+		},
+		["古剑 - 阿尔萨斯"] = {
+			["currentTutorial"] = 2,
+			["movers"] = {
+				["EuiWorldStateMover"] = "TOP,ElvUIParent,TOP,-215,-60",
+				["PetAB"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,7,255",
+				["ElvUF_RaidMover"] = "TOPLEFT,ElvUIParent,TOPLEFT,214,-207",
+				["LeftChatMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,0,0",
+				["GMMover"] = "TOPLEFT,ElvUIParent,TOPLEFT,374,-22",
+				["BuffsMover"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,-244,0",
+				["BossButton"] = "BOTTOM,ElvUIParent,BOTTOM,2,174",
+				["LootFrameMover"] = "TOPLEFT,ElvUIParent,TOPLEFT,476,-225",
+				["ZoneAbility"] = "BOTTOM,ElvUIParent,BOTTOM,118,283",
+				["MinimapMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-250,9",
+				["ElvUF_RaidpetMover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,4,736",
+				["AutoButtonAnchor3Mover"] = "BOTTOM,ElvUIParent,BOTTOM,312,157",
+				["AutoButtonAnchor2Mover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-484,116",
+				["ElvUF_FocusMover"] = "TOPLEFT,ElvUIParent,TOPLEFT,478,-116",
+				["EUIMinimapButtonMover"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,-17,-8",
+				["AutoButtonAnchorMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-461,72",
+				["ClassBarMover"] = "BOTTOM,ElvUIParent,BOTTOM,4,149",
+				["MicrobarMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,8,229",
+				["ElvUF_PetCastbarMover"] = "BOTTOM,ElvUIParent,BOTTOM,-130,358",
+				["VehicleSeatMover"] = "TOPLEFT,ElvUIParent,TOPLEFT,292,-236",
+				["ElvUF_PartyMover"] = "TOPLEFT,ElvUIParent,TOPLEFT,453,-337",
+				["TotemBarMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,413,2",
+				["PlayerPowerBarMover"] = "BOTTOM,ElvUIParent,BOTTOM,1,119",
+				["ElvUF_TargetMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-438,223",
+				["EuiExecuteMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,1125,280",
+				["LossControlMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-554,385",
+				["LevelUpBossBannerMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-7,239",
+				["MirrorTimer1Mover"] = "TOP,ElvUIParent,TOP,198,-105",
+				["ElvUF_PlayerCastbarMover"] = "BOTTOM,ElvUIParent,BOTTOM,13,221",
+				["ElvAB_1"] = "BOTTOM,ElvUIParent,BOTTOM,-4,0",
+				["ElvAB_2"] = "BOTTOM,ElvUIParent,BOTTOM,-3,35",
+				["BelowMinimapContainerMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-13,202",
+				["ElvUF_PetMover"] = "BOTTOM,ElvUIParent,BOTTOM,-300,284",
+				["TalkingHeadFrameMover"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,-258,-303",
+				["ArtifactBarMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,368,6",
+				["AltPowerBarMover"] = "TOPLEFT,ElvUIParent,TOPLEFT,346,-404",
+				["ElvAB_3"] = "BOTTOM,ElvUIParent,BOTTOM,-2,70",
+				["ElvAB_5"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,-39,-334",
+				["VehicleLeaveButton"] = "BOTTOM,ElvUIParent,BOTTOM,-258,398",
+				["ArenaHeaderMover"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,-437,-351",
+				["ElvUF_PlayerMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,468,222",
+				["VOICECHAT"] = "TOPLEFT,ElvUIParent,TOPLEFT,370,-147",
+				["BNETMover"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,-214,-226",
+				["ShiftAB"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,684,209",
+				["ElvNP_PlayerMover"] = "BOTTOM,ElvUIParent,BOTTOM,163,440",
+				["HonorBarMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,396,0",
+				["ElvUF_TargetCastbarMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-305,343",
+				["TooltipMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-555,300",
+				["ElvUF_TankMover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,11,651",
+				["BossHeaderMover"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,-332,-356",
+				["ElvUIBagMover"] = "BOTTOM,ElvUIParent,BOTTOM,-177,309",
+				["ElvUF_TargetTargetMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-273,235",
+				["RightChatMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,8,2",
+				["RaidCDAnchorMover"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,-208,-276",
+				["DebuffsMover"] = "TOP,ElvUIParent,TOP,28,-211",
+				["ElvUF_AssistMover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,127,650",
+			},
+			["v11NamePlateReset"] = true,
+			["auras"] = {
+				["buffs"] = {
+					["countFontSize"] = 12,
+					["durationFontSize"] = 12,
+				},
+				["debuffs"] = {
+					["countFontSize"] = 12,
+					["durationFontSize"] = 12,
+				},
+			},
+			["unitframe"] = {
+				["colors"] = {
+					["power_backdrop"] = {
+						["b"] = 0.03529411764705882,
+						["g"] = 0.05882352941176471,
+						["r"] = 0.5019607843137255,
+					},
+					["power"] = {
+						["ENERGY"] = {
+							["b"] = 0.6039215686274509,
+							["g"] = 0.07058823529411765,
+							["r"] = 0.6509803921568628,
+						},
+						["RAGE"] = {
+							["b"] = 0.1294117647058823,
+							["g"] = 0.04705882352941176,
+							["r"] = 0.9294117647058824,
+						},
+					},
+					["colorhealthbyvalue"] = false,
+					["healthclass"] = true,
+				},
+				["units"] = {
+					["targettargettarget"] = {
+						["health"] = {
+							["frequentUpdates"] = true,
+						},
+					},
+					["focustarget"] = {
+						["health"] = {
+							["frequentUpdates"] = true,
+						},
+					},
+					["pet"] = {
+						["health"] = {
+							["frequentUpdates"] = true,
+						},
+					},
+					["pettarget"] = {
+						["health"] = {
+							["frequentUpdates"] = true,
+						},
+					},
+					["boss"] = {
+						["health"] = {
+							["frequentUpdates"] = true,
+						},
+					},
+					["raid"] = {
+						["height"] = 56,
+						["width"] = 85,
+					},
+					["focus"] = {
+						["health"] = {
+							["frequentUpdates"] = true,
+						},
+					},
+					["target"] = {
+						["width"] = 259,
+						["fader"] = {
+							["enable"] = false,
+							["range"] = false,
+						},
+						["castbar"] = {
+							["height"] = 37,
+							["width"] = 461,
+						},
+						["height"] = 52,
+						["portrait"] = {
+							["enable"] = false,
+						},
+						["health"] = {
+							["frequentUpdates"] = true,
+						},
+						["aurabar"] = {
+							["enable"] = false,
+						},
+					},
+					["arena"] = {
+						["health"] = {
+							["frequentUpdates"] = true,
+						},
+					},
+					["player"] = {
+						["portrait"] = {
+							["enable"] = false,
+						},
+						["power"] = {
+							["detachFromFrame"] = true,
+							["detachedWidth"] = 430,
+							["height"] = 28,
+							["xOffset"] = -8,
+							["attachTextTo"] = "Power",
+							["width"] = "spaced",
+						},
+						["width"] = 259,
+						["health"] = {
+							["frequentUpdates"] = true,
+						},
+						["threatStyle"] = "GLOW",
+						["height"] = 56,
+						["castbar"] = {
+							["tickWidth"] = 4,
+							["height"] = 57,
+							["width"] = 439,
+						},
+						["classbar"] = {
+							["detachFromFrame"] = true,
+							["verticalOrientation"] = true,
+							["strataAndLevel"] = {
+								["useCustomStrata"] = true,
+								["frameLevel"] = 128,
+								["useCustomLevel"] = true,
+							},
+							["spacing"] = 4,
+							["height"] = 25,
+							["detachedWidth"] = 386,
+							["fill"] = "fill",
+						},
+						["aurabar"] = {
+							["enable"] = false,
+						},
+					},
+					["targettarget"] = {
+						["health"] = {
+							["frequentUpdates"] = true,
+						},
+					},
+				},
+			},
+			["actionbar"] = {
+				["bar3"] = {
+					["buttons"] = 12,
+					["buttonsPerRow"] = 12,
+				},
+				["bar2"] = {
+					["enabled"] = true,
+					["backdrop"] = true,
+				},
+				["microbar"] = {
+					["enabled"] = true,
+					["mouseover"] = true,
+					["buttons"] = 11,
+				},
+				["bar5"] = {
+					["buttons"] = 12,
+					["buttonsPerRow"] = 1,
+				},
+				["barPet"] = {
+					["buttonsPerRow"] = 10,
+				},
+			},
+			["euiscript"] = {
+				["disableBLZCombatText"] = false,
+				["threat"] = {
+					["enable"] = true,
+				},
+				["executebutton"] = {
+					["spellList"] = {
+						["ROGUE"] = {
+							{
+								["enabled"] = true,
+								["perc"] = 30,
+							}, -- [1]
+						},
+					},
+				},
+			},
+			["dbConverted"] = 12.15,
+			["chat"] = {
+				["fadeTabsNoBackdrop"] = false,
+				["panelColor"] = {
+					["a"] = 0.9,
+				},
+				["panelColorConverted"] = true,
+				["panelWidth"] = 386,
+			},
+			["AuraWatch"] = {
+				["loadDefault"] = true,
+				["myclass"] = "DEATHKNIGHT",
+				["ver"] = 2,
+				["DB"] = {
+					{
+						["Direction"] = "RIGHT",
+						["Name"] = "玩家减益",
+						["List"] = {
+							{
+								["AuraID"] = 118,
+								["UnitID"] = "player",
+							}, -- [1]
+						},
+						["Interval"] = 10,
+						["Mode"] = "ICON",
+						["IconSize"] = 48,
+						["Pos"] = {
+							"CENTER", -- [1]
+							"UIParent", -- [2]
+							"CENTER", -- [3]
+							-200, -- [4]
+							200, -- [5]
+						},
+					}, -- [1]
+					{
+						["Direction"] = "RIGHT",
+						["Name"] = "玩家重要增益",
+						["List"] = {
+							{
+								["AuraID"] = 74001,
+								["UnitID"] = "player",
+							}, -- [1]
+							{
+								["AuraID"] = 74002,
+								["UnitID"] = "player",
+							}, -- [2]
+							{
+								["AuraID"] = 126697,
+								["UnitID"] = "player",
+							}, -- [3]
+							{
+								["AuraID"] = 126649,
+								["UnitID"] = "player",
+							}, -- [4]
+							{
+								["AuraID"] = 126599,
+								["UnitID"] = "player",
+							}, -- [5]
+							{
+								["AuraID"] = 126554,
+								["UnitID"] = "player",
+							}, -- [6]
+							{
+								["AuraID"] = 126690,
+								["UnitID"] = "player",
+							}, -- [7]
+							{
+								["AuraID"] = 126707,
+								["UnitID"] = "player",
+							}, -- [8]
+							{
+								["AuraID"] = 125489,
+								["UnitID"] = "player",
+							}, -- [9]
+							{
+								["AuraID"] = 118334,
+								["UnitID"] = "player",
+							}, -- [10]
+						},
+						["Interval"] = 6,
+						["Mode"] = "ICON",
+						["IconSize"] = 42,
+						["Pos"] = {
+							"BOTTOMLEFT", -- [1]
+							"ElvUF_Player", -- [2]
+							"TOPLEFT", -- [3]
+							0, -- [4]
+							55, -- [5]
+						},
+					}, -- [2]
+					{
+						["Direction"] = "RIGHT",
+						["Name"] = "玩家增益",
+						["List"] = {
+							{
+								["AuraID"] = 2983,
+								["UnitID"] = "player",
+							}, -- [1]
+							{
+								["AuraID"] = 13750,
+								["UnitID"] = "player",
+							}, -- [2]
+							{
+								["AuraID"] = 5277,
+								["UnitID"] = "player",
+							}, -- [3]
+							{
+								["AuraID"] = 32645,
+								["UnitID"] = "player",
+							}, -- [4]
+							{
+								["AuraID"] = 58426,
+								["UnitID"] = "player",
+							}, -- [5]
+							{
+								["AuraID"] = 5171,
+								["UnitID"] = "player",
+							}, -- [6]
+							{
+								["AuraID"] = 51713,
+								["UnitID"] = "player",
+							}, -- [7]
+							{
+								["AuraID"] = 73651,
+								["UnitID"] = "player",
+							}, -- [8]
+							{
+								["AuraID"] = 36563,
+								["UnitID"] = "player",
+							}, -- [9]
+							{
+								["AuraID"] = 31665,
+								["UnitID"] = "player",
+							}, -- [10]
+							{
+								["AuraID"] = 31224,
+								["UnitID"] = "player",
+							}, -- [11]
+							{
+								["AuraID"] = 1856,
+								["UnitID"] = "player",
+							}, -- [12]
+							{
+								["AuraID"] = 45182,
+								["UnitID"] = "player",
+							}, -- [13]
+							{
+								["AuraID"] = 13877,
+								["UnitID"] = "player",
+							}, -- [14]
+							{
+								["AuraID"] = 84745,
+								["UnitID"] = "player",
+							}, -- [15]
+							{
+								["AuraID"] = 84746,
+								["UnitID"] = "player",
+							}, -- [16]
+							{
+								["AuraID"] = 84747,
+								["UnitID"] = "player",
+							}, -- [17]
+						},
+						["Interval"] = 6,
+						["Mode"] = "ICON",
+						["IconSize"] = 42,
+						["Pos"] = {
+							"BOTTOMLEFT", -- [1]
+							"ElvUF_Player", -- [2]
+							"TOPLEFT", -- [3]
+							0, -- [4]
+							12, -- [5]
+						},
+					}, -- [3]
+					{
+						["Direction"] = "RIGHT",
+						["Name"] = "目标减益",
+						["List"] = {
+							{
+								["UnitID"] = "target",
+								["AuraID"] = 1943,
+								["Caster"] = "player",
+							}, -- [1]
+							{
+								["UnitID"] = "target",
+								["AuraID"] = 703,
+								["Caster"] = "player",
+							}, -- [2]
+							{
+								["UnitID"] = "target",
+								["AuraID"] = 1776,
+								["Caster"] = "player",
+							}, -- [3]
+							{
+								["UnitID"] = "target",
+								["AuraID"] = 8647,
+								["Caster"] = "player",
+							}, -- [4]
+							{
+								["UnitID"] = "target",
+								["AuraID"] = 51722,
+								["Caster"] = "player",
+							}, -- [5]
+							{
+								["UnitID"] = "target",
+								["AuraID"] = 84617,
+								["Caster"] = "player",
+							}, -- [6]
+							{
+								["UnitID"] = "target",
+								["AuraID"] = 79140,
+								["Caster"] = "player",
+							}, -- [7]
+							{
+								["UnitID"] = "target",
+								["AuraID"] = 16511,
+								["Caster"] = "player",
+							}, -- [8]
+							{
+								["UnitID"] = "target",
+								["AuraID"] = 89775,
+								["Caster"] = "player",
+							}, -- [9]
+							{
+								["UnitID"] = "target",
+								["AuraID"] = 91021,
+								["Caster"] = "player",
+							}, -- [10]
+							{
+								["UnitID"] = "target",
+								["AuraID"] = 2818,
+								["Caster"] = "player",
+							}, -- [11]
+							{
+								["UnitID"] = "target",
+								["AuraID"] = 5760,
+								["Caster"] = "player",
+							}, -- [12]
+							{
+								["UnitID"] = "target",
+								["AuraID"] = 3409,
+								["Caster"] = "player",
+							}, -- [13]
+							{
+								["UnitID"] = "target",
+								["AuraID"] = 8680,
+								["Caster"] = "player",
+							}, -- [14]
+						},
+						["Interval"] = 4,
+						["Mode"] = "ICON",
+						["IconSize"] = 48,
+						["Pos"] = {
+							"BOTTOMLEFT", -- [1]
+							"ElvUF_Target", -- [2]
+							"TOPLEFT", -- [3]
+							0, -- [4]
+							68, -- [5]
+						},
+					}, -- [4]
+					{
+						["Interval"] = 6,
+						["Direction"] = "RIGHT",
+						["Name"] = "冷却监视",
+						["List"] = {
+							{
+								["AuraID"] = 88423,
+								["filter"] = "CD",
+							}, -- [1]
+							{
+								["AuraID"] = 2782,
+								["filter"] = "CD",
+							}, -- [2]
+							{
+								["AuraID"] = 106839,
+								["filter"] = "CD",
+							}, -- [3]
+							{
+								["AuraID"] = 33917,
+								["filter"] = "CD",
+							}, -- [4]
+							{
+								["AuraID"] = 48438,
+								["filter"] = "CD",
+							}, -- [5]
+							{
+								["AuraID"] = 18562,
+								["filter"] = "CD",
+							}, -- [6]
+							{
+								["AuraID"] = 6795,
+								["filter"] = "CD",
+							}, -- [7]
+							{
+								["AuraID"] = 22570,
+								["filter"] = "CD",
+							}, -- [8]
+							{
+								["AuraID"] = 78674,
+								["filter"] = "CD",
+							}, -- [9]
+							{
+								["AuraID"] = 102401,
+								["filter"] = "CD",
+							}, -- [10]
+							{
+								["AuraID"] = 205636,
+								["filter"] = "CD",
+							}, -- [11]
+							{
+								["AuraID"] = 5217,
+								["filter"] = "CD",
+							}, -- [12]
+							{
+								["AuraID"] = 99,
+								["filter"] = "CD",
+							}, -- [13]
+							{
+								["AuraID"] = 155835,
+								["filter"] = "CD",
+							}, -- [14]
+							{
+								["AuraID"] = 102359,
+								["filter"] = "CD",
+							}, -- [15]
+							{
+								["AuraID"] = 132469,
+								["filter"] = "CD",
+							}, -- [16]
+							{
+								["AuraID"] = 5211,
+								["filter"] = "CD",
+							}, -- [17]
+							{
+								["AuraID"] = 78675,
+								["filter"] = "CD",
+							}, -- [18]
+							{
+								["AuraID"] = 22812,
+								["filter"] = "CD",
+							}, -- [19]
+							{
+								["AuraID"] = 102342,
+								["filter"] = "CD",
+							}, -- [20]
+							{
+								["AuraID"] = 102793,
+								["filter"] = "CD",
+							}, -- [21]
+							{
+								["AuraID"] = 124974,
+								["filter"] = "CD",
+							}, -- [22]
+							{
+								["AuraID"] = 106951,
+								["absID"] = true,
+								["filter"] = "CD",
+							}, -- [23]
+							{
+								["AuraID"] = 210722,
+								["filter"] = "CD",
+							}, -- [24]
+							{
+								["AuraID"] = 102560,
+								["filter"] = "CD",
+							}, -- [25]
+							{
+								["AuraID"] = 102543,
+								["filter"] = "CD",
+							}, -- [26]
+							{
+								["AuraID"] = 102558,
+								["filter"] = "CD",
+							}, -- [27]
+							{
+								["AuraID"] = 33891,
+								["filter"] = "CD",
+							}, -- [28]
+							{
+								["AuraID"] = 195710,
+								["filter"] = "CD",
+							}, -- [29]
+							{
+								["AuraID"] = 26297,
+								["absID"] = true,
+								["filter"] = "CD",
+							}, -- [30]
+							{
+								["AuraID"] = 68992,
+								["filter"] = "CD",
+							}, -- [31]
+							{
+								["AuraID"] = 58984,
+								["filter"] = "CD",
+							}, -- [32]
+							{
+								["AuraID"] = 20549,
+								["filter"] = "CD",
+							}, -- [33]
+						},
+						["IconSize"] = 48,
+						["Mode"] = "ICON",
+						["Alpha"] = 1,
+						["Pos"] = {
+							"BOTTOMLEFT", -- [1]
+							"ElvUF_Player", -- [2]
+							"TOPLEFT", -- [3]
+							0, -- [4]
+							99, -- [5]
+						},
+					}, -- [5]
 				},
 			},
 			["RightChatPanelFaded"] = true,
@@ -3794,6 +4607,9 @@ ElvDB = {
 					["enabled"] = true,
 					["backdrop"] = true,
 				},
+				["barPet"] = {
+					["buttonsPerRow"] = 10,
+				},
 				["microbar"] = {
 					["enabled"] = true,
 					["mouseover"] = true,
@@ -3801,9 +4617,6 @@ ElvDB = {
 				["bar5"] = {
 					["buttons"] = 12,
 					["buttonsPerRow"] = 1,
-				},
-				["barPet"] = {
-					["buttonsPerRow"] = 10,
 				},
 			},
 			["AuraWatch"] = {
@@ -4083,26 +4896,26 @@ ElvDB = {
 		},
 	},
 	["profileKeys"] = {
-		["猫乄 - 阿尔萨斯"] = "你见过我吗 - 阿尔萨斯",
-		["秋心 - 阿尔萨斯"] = "你见过我吗 - 阿尔萨斯",
+		["猫乄 - 阿尔萨斯"] = "猫乄 - 阿尔萨斯",
+		["霜天晓角 - 阿尔萨斯"] = "你见过我吗 - 阿尔萨斯",
 		["木叶之说 - 阿尔萨斯"] = "你见过我吗 - 阿尔萨斯",
 		["你见过我吗 - 阿尔萨斯"] = "你见过我吗 - 阿尔萨斯",
 		["阿服第一武僧 - 阿尔萨斯"] = "你见过我吗 - 阿尔萨斯",
-		["霜天晓角 - 阿尔萨斯"] = "你见过我吗 - 阿尔萨斯",
-		["丨术丨 - 阿尔萨斯"] = "你见过我吗 - 阿尔萨斯",
 		["老弓 - 阿尔萨斯"] = "你见过我吗 - 阿尔萨斯",
+		["丨术丨 - 阿尔萨斯"] = "你见过我吗 - 阿尔萨斯",
+		["秋心 - 阿尔萨斯"] = "秋心 - 阿尔萨斯",
 		["悦战 - 阿尔萨斯"] = "你见过我吗 - 阿尔萨斯",
 		["冰火兮 - 阿尔萨斯"] = "你见过我吗 - 阿尔萨斯",
-		["古剑 - 阿尔萨斯"] = "你见过我吗 - 阿尔萨斯",
+		["古剑 - 阿尔萨斯"] = "古剑 - 阿尔萨斯",
 		["作业还没写 - 阿尔萨斯"] = "你见过我吗 - 阿尔萨斯",
 	},
 	["gold"] = {
 		["阿尔萨斯"] = {
-			["古剑"] = 1110767683,
-			["秋心"] = 257374478,
-			["你见过我吗"] = 31568043,
-			["冰火兮"] = 23230758,
-			["猫乄"] = 296888147,
+			["古剑"] = 1130553830,
+			["秋心"] = 299810965,
+			["你见过我吗"] = 1570826448,
+			["冰火兮"] = 20648153,
+			["猫乄"] = 303171038,
 			["霜天晓角"] = 29335365,
 			["作业还没写"] = 1613099,
 			["老弓"] = 77422673,
@@ -4118,13 +4931,13 @@ ElvDB = {
 ElvPrivateDB = {
 	["profileKeys"] = {
 		["猫乄 - 阿尔萨斯"] = "猫乄 - 阿尔萨斯",
-		["秋心 - 阿尔萨斯"] = "秋心 - 阿尔萨斯",
+		["霜天晓角 - 阿尔萨斯"] = "霜天晓角 - 阿尔萨斯",
 		["木叶之说 - 阿尔萨斯"] = "木叶之说 - 阿尔萨斯",
 		["你见过我吗 - 阿尔萨斯"] = "你见过我吗 - 阿尔萨斯",
 		["阿服第一武僧 - 阿尔萨斯"] = "阿服第一武僧 - 阿尔萨斯",
-		["霜天晓角 - 阿尔萨斯"] = "霜天晓角 - 阿尔萨斯",
-		["丨术丨 - 阿尔萨斯"] = "丨术丨 - 阿尔萨斯",
 		["老弓 - 阿尔萨斯"] = "老弓 - 阿尔萨斯",
+		["丨术丨 - 阿尔萨斯"] = "丨术丨 - 阿尔萨斯",
+		["秋心 - 阿尔萨斯"] = "秋心 - 阿尔萨斯",
 		["悦战 - 阿尔萨斯"] = "悦战 - 阿尔萨斯",
 		["冰火兮 - 阿尔萨斯"] = "冰火兮 - 阿尔萨斯",
 		["古剑 - 阿尔萨斯"] = "古剑 - 阿尔萨斯",
@@ -4132,19 +4945,10 @@ ElvPrivateDB = {
 	},
 	["profiles"] = {
 		["猫乄 - 阿尔萨斯"] = {
+			["skins"] = {
+				["WeakAuras"] = false,
+			},
 			["install_complete"] = "11.02",
-		},
-		["秋心 - 阿尔萨斯"] = {
-			["install_complete"] = 11.41,
-		},
-		["木叶之说 - 阿尔萨斯"] = {
-			["install_complete"] = "10.70",
-		},
-		["你见过我吗 - 阿尔萨斯"] = {
-			["install_complete"] = "10.70",
-		},
-		["阿服第一武僧 - 阿尔萨斯"] = {
-			["install_complete"] = 12.04,
 		},
 		["霜天晓角 - 阿尔萨斯"] = {
 			["skins"] = {
@@ -4154,11 +4958,30 @@ ElvPrivateDB = {
 			},
 			["install_complete"] = "10.76",
 		},
-		["丨术丨 - 阿尔萨斯"] = {
+		["木叶之说 - 阿尔萨斯"] = {
+			["install_complete"] = "10.70",
+		},
+		["你见过我吗 - 阿尔萨斯"] = {
+			["skins"] = {
+				["WeakAuras"] = false,
+			},
+			["install_complete"] = "10.70",
+		},
+		["阿服第一武僧 - 阿尔萨斯"] = {
 			["install_complete"] = 12.04,
 		},
 		["老弓 - 阿尔萨斯"] = {
 			["install_complete"] = "10.76",
+		},
+		["丨术丨 - 阿尔萨斯"] = {
+			["install_complete"] = 12.04,
+		},
+		["秋心 - 阿尔萨斯"] = {
+			["skins"] = {
+				["WeakAuras"] = false,
+				["checkBoxSkin"] = false,
+			},
+			["install_complete"] = 11.41,
 		},
 		["悦战 - 阿尔萨斯"] = {
 		},
@@ -4179,13 +5002,13 @@ ElvPrivateDB = {
 AzeriteTooltipDB = {
 	["profileKeys"] = {
 		["猫乄 - 阿尔萨斯"] = "Default",
-		["霜天晓角 - 阿尔萨斯"] = "Default",
+		["秋心 - 阿尔萨斯"] = "Default",
 		["木叶之说 - 阿尔萨斯"] = "Default",
 		["你见过我吗 - 阿尔萨斯"] = "Default",
 		["阿服第一武僧 - 阿尔萨斯"] = "Default",
-		["秋心 - 阿尔萨斯"] = "Default",
-		["丨术丨 - 阿尔萨斯"] = "Default",
 		["老弓 - 阿尔萨斯"] = "Default",
+		["丨术丨 - 阿尔萨斯"] = "Default",
+		["霜天晓角 - 阿尔萨斯"] = "Default",
 		["悦战 - 阿尔萨斯"] = "Default",
 		["冰火兮 - 阿尔萨斯"] = "Default",
 		["古剑 - 阿尔萨斯"] = "Default",

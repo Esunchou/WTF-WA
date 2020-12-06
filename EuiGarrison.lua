@@ -13,12 +13,12 @@ MasterPlanAG = {
 			["faction"] = "Horde",
 		},
 		["古剑"] = {
+			["faction"] = "Horde",
 			["class"] = "DEATHKNIGHT",
-			["faction"] = "Horde",
 		},
-		["霜天晓角"] = {
+		["老弓"] = {
 			["faction"] = "Horde",
-			["class"] = "DEMONHUNTER",
+			["class"] = "HUNTER",
 		},
 		["秋心"] = {
 			["class"] = "PALADIN",
@@ -27,24 +27,24 @@ MasterPlanAG = {
 		["木叶之说"] = {
 			["class"] = "PRIEST",
 			["summary"] = {
+				["ti3"] = 128391,
 				["tt3"] = true,
 				["inProgress"] = {
 					[664] = 1472527754,
 					[750] = 1472686134,
 					[667] = 1472520549,
 				},
-				["ti3"] = 128391,
 			},
 			["faction"] = "Horde",
 		},
 		["你见过我吗"] = {
 			["class"] = "ROGUE",
 			["summary"] = {
-				["ti2"] = 122486,
 				["inProgress"] = {
 					[678] = 1515199333,
 				},
 				["ti3"] = 127854,
+				["ti2"] = 122486,
 				["tt1"] = true,
 				["ti1"] = 118531,
 				["tt3"] = true,
@@ -61,8 +61,8 @@ MasterPlanAG = {
 			},
 			["faction"] = "Horde",
 		},
-		["老弓"] = {
-			["class"] = "HUNTER",
+		["霜天晓角"] = {
+			["class"] = "DEMONHUNTER",
 			["faction"] = "Horde",
 		},
 	},
@@ -70,6 +70,9 @@ MasterPlanAG = {
 SV_GarrisonMissionManager = {
 }
 IPMDB = {
+	["enableGarrisonMissions"] = true,
+	["ignores"] = {
+	},
 	["profiles"] = {
 		["霜天晓角-阿尔萨斯"] = {
 			{
@@ -95,7 +98,7 @@ IPMDB = {
 				["followerTypeID"] = 4,
 				["offeredGarrMissionTextureID"] = 0,
 				["durationSeconds"] = 3600,
-				["missionID"] = 954,
+				["duration"] = "1小时",
 				["iLevel"] = 760,
 				["overmaxSucceeded"] = false,
 				["offerTimeRemaining"] = "0秒",
@@ -132,26 +135,26 @@ IPMDB = {
 						["displayScale"] = 0.8999999761581421,
 						["status"] = "正在执行任务",
 						["level"] = 100,
-						["isCollected"] = true,
+						["garrFollowerID"] = 880,
 						["quality"] = 1,
 						["portraitIconID"] = 1401873,
 						["maxDurability"] = 2,
 						["isFavorite"] = false,
-						["durability"] = 2,
+						["levelXP"] = 200,
 						["classSpec"] = 79,
 						["slotSoundKitID"] = 68974,
 						["xp"] = 0,
-						["className"] = "破碎者",
+						["followerID"] = "0x000000000805EFC8",
+						["name"] = "灰舌战士",
+						["isMaxLevel"] = false,
 						["abilities"] = {
 							603, -- [1]
 						},
-						["isMaxLevel"] = false,
-						["name"] = "灰舌战士",
-						["followerID"] = "0x000000000805EFC8",
+						["className"] = "破碎者",
 						["height"] = 1.100000023841858,
-						["levelXP"] = 200,
+						["durability"] = 2,
 						["flavorText"] = "因暴露在恶魔能量下而慢慢退化的灰舌破碎者学会了不择手段生存下去，他们会在明处和暗处与敌人战斗。",
-						["garrFollowerID"] = 880,
+						["isCollected"] = true,
 					},
 					["0x0000000007F7938F"] = {
 						["displayHeight"] = 0.5,
@@ -174,21 +177,21 @@ IPMDB = {
 						["quality"] = 1,
 						["portraitIconID"] = 1341788,
 						["isFavorite"] = false,
-						["classSpec"] = 63,
+						["garrFollowerID"] = 595,
 						["slotSoundKitID"] = 67156,
 						["xp"] = 100,
+						["isCollected"] = true,
+						["levelXP"] = 200,
+						["isMaxLevel"] = false,
 						["abilities"] = {
 							358, -- [1]
 							462, -- [2]
 						},
 						["className"] = "浩劫恶魔猎手",
-						["isMaxLevel"] = false,
-						["name"] = "凯恩·日怒",
-						["followerID"] = "0x0000000007F7938F",
 						["height"] = 1.200000047683716,
-						["levelXP"] = 200,
-						["isCollected"] = true,
-						["garrFollowerID"] = 595,
+						["followerID"] = "0x0000000007F7938F",
+						["name"] = "凯恩·日怒",
+						["classSpec"] = 63,
 					},
 					["0x0000000007F793B1"] = {
 						["displayHeight"] = 0.5,
@@ -210,41 +213,41 @@ IPMDB = {
 						["quality"] = 1,
 						["portraitIconID"] = 1396674,
 						["isFavorite"] = false,
-						["classSpec"] = 64,
+						["garrFollowerID"] = 722,
 						["slotSoundKitID"] = 71285,
 						["xp"] = 0,
+						["isCollected"] = true,
+						["levelXP"] = 200,
+						["isMaxLevel"] = false,
 						["abilities"] = {
 							359, -- [1]
 							463, -- [2]
 						},
 						["className"] = "复仇恶魔猎手",
-						["isMaxLevel"] = false,
-						["name"] = "阿莎·鸦歌",
-						["followerID"] = "0x0000000007F793B1",
 						["height"] = 1.399999976158142,
-						["levelXP"] = 200,
-						["isCollected"] = true,
-						["garrFollowerID"] = 722,
+						["followerID"] = "0x0000000007F793B1",
+						["name"] = "阿莎·鸦歌",
+						["classSpec"] = 64,
 					},
 				},
 				["timeLeftSeconds"] = 0,
-				["completed"] = false,
+				["basecost"] = 20,
 				["rewards"] = {
 					{
 						["itemID"] = 138232,
 						["quantity"] = 1,
 					}, -- [1]
 				},
-				["costCurrencyTypesID"] = 1220,
-				["numFollowers"] = 3,
-				["requiredSuccessChance"] = 0,
-				["areaID"] = 7334,
 				["requiredChampionCount"] = 1,
-				["basecost"] = 20,
+				["numFollowers"] = 3,
+				["completed"] = false,
+				["areaID"] = 7334,
+				["requiredSuccessChance"] = 0,
+				["costCurrencyTypesID"] = 1220,
 				["location"] = "阿苏纳",
 				["isRare"] = false,
 				["mapPosX"] = 0,
-				["duration"] = "1小时",
+				["missionID"] = 954,
 			}, -- [1]
 		},
 		["猫乄-阿尔萨斯"] = {
@@ -271,7 +274,7 @@ IPMDB = {
 				["followerTypeID"] = 1,
 				["offeredGarrMissionTextureID"] = 0,
 				["durationSeconds"] = 86000,
-				["duration"] = "23小时53分钟",
+				["missionID"] = 412,
 				["iLevel"] = 0,
 				["overmaxSucceeded"] = false,
 				["offerTimeRemaining"] = "0秒",
@@ -301,15 +304,8 @@ IPMDB = {
 						["quality"] = 4,
 						["portraitIconID"] = 1066095,
 						["isFavorite"] = false,
-						["garrFollowerID"] = 159,
+						["classSpec"] = 29,
 						["xp"] = 0,
-						["isCollected"] = true,
-						["levelXP"] = 0,
-						["isMaxLevel"] = true,
-						["name"] = "尖啸者卡兹",
-						["followerID"] = "0x00000000003D759F",
-						["height"] = 1.299999952316284,
-						["className"] = "元素萨满祭司",
 						["abilities"] = {
 							157, -- [1]
 							232, -- [2]
@@ -317,7 +313,14 @@ IPMDB = {
 							106, -- [4]
 							72, -- [5]
 						},
-						["classSpec"] = 29,
+						["className"] = "元素萨满祭司",
+						["isMaxLevel"] = true,
+						["name"] = "尖啸者卡兹",
+						["followerID"] = "0x00000000003D759F",
+						["height"] = 1.299999952316284,
+						["levelXP"] = 0,
+						["isCollected"] = true,
+						["garrFollowerID"] = 159,
 					},
 					["0x0000000000219C03"] = {
 						["displayHeight"] = 0.5,
@@ -339,15 +342,8 @@ IPMDB = {
 						["quality"] = 4,
 						["portraitIconID"] = 1066122,
 						["isFavorite"] = false,
-						["garrFollowerID"] = 153,
+						["classSpec"] = 28,
 						["xp"] = 0,
-						["isCollected"] = true,
-						["levelXP"] = 0,
-						["isMaxLevel"] = true,
-						["name"] = "卡拉",
-						["followerID"] = "0x0000000000219C03",
-						["height"] = 1.299999952316284,
-						["className"] = "敏锐潜行者",
 						["abilities"] = {
 							159, -- [1]
 							60, -- [2]
@@ -355,7 +351,14 @@ IPMDB = {
 							160, -- [4]
 							71, -- [5]
 						},
-						["classSpec"] = 28,
+						["className"] = "敏锐潜行者",
+						["isMaxLevel"] = true,
+						["name"] = "卡拉",
+						["followerID"] = "0x0000000000219C03",
+						["height"] = 1.299999952316284,
+						["levelXP"] = 0,
+						["isCollected"] = true,
+						["garrFollowerID"] = 153,
 					},
 					["0x00000000003FF5C6"] = {
 						["displayHeight"] = 0.5,
@@ -377,15 +380,8 @@ IPMDB = {
 						["quality"] = 4,
 						["portraitIconID"] = 1066344,
 						["isFavorite"] = false,
-						["garrFollowerID"] = 204,
+						["classSpec"] = 4,
 						["xp"] = 0,
-						["isCollected"] = true,
-						["levelXP"] = 0,
-						["isMaxLevel"] = true,
-						["name"] = "本杰明·吉布",
-						["followerID"] = "0x00000000003FF5C6",
-						["height"] = 1.200000047683716,
-						["className"] = "邪恶死亡骑士",
 						["abilities"] = {
 							116, -- [1]
 							58, -- [2]
@@ -393,27 +389,34 @@ IPMDB = {
 							114, -- [4]
 							45, -- [5]
 						},
-						["classSpec"] = 4,
+						["className"] = "邪恶死亡骑士",
+						["isMaxLevel"] = true,
+						["name"] = "本杰明·吉布",
+						["followerID"] = "0x00000000003FF5C6",
+						["height"] = 1.200000047683716,
+						["levelXP"] = 0,
+						["isCollected"] = true,
+						["garrFollowerID"] = 204,
 					},
 				},
 				["timeLeftSeconds"] = 0,
+				["requiredSuccessChance"] = 0,
 				["rewards"] = {
 					{
 						["itemID"] = 115510,
 						["quantity"] = 18,
 					}, -- [1]
 				},
-				["basecost"] = 75,
-				["completed"] = false,
-				["numFollowers"] = 3,
-				["costCurrencyTypesID"] = 824,
-				["areaID"] = 0,
 				["requiredChampionCount"] = 3,
-				["requiredSuccessChance"] = 0,
+				["numFollowers"] = 3,
+				["completed"] = false,
+				["areaID"] = 0,
+				["costCurrencyTypesID"] = 824,
+				["basecost"] = 75,
 				["location"] = "刃拳堡",
 				["isRare"] = true,
 				["mapPosX"] = 0,
-				["missionID"] = 412,
+				["duration"] = "23小时53分钟",
 			}, -- [1]
 		},
 		["木叶之说-阿尔萨斯"] = {
@@ -439,7 +442,7 @@ IPMDB = {
 				["successChance"] = 98,
 				["followerTypeID"] = 2,
 				["offeredGarrMissionTextureID"] = 0,
-				["missionID"] = 750,
+				["duration"] = "2天",
 				["durationSeconds"] = 172800,
 				["iLevel"] = 0,
 				["overmaxSucceeded"] = false,
@@ -471,23 +474,23 @@ IPMDB = {
 						["quality"] = 4,
 						["portraitIconID"] = 1341793,
 						["isFavorite"] = false,
-						["classSpec"] = 59,
+						["garrFollowerID"] = 562,
+						["isCollected"] = true,
+						["xp"] = 0,
+						["levelXP"] = 0,
+						["height"] = 0.280000001192093,
+						["isMaxLevel"] = true,
 						["abilities"] = {
 							263, -- [1]
 							282, -- [2]
 							279, -- [3]
 							270, -- [4]
 						},
-						["xp"] = 0,
 						["className"] = "驱逐舰",
 						["texPrefix"] = "Ships_GalleonH",
-						["isMaxLevel"] = true,
-						["name"] = "索瑞森之触号",
 						["followerID"] = "0x0000000001F18E55",
-						["height"] = 0.280000001192093,
-						["levelXP"] = 0,
-						["isCollected"] = true,
-						["garrFollowerID"] = 562,
+						["name"] = "索瑞森之触号",
+						["classSpec"] = 59,
 					},
 					["0x0000000001F18CAB"] = {
 						["displayHeight"] = 0.300000011920929,
@@ -509,26 +512,27 @@ IPMDB = {
 						["quality"] = 4,
 						["portraitIconID"] = 1341793,
 						["isFavorite"] = false,
-						["classSpec"] = 59,
+						["garrFollowerID"] = 491,
+						["isCollected"] = true,
+						["xp"] = 0,
+						["levelXP"] = 0,
+						["height"] = 0.280000001192093,
+						["isMaxLevel"] = true,
 						["abilities"] = {
 							263, -- [1]
 							269, -- [2]
 							294, -- [3]
 							279, -- [4]
 						},
-						["xp"] = 0,
 						["className"] = "驱逐舰",
 						["texPrefix"] = "Ships_GalleonH",
-						["isMaxLevel"] = true,
-						["name"] = "逐晨者号",
 						["followerID"] = "0x0000000001F18CAB",
-						["height"] = 0.280000001192093,
-						["levelXP"] = 0,
-						["isCollected"] = true,
-						["garrFollowerID"] = 491,
+						["name"] = "逐晨者号",
+						["classSpec"] = 59,
 					},
 				},
 				["timeLeftSeconds"] = 0,
+				["completed"] = false,
 				["rewards"] = {
 					{
 						["title"] = "奖励追随者经验",
@@ -538,17 +542,16 @@ IPMDB = {
 						["name"] = "+15,000经验值",
 					}, -- [1]
 				},
-				["basecost"] = 150,
-				["requiredChampionCount"] = 2,
-				["numFollowers"] = 2,
-				["requiredSuccessChance"] = 0,
 				["costCurrencyTypesID"] = 1101,
-				["completed"] = false,
+				["numFollowers"] = 2,
+				["requiredChampionCount"] = 2,
+				["requiredSuccessChance"] = 0,
+				["basecost"] = 150,
 				["isComplete"] = true,
 				["location"] = "咸水海沟",
 				["isRare"] = false,
 				["mapPosX"] = 231,
-				["duration"] = "2天",
+				["missionID"] = 750,
 			}, -- [1]
 			{
 				["description"] = "",
@@ -572,7 +575,7 @@ IPMDB = {
 				["successChance"] = 87,
 				["followerTypeID"] = 1,
 				["offeredGarrMissionTextureID"] = 0,
-				["missionID"] = 664,
+				["duration"] = "4小时",
 				["durationSeconds"] = 14400,
 				["iLevel"] = 0,
 				["overmaxSucceeded"] = false,
@@ -584,40 +587,43 @@ IPMDB = {
 				["mapPosY"] = 0,
 				["type"] = "战斗",
 				["followerInfo"] = {
-					["0x0000000001F305B1"] = {
+					["0x0000000001E04149"] = {
 						["displayHeight"] = 0.5,
 						["followerTypeID"] = 1,
 						["iLevel"] = 600,
-						["scale"] = 0.699999988079071,
-						["classAtlas"] = "GarrMission_ClassIcon-Priest",
+						["scale"] = 0.75,
+						["classAtlas"] = "GarrMission_ClassIcon-Hunter",
 						["isTroop"] = false,
 						["displayIDs"] = {
 							{
 								["followerPageScale"] = 1,
 								["showWeapon"] = true,
-								["id"] = 60206,
+								["id"] = 54968,
 							}, -- [1]
 						},
 						["displayScale"] = 1,
 						["status"] = "正在执行任务",
-						["level"] = 98,
-						["quality"] = 2,
-						["portraitIconID"] = 1066400,
+						["level"] = 100,
+						["quality"] = 4,
+						["portraitIconID"] = 1066110,
 						["isFavorite"] = false,
-						["classSpec"] = 25,
-						["xp"] = 2805,
-						["abilities"] = {
-							256, -- [1]
-							152, -- [2]
-						},
-						["className"] = "暗影牧师",
-						["isMaxLevel"] = false,
-						["name"] = "哈雷·苏布雷特",
-						["followerID"] = "0x0000000001F305B1",
-						["height"] = 1.20000004768372,
-						["levelXP"] = 5400,
+						["garrFollowerID"] = 183,
+						["xp"] = 0,
 						["isCollected"] = true,
-						["garrFollowerID"] = 356,
+						["levelXP"] = 0,
+						["isMaxLevel"] = true,
+						["abilities"] = {
+							101, -- [1]
+							166, -- [2]
+							74, -- [3]
+							49, -- [4]
+							80, -- [5]
+						},
+						["className"] = "射击猎人",
+						["height"] = 1,
+						["followerID"] = "0x0000000001E04149",
+						["name"] = "戈隆追猎者洛卡什",
+						["classSpec"] = 12,
 					},
 					["0x0000000001E81822"] = {
 						["displayHeight"] = 0.5,
@@ -639,81 +645,78 @@ IPMDB = {
 						["quality"] = 3,
 						["portraitIconID"] = 1066198,
 						["isFavorite"] = false,
-						["classSpec"] = 24,
+						["garrFollowerID"] = 463,
 						["xp"] = 56392,
+						["isCollected"] = true,
+						["levelXP"] = 120000,
+						["isMaxLevel"] = true,
 						["abilities"] = {
 							148, -- [1]
 							77, -- [2]
 							4, -- [3]
 						},
 						["className"] = "神圣牧师",
-						["isMaxLevel"] = true,
-						["name"] = "乌娜·斯莱舍",
-						["followerID"] = "0x0000000001E81822",
 						["height"] = 1.20000004768372,
-						["levelXP"] = 120000,
-						["isCollected"] = true,
-						["garrFollowerID"] = 463,
+						["followerID"] = "0x0000000001E81822",
+						["name"] = "乌娜·斯莱舍",
+						["classSpec"] = 24,
 					},
-					["0x0000000001E04149"] = {
+					["0x0000000001F305B1"] = {
 						["displayHeight"] = 0.5,
 						["followerTypeID"] = 1,
 						["iLevel"] = 600,
-						["scale"] = 0.75,
-						["classAtlas"] = "GarrMission_ClassIcon-Hunter",
+						["scale"] = 0.699999988079071,
+						["classAtlas"] = "GarrMission_ClassIcon-Priest",
 						["isTroop"] = false,
 						["displayIDs"] = {
 							{
 								["followerPageScale"] = 1,
 								["showWeapon"] = true,
-								["id"] = 54968,
+								["id"] = 60206,
 							}, -- [1]
 						},
 						["displayScale"] = 1,
 						["status"] = "正在执行任务",
-						["level"] = 100,
-						["quality"] = 4,
-						["portraitIconID"] = 1066110,
+						["level"] = 98,
+						["quality"] = 2,
+						["portraitIconID"] = 1066400,
 						["isFavorite"] = false,
-						["classSpec"] = 12,
-						["xp"] = 0,
-						["abilities"] = {
-							101, -- [1]
-							166, -- [2]
-							74, -- [3]
-							49, -- [4]
-							80, -- [5]
-						},
-						["className"] = "射击猎人",
-						["isMaxLevel"] = true,
-						["name"] = "戈隆追猎者洛卡什",
-						["followerID"] = "0x0000000001E04149",
-						["height"] = 1,
-						["levelXP"] = 0,
+						["garrFollowerID"] = 356,
+						["xp"] = 2805,
 						["isCollected"] = true,
-						["garrFollowerID"] = 183,
+						["levelXP"] = 5400,
+						["isMaxLevel"] = false,
+						["abilities"] = {
+							256, -- [1]
+							152, -- [2]
+						},
+						["className"] = "暗影牧师",
+						["height"] = 1.20000004768372,
+						["followerID"] = "0x0000000001F305B1",
+						["name"] = "哈雷·苏布雷特",
+						["classSpec"] = 25,
 					},
 				},
 				["timeLeftSeconds"] = 0,
+				["completed"] = false,
 				["rewards"] = {
 					{
-						["title"] = "货币奖励",
-						["quantity"] = 25,
 						["icon"] = 1131085,
+						["quantity"] = 25,
+						["title"] = "货币奖励",
 						["currencyID"] = 1101,
 					}, -- [1]
 				},
-				["basecost"] = 15,
-				["requiredChampionCount"] = 3,
-				["numFollowers"] = 3,
-				["requiredSuccessChance"] = 0,
 				["costCurrencyTypesID"] = 824,
-				["completed"] = false,
+				["numFollowers"] = 3,
+				["requiredChampionCount"] = 3,
+				["requiredSuccessChance"] = 0,
+				["basecost"] = 15,
 				["isComplete"] = true,
 				["location"] = "塔拉多",
 				["isRare"] = false,
 				["mapPosX"] = 0,
-				["duration"] = "4小时",
+				["missionID"] = 664,
 			}, -- [2]
 			{
 				["description"] = "",
@@ -737,7 +740,7 @@ IPMDB = {
 				["successChance"] = 100,
 				["followerTypeID"] = 1,
 				["offeredGarrMissionTextureID"] = 0,
-				["missionID"] = 667,
+				["duration"] = "2小时",
 				["durationSeconds"] = 7200,
 				["iLevel"] = 0,
 				["overmaxSucceeded"] = false,
@@ -769,21 +772,21 @@ IPMDB = {
 						["quality"] = 3,
 						["portraitIconID"] = 1066126,
 						["isFavorite"] = false,
-						["classSpec"] = 15,
+						["garrFollowerID"] = 216,
 						["xp"] = 16266,
+						["isCollected"] = true,
+						["levelXP"] = 120000,
+						["isMaxLevel"] = true,
 						["abilities"] = {
 							231, -- [1]
 							5, -- [2]
 							221, -- [3]
 						},
 						["className"] = "火焰法师",
-						["isMaxLevel"] = true,
-						["name"] = "薇薇安",
-						["followerID"] = "0x0000000001A9E1CD",
 						["height"] = 1.20000004768372,
-						["levelXP"] = 120000,
-						["isCollected"] = true,
-						["garrFollowerID"] = 216,
+						["followerID"] = "0x0000000001A9E1CD",
+						["name"] = "薇薇安",
+						["classSpec"] = 15,
 					},
 					["0x0000000001A9E134"] = {
 						["displayHeight"] = 0.5,
@@ -805,20 +808,20 @@ IPMDB = {
 						["quality"] = 2,
 						["portraitIconID"] = 1066111,
 						["isFavorite"] = false,
-						["classSpec"] = 38,
+						["garrFollowerID"] = 34,
 						["xp"] = 58446,
+						["isCollected"] = true,
+						["levelXP"] = 60000,
+						["isMaxLevel"] = true,
 						["abilities"] = {
 							100, -- [1]
 							59, -- [2]
 						},
 						["className"] = "防护战士",
-						["isMaxLevel"] = true,
-						["name"] = "欧林·棕皮",
-						["followerID"] = "0x0000000001A9E134",
 						["height"] = 1,
-						["levelXP"] = 60000,
-						["isCollected"] = true,
-						["garrFollowerID"] = 34,
+						["followerID"] = "0x0000000001A9E134",
+						["name"] = "欧林·棕皮",
+						["classSpec"] = 38,
 					},
 					["0x00000000022757AC"] = {
 						["displayHeight"] = 0.5,
@@ -840,8 +843,11 @@ IPMDB = {
 						["quality"] = 5,
 						["portraitIconID"] = 1108817,
 						["isFavorite"] = false,
-						["classSpec"] = 26,
+						["garrFollowerID"] = 466,
 						["xp"] = 0,
+						["isCollected"] = true,
+						["levelXP"] = 0,
+						["isMaxLevel"] = true,
 						["abilities"] = {
 							47, -- [1]
 							105, -- [2]
@@ -850,35 +856,32 @@ IPMDB = {
 							75, -- [5]
 						},
 						["className"] = "奇袭潜行者",
-						["isMaxLevel"] = true,
-						["name"] = "半兽人迦罗娜",
-						["followerID"] = "0x00000000022757AC",
 						["height"] = 1.29999995231628,
-						["levelXP"] = 0,
-						["isCollected"] = true,
-						["garrFollowerID"] = 466,
+						["followerID"] = "0x00000000022757AC",
+						["name"] = "半兽人迦罗娜",
+						["classSpec"] = 26,
 					},
 				},
 				["timeLeftSeconds"] = 0,
+				["completed"] = false,
 				["rewards"] = {
 					{
-						["title"] = "货币奖励",
-						["quantity"] = 25,
 						["icon"] = 1131085,
+						["quantity"] = 25,
+						["title"] = "货币奖励",
 						["currencyID"] = 1101,
 					}, -- [1]
 				},
-				["basecost"] = 15,
-				["requiredChampionCount"] = 3,
-				["numFollowers"] = 3,
-				["requiredSuccessChance"] = 0,
 				["costCurrencyTypesID"] = 824,
-				["completed"] = false,
+				["numFollowers"] = 3,
+				["requiredChampionCount"] = 3,
+				["requiredSuccessChance"] = 0,
+				["basecost"] = 15,
 				["isComplete"] = true,
 				["location"] = "阿兰卡峰林",
 				["isRare"] = false,
 				["mapPosX"] = 0,
-				["duration"] = "2小时",
+				["missionID"] = 667,
 			}, -- [3]
 		},
 		["你见过我吗-阿尔萨斯"] = {
@@ -895,9 +898,9 @@ IPMDB = {
 				["inProgress"] = true,
 				["overmaxRewards"] = {
 					{
-						["title"] = "金钱奖励",
-						["quantity"] = 1007400,
 						["icon"] = "Interface\\Icons\\inv_misc_coin_01",
+						["quantity"] = 1007400,
+						["title"] = "金钱奖励",
 						["currencyID"] = 0,
 					}, -- [1]
 				},
@@ -911,7 +914,7 @@ IPMDB = {
 				["followerTypeID"] = 22,
 				["offeredGarrMissionTextureID"] = 0,
 				["durationSeconds"] = 21600,
-				["missionID"] = 1935,
+				["duration"] = "6小时",
 				["iLevel"] = 800,
 				["overmaxSucceeded"] = false,
 				["offerTimeRemaining"] = "0秒",
@@ -946,22 +949,22 @@ IPMDB = {
 						["quality"] = 3,
 						["portraitIconID"] = 1984902,
 						["isFavorite"] = false,
-						["maxDurability"] = 2,
-						["durability"] = 1,
-						["classSpec"] = 194,
+						["garrFollowerID"] = 1066,
+						["isCollected"] = true,
+						["levelXP"] = 2000,
 						["xp"] = 0,
+						["name"] = "暗矛萨满祭司",
+						["followerID"] = "0x000000000FDD2B1A",
+						["isMaxLevel"] = true,
 						["abilities"] = {
 							1083, -- [1]
 							1139, -- [2]
 						},
 						["className"] = "部落部队",
-						["isMaxLevel"] = true,
-						["name"] = "暗矛萨满祭司",
-						["followerID"] = "0x000000000FDD2B1A",
 						["height"] = 1.25,
-						["levelXP"] = 2000,
-						["isCollected"] = true,
-						["garrFollowerID"] = 1066,
+						["classSpec"] = 194,
+						["durability"] = 1,
+						["maxDurability"] = 2,
 					},
 					["0x000000000A49C50F"] = {
 						["displayHeight"] = 0.5,
@@ -983,8 +986,11 @@ IPMDB = {
 						["quality"] = 5,
 						["portraitIconID"] = 2026471,
 						["isFavorite"] = false,
-						["classSpec"] = 182,
+						["garrFollowerID"] = 1065,
 						["xp"] = 0,
+						["isCollected"] = true,
+						["levelXP"] = 0,
+						["isMaxLevel"] = true,
 						["abilities"] = {
 							1062, -- [1]
 							1114, -- [2]
@@ -993,13 +999,10 @@ IPMDB = {
 							1101, -- [5]
 						},
 						["className"] = "奥术师",
-						["isMaxLevel"] = true,
-						["name"] = "奥术师瓦尔托伊",
-						["followerID"] = "0x000000000A49C50F",
 						["height"] = 1.200000047683716,
-						["levelXP"] = 0,
-						["isCollected"] = true,
-						["garrFollowerID"] = 1065,
+						["followerID"] = "0x000000000A49C50F",
+						["name"] = "奥术师瓦尔托伊",
+						["classSpec"] = 182,
 					},
 					["0x000000000A509F76"] = {
 						["displayHeight"] = 0.5,
@@ -1021,8 +1024,11 @@ IPMDB = {
 						["quality"] = 5,
 						["portraitIconID"] = 2395693,
 						["isFavorite"] = false,
-						["classSpec"] = 183,
+						["garrFollowerID"] = 1068,
 						["xp"] = 0,
+						["isCollected"] = true,
+						["levelXP"] = 0,
+						["isMaxLevel"] = true,
 						["abilities"] = {
 							1042, -- [1]
 							1099, -- [2]
@@ -1031,35 +1037,32 @@ IPMDB = {
 							1260, -- [5]
 						},
 						["className"] = "工程师",
-						["isMaxLevel"] = true,
-						["name"] = "霍巴特·钩锤",
-						["followerID"] = "0x000000000A509F76",
 						["height"] = 1.100000023841858,
-						["levelXP"] = 0,
-						["isCollected"] = true,
-						["garrFollowerID"] = 1068,
+						["followerID"] = "0x000000000A509F76",
+						["name"] = "霍巴特·钩锤",
+						["classSpec"] = 183,
 					},
 				},
 				["timeLeftSeconds"] = 0,
-				["requiredSuccessChance"] = 0,
+				["basecost"] = 40,
 				["rewards"] = {
 					{
-						["title"] = "金钱奖励",
-						["quantity"] = 1177400,
 						["icon"] = "Interface\\Icons\\inv_misc_coin_01",
+						["quantity"] = 1177400,
+						["title"] = "金钱奖励",
 						["currencyID"] = 0,
 					}, -- [1]
 				},
-				["requiredChampionCount"] = 1,
-				["numFollowers"] = 3,
-				["completed"] = false,
-				["areaID"] = 21,
 				["costCurrencyTypesID"] = 1560,
-				["basecost"] = 40,
+				["numFollowers"] = 3,
+				["requiredSuccessChance"] = 0,
+				["areaID"] = 21,
+				["completed"] = false,
+				["requiredChampionCount"] = 1,
 				["location"] = "凯旋壁垒",
 				["isRare"] = false,
 				["mapPosX"] = 0,
-				["duration"] = "6小时",
+				["missionID"] = 1935,
 			}, -- [1]
 			{
 				["description"] = "",
@@ -1074,9 +1077,9 @@ IPMDB = {
 				["inProgress"] = true,
 				["overmaxRewards"] = {
 					{
-						["title"] = "货币奖励",
-						["quantity"] = 100,
 						["icon"] = 2032593,
+						["quantity"] = 100,
+						["title"] = "货币奖励",
 						["currencyID"] = 1600,
 					}, -- [1]
 				},
@@ -1090,7 +1093,7 @@ IPMDB = {
 				["followerTypeID"] = 22,
 				["offeredGarrMissionTextureID"] = 0,
 				["durationSeconds"] = 7200,
-				["missionID"] = 1923,
+				["duration"] = "2小时",
 				["iLevel"] = 800,
 				["overmaxSucceeded"] = false,
 				["offerTimeRemaining"] = "0秒",
@@ -1125,8 +1128,11 @@ IPMDB = {
 						["quality"] = 5,
 						["portraitIconID"] = 1396666,
 						["isFavorite"] = false,
-						["classSpec"] = 185,
+						["garrFollowerID"] = 1069,
 						["xp"] = 0,
+						["isCollected"] = true,
+						["levelXP"] = 0,
+						["isMaxLevel"] = true,
 						["abilities"] = {
 							1062, -- [1]
 							1093, -- [2]
@@ -1135,13 +1141,10 @@ IPMDB = {
 							1101, -- [5]
 						},
 						["className"] = "生存猎人",
-						["isMaxLevel"] = true,
-						["name"] = "雷克萨",
-						["followerID"] = "0x000000000A49E614",
 						["height"] = 1,
-						["levelXP"] = 0,
-						["isCollected"] = true,
-						["garrFollowerID"] = 1069,
+						["followerID"] = "0x000000000A49E614",
+						["name"] = "雷克萨",
+						["classSpec"] = 185,
 					},
 					["0x000000000A4ED3CA"] = {
 						["displayHeight"] = 0.5,
@@ -1163,8 +1166,11 @@ IPMDB = {
 						["quality"] = 4,
 						["portraitIconID"] = 2026473,
 						["isFavorite"] = false,
-						["classSpec"] = 186,
+						["garrFollowerID"] = 1072,
 						["xp"] = 25505,
+						["isCollected"] = true,
+						["levelXP"] = 30000,
+						["isMaxLevel"] = true,
 						["abilities"] = {
 							1043, -- [1]
 							1088, -- [2]
@@ -1172,13 +1178,10 @@ IPMDB = {
 							1100, -- [4]
 						},
 						["className"] = "暗影猎手",
-						["isMaxLevel"] = true,
-						["name"] = "暗影猎手塔金",
-						["followerID"] = "0x000000000A4ED3CA",
 						["height"] = 1.25,
-						["levelXP"] = 30000,
-						["isCollected"] = true,
-						["garrFollowerID"] = 1072,
+						["followerID"] = "0x000000000A4ED3CA",
+						["name"] = "暗影猎手塔金",
+						["classSpec"] = 186,
 					},
 					["0x000000000A9FA4FA"] = {
 						["displayHeight"] = 0.5,
@@ -1200,8 +1203,11 @@ IPMDB = {
 						["quality"] = 4,
 						["portraitIconID"] = 2026474,
 						["isFavorite"] = false,
-						["classSpec"] = 184,
+						["garrFollowerID"] = 1062,
 						["xp"] = 25375,
+						["isCollected"] = true,
+						["levelXP"] = 30000,
+						["isMaxLevel"] = true,
 						["abilities"] = {
 							1043, -- [1]
 							1103, -- [2]
@@ -1209,35 +1215,32 @@ IPMDB = {
 							1100, -- [4]
 						},
 						["className"] = "敏锐潜行者",
-						["isMaxLevel"] = true,
-						["name"] = "莉莉安·沃斯",
-						["followerID"] = "0x000000000A9FA4FA",
 						["height"] = 1.200000047683716,
-						["levelXP"] = 30000,
-						["isCollected"] = true,
-						["garrFollowerID"] = 1062,
+						["followerID"] = "0x000000000A9FA4FA",
+						["name"] = "莉莉安·沃斯",
+						["classSpec"] = 184,
 					},
 				},
 				["timeLeftSeconds"] = 0,
-				["requiredSuccessChance"] = 0,
+				["basecost"] = 20,
 				["rewards"] = {
 					{
-						["title"] = "货币奖励",
-						["quantity"] = 75,
 						["icon"] = 2032593,
+						["quantity"] = 75,
+						["title"] = "货币奖励",
 						["currencyID"] = 1600,
 					}, -- [1]
 				},
-				["requiredChampionCount"] = 1,
-				["numFollowers"] = 3,
-				["completed"] = false,
-				["areaID"] = 21,
 				["costCurrencyTypesID"] = 1560,
-				["basecost"] = 20,
+				["numFollowers"] = 3,
+				["requiredSuccessChance"] = 0,
+				["areaID"] = 21,
+				["completed"] = false,
+				["requiredChampionCount"] = 1,
 				["location"] = "提拉加德城堡",
 				["isRare"] = false,
 				["mapPosX"] = 0,
-				["duration"] = "2小时",
+				["missionID"] = 1923,
 			}, -- [2]
 			{
 				["description"] = "",
@@ -1262,7 +1265,7 @@ IPMDB = {
 				["followerTypeID"] = 1,
 				["offeredGarrMissionTextureID"] = 0,
 				["durationSeconds"] = 21600,
-				["missionID"] = 678,
+				["duration"] = "6小时",
 				["iLevel"] = 675,
 				["overmaxSucceeded"] = false,
 				["offerTimeRemaining"] = "0秒",
@@ -1292,8 +1295,11 @@ IPMDB = {
 						["quality"] = 4,
 						["portraitIconID"] = 1066529,
 						["isFavorite"] = false,
-						["classSpec"] = 14,
+						["garrFollowerID"] = 455,
 						["xp"] = 0,
+						["isCollected"] = true,
+						["levelXP"] = 0,
+						["isMaxLevel"] = true,
 						["abilities"] = {
 							172, -- [1]
 							170, -- [2]
@@ -1302,13 +1308,10 @@ IPMDB = {
 							38, -- [5]
 						},
 						["className"] = "奥术法师",
-						["isMaxLevel"] = true,
-						["name"] = "米尔豪斯·法力风暴",
-						["followerID"] = "0x00000000004AD867",
 						["height"] = 1.100000023841858,
-						["levelXP"] = 0,
-						["isCollected"] = true,
-						["garrFollowerID"] = 455,
+						["followerID"] = "0x00000000004AD867",
+						["name"] = "米尔豪斯·法力风暴",
+						["classSpec"] = 14,
 					},
 					["0x0000000000DC14BA"] = {
 						["displayHeight"] = 0.5,
@@ -1330,8 +1333,11 @@ IPMDB = {
 						["quality"] = 5,
 						["portraitIconID"] = 1108817,
 						["isFavorite"] = false,
-						["classSpec"] = 26,
+						["garrFollowerID"] = 466,
 						["xp"] = 0,
+						["isCollected"] = true,
+						["levelXP"] = 0,
+						["isMaxLevel"] = true,
 						["abilities"] = {
 							47, -- [1]
 							159, -- [2]
@@ -1340,13 +1346,10 @@ IPMDB = {
 							72, -- [5]
 						},
 						["className"] = "奇袭潜行者",
-						["isMaxLevel"] = true,
-						["name"] = "半兽人迦罗娜",
-						["followerID"] = "0x0000000000DC14BA",
 						["height"] = 1.299999952316284,
-						["levelXP"] = 0,
-						["isCollected"] = true,
-						["garrFollowerID"] = 466,
+						["followerID"] = "0x0000000000DC14BA",
+						["name"] = "半兽人迦罗娜",
+						["classSpec"] = 26,
 					},
 					["0x0000000000635A5C"] = {
 						["displayHeight"] = 0.5,
@@ -1368,8 +1371,11 @@ IPMDB = {
 						["quality"] = 4,
 						["portraitIconID"] = 1066168,
 						["isFavorite"] = false,
-						["classSpec"] = 20,
+						["garrFollowerID"] = 107,
 						["xp"] = 0,
+						["isCollected"] = true,
+						["levelXP"] = 0,
+						["isMaxLevel"] = true,
 						["abilities"] = {
 							129, -- [1]
 							236, -- [2]
@@ -1378,33 +1384,30 @@ IPMDB = {
 							71, -- [5]
 						},
 						["className"] = "神圣圣骑士",
-						["isMaxLevel"] = true,
-						["name"] = "塞尔莉娅·晨风",
-						["followerID"] = "0x0000000000635A5C",
 						["height"] = 1.200000047683716,
-						["levelXP"] = 0,
-						["isCollected"] = true,
-						["garrFollowerID"] = 107,
+						["followerID"] = "0x0000000000635A5C",
+						["name"] = "塞尔莉娅·晨风",
+						["classSpec"] = 20,
 					},
 				},
 				["timeLeftSeconds"] = 0,
-				["requiredSuccessChance"] = 0,
+				["basecost"] = 100,
 				["rewards"] = {
 					{
 						["itemID"] = 127748,
 						["quantity"] = 1,
 					}, -- [1]
 				},
-				["requiredChampionCount"] = 3,
-				["numFollowers"] = 3,
-				["completed"] = false,
-				["areaID"] = 0,
 				["costCurrencyTypesID"] = 824,
-				["basecost"] = 100,
+				["numFollowers"] = 3,
+				["requiredSuccessChance"] = 0,
+				["areaID"] = 0,
+				["completed"] = false,
+				["requiredChampionCount"] = 3,
 				["location"] = "黑石铸造厂",
 				["isRare"] = true,
 				["mapPosX"] = 0,
-				["duration"] = "6小时",
+				["missionID"] = 678,
 			}, -- [3]
 		},
 		["冰火兮-阿尔萨斯"] = {
@@ -1429,7 +1432,7 @@ IPMDB = {
 				["followerTypeID"] = 1,
 				["offeredGarrMissionTextureID"] = 0,
 				["durationSeconds"] = 3600,
-				["missionID"] = 148,
+				["duration"] = "1小时",
 				["iLevel"] = 0,
 				["overmaxSucceeded"] = false,
 				["offerTimeRemaining"] = "0秒",
@@ -1459,11 +1462,15 @@ IPMDB = {
 						["quality"] = 4,
 						["portraitIconID"] = 1066110,
 						["isFavorite"] = false,
-						["classSpec"] = 12,
+						["garrFollowerID"] = 183,
 						["xp"] = 1500,
+						["isCollected"] = true,
+						["levelXP"] = 1600,
+						["isMaxLevel"] = false,
 						["name"] = "戈隆追猎者洛卡什",
 						["followerID"] = "0x000000000215A910",
-						["isMaxLevel"] = false,
+						["height"] = 1,
+						["className"] = "射击猎人",
 						["abilities"] = {
 							167, -- [1]
 							167, -- [2]
@@ -1471,21 +1478,10 @@ IPMDB = {
 							41, -- [4]
 							49, -- [5]
 						},
-						["className"] = "射击猎人",
-						["height"] = 1,
-						["levelXP"] = 1600,
-						["isCollected"] = true,
-						["garrFollowerID"] = 183,
+						["classSpec"] = 12,
 					},
 				},
 				["timeLeftSeconds"] = 0,
-				["costCurrencyTypesID"] = 824,
-				["basecost"] = 10,
-				["requiredSuccessChance"] = 0,
-				["numFollowers"] = 1,
-				["requiredChampionCount"] = 1,
-				["areaID"] = 0,
-				["completed"] = false,
 				["rewards"] = {
 					{
 						["title"] = "奖励追随者经验",
@@ -1495,10 +1491,17 @@ IPMDB = {
 						["name"] = "+300经验值",
 					}, -- [1]
 				},
+				["basecost"] = 10,
+				["completed"] = false,
+				["numFollowers"] = 1,
+				["costCurrencyTypesID"] = 824,
+				["areaID"] = 0,
+				["requiredChampionCount"] = 1,
+				["requiredSuccessChance"] = 0,
 				["location"] = "戈尔隆德",
 				["isRare"] = false,
 				["mapPosX"] = 0,
-				["duration"] = "1小时",
+				["missionID"] = 148,
 			}, -- [1]
 		},
 		["古剑-阿尔萨斯"] = {
@@ -1515,9 +1518,9 @@ IPMDB = {
 				["inProgress"] = true,
 				["overmaxRewards"] = {
 					{
-						["title"] = "货币奖励",
-						["quantity"] = 340,
 						["icon"] = 1397630,
+						["quantity"] = 340,
+						["title"] = "货币奖励",
 						["currencyID"] = 1220,
 					}, -- [1]
 				},
@@ -1530,7 +1533,7 @@ IPMDB = {
 				["successChance"] = 200,
 				["followerTypeID"] = 4,
 				["offeredGarrMissionTextureID"] = 0,
-				["missionID"] = 1754,
+				["level"] = 110,
 				["durationSeconds"] = 12096,
 				["duration"] = "3小时21分钟",
 				["iLevel"] = 950,
@@ -1542,87 +1545,6 @@ IPMDB = {
 				["mapPosY"] = 0.612698435783386,
 				["type"] = "7.0 职业大厅 - 一般任务",
 				["followerInfo"] = {
-					["0x0000000007666DCF"] = {
-						["displayHeight"] = 0.5,
-						["followerTypeID"] = 4,
-						["zoneSupportSpellID"] = 234901,
-						["iLevel"] = 950,
-						["scale"] = 0.699999988079071,
-						["classAtlas"] = "GarrMission_ClassIcon-DeathKnight-Blood",
-						["isTroop"] = false,
-						["displayIDs"] = {
-							{
-								["followerPageScale"] = 1,
-								["showWeapon"] = true,
-								["id"] = 64614,
-							}, -- [1]
-						},
-						["displayScale"] = 1,
-						["status"] = "正在执行任务",
-						["level"] = 110,
-						["quality"] = 6,
-						["portraitIconID"] = 1589543,
-						["isFavorite"] = false,
-						["classSpec"] = 108,
-						["slotSoundKitID"] = 81299,
-						["xp"] = 0,
-						["name"] = "米妮瓦·悲鸦",
-						["followerID"] = "0x0000000007666DCF",
-						["isMaxLevel"] = true,
-						["abilities"] = {
-							362, -- [1]
-							446, -- [2]
-							829, -- [3]
-							968, -- [4]
-							997, -- [5]
-							967, -- [6]
-						},
-						["className"] = "鲜血死亡骑士",
-						["height"] = 1.20000004768372,
-						["levelXP"] = 0,
-						["isCollected"] = true,
-						["garrFollowerID"] = 1003,
-					},
-					["0x0000000004217B08"] = {
-						["displayHeight"] = 0.5,
-						["followerTypeID"] = 4,
-						["iLevel"] = 950,
-						["scale"] = 0.699999988079071,
-						["classAtlas"] = "GarrMission_ClassIcon-DeathKnight-Frost",
-						["isTroop"] = false,
-						["displayIDs"] = {
-							{
-								["followerPageScale"] = 1,
-								["showWeapon"] = true,
-								["id"] = 70807,
-							}, -- [1]
-						},
-						["displayScale"] = 1,
-						["status"] = "正在执行任务",
-						["level"] = 110,
-						["quality"] = 6,
-						["portraitIconID"] = 1452582,
-						["isFavorite"] = false,
-						["classSpec"] = 109,
-						["slotSoundKitID"] = 70104,
-						["xp"] = 0,
-						["name"] = "索拉斯·托尔贝恩",
-						["followerID"] = "0x0000000004217B08",
-						["isMaxLevel"] = true,
-						["abilities"] = {
-							361, -- [1]
-							445, -- [2]
-							622, -- [3]
-							969, -- [4]
-							968, -- [5]
-							995, -- [6]
-						},
-						["className"] = "冰霜死亡骑士",
-						["height"] = 1,
-						["levelXP"] = 0,
-						["isCollected"] = true,
-						["garrFollowerID"] = 838,
-					},
 					["0x000000000421838A"] = {
 						["displayHeight"] = 0.5,
 						["followerTypeID"] = 4,
@@ -1644,12 +1566,16 @@ IPMDB = {
 						["quality"] = 6,
 						["portraitIconID"] = 1341768,
 						["isFavorite"] = false,
-						["classSpec"] = 108,
+						["garrFollowerID"] = 599,
 						["slotSoundKitID"] = 70110,
 						["xp"] = 0,
+						["isCollected"] = true,
+						["levelXP"] = 0,
+						["isMaxLevel"] = true,
 						["name"] = "库尔迪拉·织亡者",
 						["followerID"] = "0x000000000421838A",
-						["isMaxLevel"] = true,
+						["height"] = 1.20000004768372,
+						["className"] = "鲜血死亡骑士",
 						["abilities"] = {
 							362, -- [1]
 							445, -- [2]
@@ -1658,37 +1584,111 @@ IPMDB = {
 							970, -- [5]
 							997, -- [6]
 						},
-						["className"] = "鲜血死亡骑士",
-						["height"] = 1.20000004768372,
-						["levelXP"] = 0,
+						["classSpec"] = 108,
+					},
+					["0x0000000004217B08"] = {
+						["displayHeight"] = 0.5,
+						["followerTypeID"] = 4,
+						["iLevel"] = 950,
+						["scale"] = 0.699999988079071,
+						["classAtlas"] = "GarrMission_ClassIcon-DeathKnight-Frost",
+						["isTroop"] = false,
+						["displayIDs"] = {
+							{
+								["followerPageScale"] = 1,
+								["showWeapon"] = true,
+								["id"] = 70807,
+							}, -- [1]
+						},
+						["displayScale"] = 1,
+						["status"] = "正在执行任务",
+						["level"] = 110,
+						["quality"] = 6,
+						["portraitIconID"] = 1452582,
+						["isFavorite"] = false,
+						["garrFollowerID"] = 838,
+						["slotSoundKitID"] = 70104,
+						["xp"] = 0,
 						["isCollected"] = true,
-						["garrFollowerID"] = 599,
+						["levelXP"] = 0,
+						["isMaxLevel"] = true,
+						["name"] = "索拉斯·托尔贝恩",
+						["followerID"] = "0x0000000004217B08",
+						["height"] = 1,
+						["className"] = "冰霜死亡骑士",
+						["abilities"] = {
+							361, -- [1]
+							445, -- [2]
+							622, -- [3]
+							969, -- [4]
+							968, -- [5]
+							995, -- [6]
+						},
+						["classSpec"] = 109,
+					},
+					["0x0000000007666DCF"] = {
+						["displayHeight"] = 0.5,
+						["followerTypeID"] = 4,
+						["zoneSupportSpellID"] = 234901,
+						["iLevel"] = 950,
+						["scale"] = 0.699999988079071,
+						["classAtlas"] = "GarrMission_ClassIcon-DeathKnight-Blood",
+						["isTroop"] = false,
+						["displayIDs"] = {
+							{
+								["followerPageScale"] = 1,
+								["showWeapon"] = true,
+								["id"] = 64614,
+							}, -- [1]
+						},
+						["displayScale"] = 1,
+						["status"] = "正在执行任务",
+						["level"] = 110,
+						["quality"] = 6,
+						["portraitIconID"] = 1589543,
+						["isFavorite"] = false,
+						["garrFollowerID"] = 1003,
+						["slotSoundKitID"] = 81299,
+						["xp"] = 0,
+						["isCollected"] = true,
+						["levelXP"] = 0,
+						["isMaxLevel"] = true,
+						["name"] = "米妮瓦·悲鸦",
+						["followerID"] = "0x0000000007666DCF",
+						["height"] = 1.20000004768372,
+						["className"] = "鲜血死亡骑士",
+						["abilities"] = {
+							362, -- [1]
+							446, -- [2]
+							829, -- [3]
+							968, -- [4]
+							997, -- [5]
+							967, -- [6]
+						},
+						["classSpec"] = 108,
 					},
 				},
 				["timeLeftSeconds"] = 0,
+				["requiredSuccessChance"] = 0,
 				["rewards"] = {
 					{
-						["title"] = "货币奖励",
-						["quantity"] = 340,
 						["icon"] = 1397630,
+						["quantity"] = 340,
+						["title"] = "货币奖励",
 						["currencyID"] = 1220,
 					}, -- [1]
 				},
-				["basecost"] = 400,
-				["costCurrencyTypesID"] = 1220,
-				["numFollowers"] = 3,
-				["requiredChampionCount"] = 1,
 				["completed"] = false,
-				["requiredSuccessChance"] = 0,
+				["numFollowers"] = 3,
+				["costCurrencyTypesID"] = 1220,
+				["requiredChampionCount"] = 1,
+				["basecost"] = 400,
 				["isComplete"] = true,
 				["location"] = "安托兰废土",
 				["isRare"] = false,
 				["mapPosX"] = 0.745181977748871,
-				["level"] = 110,
+				["missionID"] = 1754,
 			}, -- [1]
 		},
 	},
-	["ignores"] = {
-	},
-	["enableGarrisonMissions"] = true,
 }

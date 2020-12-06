@@ -104,8 +104,22 @@ DBMPvP_AllSavedVars = {
 			{
 				["Enabled"] = true,
 			}, -- [2]
+			{
+				["Enabled"] = true,
+			}, -- [3]
 		},
 		["talent2"] = "狂徒",
+		["z566"] = {
+			{
+				["Enabled"] = true,
+			}, -- [1]
+			{
+				["Enabled"] = true,
+			}, -- [2]
+			{
+				["Enabled"] = true,
+			}, -- [3]
+		},
 		["z2106"] = {
 			{
 				["Enabled"] = true,
@@ -113,6 +127,9 @@ DBMPvP_AllSavedVars = {
 			{
 				["Enabled"] = true,
 			}, -- [2]
+			{
+				["Enabled"] = true,
+			}, -- [3]
 		},
 		["z727"] = {
 			{
@@ -133,6 +150,15 @@ DBMPvP_AllSavedVars = {
 				["TimerCart"] = true,
 				["TimerRespawn"] = true,
 			}, -- [2]
+			{
+				["TimerRespawnCVoice"] = 0,
+				["TimerCartCVoice"] = 0,
+				["TimerCartTColor"] = 0,
+				["Enabled"] = true,
+				["TimerRespawnTColor"] = 0,
+				["TimerCart"] = true,
+				["TimerRespawn"] = true,
+			}, -- [3]
 		},
 		["z1803"] = {
 			{
@@ -147,6 +173,12 @@ DBMPvP_AllSavedVars = {
 				["TimerSpawnTColor"] = 0,
 				["Enabled"] = true,
 			}, -- [2]
+			{
+				["TimerSpawn"] = true,
+				["Enabled"] = true,
+				["TimerSpawnTColor"] = 0,
+				["TimerSpawnCVoice"] = 0,
+			}, -- [3]
 		},
 		["z30"] = {
 			{
@@ -157,6 +189,10 @@ DBMPvP_AllSavedVars = {
 				["Enabled"] = true,
 				["AutoTurnIn"] = true,
 			}, -- [2]
+			{
+				["Enabled"] = true,
+				["AutoTurnIn"] = true,
+			}, -- [3]
 		},
 		["z726"] = {
 			{
@@ -165,6 +201,9 @@ DBMPvP_AllSavedVars = {
 			{
 				["Enabled"] = true,
 			}, -- [2]
+			{
+				["Enabled"] = true,
+			}, -- [3]
 		},
 		["z628"] = {
 			{
@@ -173,23 +212,17 @@ DBMPvP_AllSavedVars = {
 			{
 				["Enabled"] = true,
 			}, -- [2]
-		},
-		["z566"] = {
 			{
 				["Enabled"] = true,
-			}, -- [1]
-			{
-				["Enabled"] = true,
-			}, -- [2]
+			}, -- [3]
 		},
+		["talent3"] = "敏锐",
 		["talent1"] = "奇袭",
 		["PvPGeneral"] = {
 			{
 				["TimerRemaining"] = true,
 				["TimerFlagCVoice"] = 0,
 				["ShowRelativeGameTime"] = true,
-				["ShowBasesToWin"] = false,
-				["ShowEstimatedPoints"] = true,
 				["TimerRemainingTColor"] = 0,
 				["TimerWinCVoice"] = 0,
 				["AutoSpirit"] = false,
@@ -202,9 +235,9 @@ DBMPvP_AllSavedVars = {
 				["Timer110310cast"] = true,
 				["TimerWin"] = true,
 				["Enabled"] = true,
+				["HideBossEmoteFrame"] = false,
 				["Timer34709nextCVoice"] = 0,
 				["Timer46392nextCVoice"] = 0,
-				["HideBossEmoteFrame"] = false,
 				["TimerRemainingCVoice"] = 0,
 				["Timer46392next"] = true,
 				["Timer34709nextTColor"] = 0,
@@ -218,28 +251,59 @@ DBMPvP_AllSavedVars = {
 				["TimerFlagCVoice"] = 0,
 				["ShowRelativeGameTime"] = true,
 				["TimerRemainingTColor"] = 0,
-				["TimerCap"] = true,
 				["Timer110310castTColor"] = 0,
+				["ShowBasesToWin"] = false,
+				["Timer110310castCVoice"] = 0,
+				["TimerCap"] = true,
 				["TimerFlagTColor"] = 0,
 				["HideBossEmoteFrame"] = false,
 				["Timer46392nextTColor"] = 0,
 				["TimerFlag"] = true,
 				["TimerWinTColor"] = 0,
 				["TimerCapCVoice"] = 0,
-				["Timer110310castCVoice"] = 0,
 				["TimerWinCVoice"] = 0,
+				["Timer46392next"] = true,
 				["Enabled"] = true,
 				["TimerWin"] = true,
-				["Timer34709nextCVoice"] = 0,
 				["Timer46392nextCVoice"] = 0,
+				["Timer34709nextCVoice"] = 0,
 				["TimerRemainingCVoice"] = 0,
-				["Timer46392next"] = true,
+				["ShowEstimatedPoints"] = true,
 				["Timer34709nextTColor"] = 0,
 				["TimerCapTColor"] = 0,
 				["Timer110310cast"] = true,
 				["AutoSpirit"] = false,
 				["Timer34709next"] = true,
 			}, -- [2]
+			{
+				["TimerRemaining"] = true,
+				["TimerFlagCVoice"] = 0,
+				["ShowRelativeGameTime"] = true,
+				["TimerRemainingTColor"] = 0,
+				["AutoSpirit"] = false,
+				["ShowBasesToWin"] = false,
+				["Timer110310cast"] = true,
+				["TimerWinCVoice"] = 0,
+				["TimerFlagTColor"] = 0,
+				["TimerCap"] = true,
+				["Timer46392nextTColor"] = 0,
+				["TimerFlag"] = true,
+				["TimerWinTColor"] = 0,
+				["TimerCapCVoice"] = 0,
+				["TimerWin"] = true,
+				["Timer46392next"] = true,
+				["Enabled"] = true,
+				["HideBossEmoteFrame"] = false,
+				["Timer34709nextCVoice"] = 0,
+				["Timer46392nextCVoice"] = 0,
+				["TimerRemainingCVoice"] = 0,
+				["ShowEstimatedPoints"] = true,
+				["Timer34709nextTColor"] = 0,
+				["TimerCapTColor"] = 0,
+				["Timer110310castCVoice"] = 0,
+				["Timer110310castTColor"] = 0,
+				["Timer34709next"] = true,
+			}, -- [3]
 		},
 		["z761"] = {
 			{
@@ -248,6 +312,9 @@ DBMPvP_AllSavedVars = {
 			{
 				["Enabled"] = true,
 			}, -- [2]
+			{
+				["Enabled"] = true,
+			}, -- [3]
 		},
 		["z998"] = {
 			{
@@ -256,6 +323,9 @@ DBMPvP_AllSavedVars = {
 			{
 				["Enabled"] = true,
 			}, -- [2]
+			{
+				["Enabled"] = true,
+			}, -- [3]
 		},
 		["z2245"] = {
 			{
@@ -264,6 +334,9 @@ DBMPvP_AllSavedVars = {
 			{
 				["Enabled"] = true,
 			}, -- [2]
+			{
+				["Enabled"] = true,
+			}, -- [3]
 		},
 	},
 	["猫乄-阿尔萨斯"] = {
